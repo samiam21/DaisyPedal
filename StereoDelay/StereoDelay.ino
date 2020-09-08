@@ -3,12 +3,16 @@
 DaisyHardware hw;
 
 size_t num_channels;
+Switch button;
 
 // two DelayLine of 24000 floats.
 DelayLine<float, 24000> del_left, del_right;
 
 void MyCallback(float **in, float **out, size_t size)
 {
+    //Debounce the button
+    button.Debounce();
+
     for (size_t i = 0; i < size; i++)
     {
         float dry_left, dry_right, wet_left, wet_right;
@@ -25,9 +29,19 @@ void MyCallback(float **in, float **out, size_t size)
         del_left.Write((wet_left * 0.5) + dry_left);
         del_right.Write((wet_right * 0.5) + dry_right);
 
-        // Mix Dry and Wet and send to I/O
-        out[0][i] = wet_left * 0.707 + dry_left * 0.707;
-        out[1][i] = wet_right * 0.707 + dry_right * 0.707;
+        // Check if the button is pressed
+        if (button.Pressed())
+        {
+            // Send only dry signal
+            out[0][i] = dry_left;
+            out[1][i] = dry_right;
+        }
+        else
+        {
+            // Mix Dry and Wet and send to I/O
+            out[0][i] = wet_left * 0.707 + dry_left * 0.707;
+            out[1][i] = wet_right * 0.707 + dry_right * 0.707;
+        }
     }
 }
 
@@ -35,9 +49,13 @@ void setup()
 {
     float samplerate;
     // Initialize for Daisy pod at 48kHz
-    hw = DAISY.init(DAISY_SEED, AUDIO_SR_48K);
+    hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
     num_channels = hw.num_channels;
-    
+
+    //setup the button
+    //update at 1kHz, no invert, on pin 28
+    button.Init(1000, true, 28);
+
     // Init Delay Lines
     del_left.Init();
     del_right.Init();
