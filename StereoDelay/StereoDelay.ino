@@ -61,7 +61,7 @@ void setup()
     del_right.Init();
 
     // Set Delay Times in Samples
-    del_left.SetDelay(12000.0f);
+    del_left.SetDelay(6000.0f);
     del_right.SetDelay(8000.0f);
 
     // Start Audio
