@@ -4,8 +4,8 @@ DaisyHardware hw;
 
 // Constant parameters
 size_t num_channels;
-const int buttonPin = 6;
-const int ledPin = LED_BUILTIN; // Built in LED
+const int onOffButtonPin = 6;
+const int ledPin = 15; // Built in LED is LED_BUILTIN
 const int audioInChannel = 0;
 const int audioOutChannel = 1;
 
@@ -54,8 +54,9 @@ void setup()
     hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
     num_channels = hw.num_channels;
 
-    // Initialize button input
-    pinMode(buttonPin, INPUT);
+    // Initialize button inputs
+    pinMode(onOffButtonPin, INPUT);
+    pinMode(ledPin, OUTPUT);
 
     // Init Delay Line
     del_line.Init();
@@ -70,7 +71,7 @@ void setup()
 void loop()
 {
   // Read the state of the pushbutton value:
-  buttonState = digitalRead(buttonPin);
+  buttonState = digitalRead(onOffButtonPin);
 
   // Check if the pushbutton is pressed
   if (buttonState == HIGH)
