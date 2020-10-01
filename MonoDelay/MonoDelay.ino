@@ -3,19 +3,27 @@
 DaisyHardware hw;
 
 // Constant parameters
-size_t num_channels;
 const int onOffButtonPin = 6;
 const int ledPin = 15; // Built in LED is LED_BUILTIN
 const int audioInChannel = 0;
 const int audioOutChannel = 1;
+const size_t delayMaxSize = 96000;
 
 // Volatile parameters
 volatile bool addDelay = true;
-volatile float tempo = 14000.0f;
-int buttonState = 0;
+volatile int onOffButtonState = 0;
+volatile size_t tempoBpm = 90;
 
-// One DelayLine of 24000 floats.
-DelayLine<float, 24000> del_line;
+// TEMPO NOTES:
+//  - Max delay size is based on audio rate, currently 96kHz
+//  - Tempo = Max is equal to "slowest" delay
+//    - 96000 => 30bpm
+//    - 48000 => 60bpm
+//    - 24000 => 120bpm
+//    - Formula: 96000 / (bpm) * 30
+
+// Declare the DelayLine
+DelayLine<float, delayMaxSize> del_line;
 
 // Audio callback when audio input occurs
 void MyCallback(float **in, float **out, size_t size)
@@ -52,7 +60,6 @@ void setup()
     float samplerate;
     // Initialize for Daisy pod at 96kHz
     hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
-    num_channels = hw.num_channels;
 
     // Initialize button inputs
     pinMode(onOffButtonPin, INPUT);
@@ -62,7 +69,8 @@ void setup()
     del_line.Init();
 
     // Set Delay Time in Samples
-    del_line.SetDelay(tempo);
+    size_t tempoSamples = (96000 / tempoBpm) * 30;
+    del_line.SetDelay(tempoSamples);
 
     // Start Audio
     DAISY.begin(MyCallback);
@@ -71,10 +79,10 @@ void setup()
 void loop()
 {
   // Read the state of the pushbutton value:
-  buttonState = digitalRead(onOffButtonPin);
+  int newOnOffButtonState = digitalRead(onOffButtonPin);
 
-  // Check if the pushbutton is pressed
-  if (buttonState == HIGH)
+  // Check if the button has gone from low to high
+  if (newOnOffButtonState == HIGH && onOffButtonState == LOW)
   {
     // Turn LED on
     digitalWrite(ledPin, HIGH);
@@ -82,7 +90,9 @@ void loop()
     // Enable the delay
     addDelay = true;
   }
-  else
+
+  // Check if the button has gone from high to low
+  if (newOnOffButtonState == LOW && onOffButtonState == HIGH)
   {
     // Turn LED off
     digitalWrite(ledPin, LOW);
@@ -90,4 +100,7 @@ void loop()
     // Disable the delay
     addDelay = false;
   }
+
+  // Update the button state
+  onOffButtonState = newOnOffButtonState;
 }
