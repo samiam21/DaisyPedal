@@ -21,6 +21,12 @@ volatile size_t tempoBpm = 90;
 //    - 48000 => 60bpm
 //    - 24000 => 120bpm
 //    - Formula: 96000 / (bpm) * 30
+//
+//  - Timespan (between beats) -> Samples
+//    - 2000ms = 96000
+//    - 1000ms = 48000
+//    - 500ms = 24000
+//    - Formula: (96000 * t) / 2000
 
 // Declare the DelayLine
 DelayLine<float, delayMaxSize> del_line;
