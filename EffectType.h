@@ -4,7 +4,8 @@
 // Effect type enum
 enum EffectType {
     Bypass = 0,
-    MonoDelay = 1
+    MonoDelay = 1,
+    Unset = 99
 };
 
 #endif

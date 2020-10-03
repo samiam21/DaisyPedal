@@ -1,7 +1,7 @@
 #include <bitset>
 #include "DaisyDuino.h"
 #include "EffectType.h"
-#include "Bypass/bypass.ino"
+#include "Bypass/Bypass.ino"
 #include "MonoDelay/MonoDelay.ino"
 
 // Global variables
@@ -16,7 +16,7 @@ const int hexSwitchPin8 = 9;
 const int ledPin = 15; // Built in LED is LED_BUILTIN
 
 // Volatile parameters
-volatile EffectType currentEffect = Bypass;
+volatile EffectType currentEffect = Unset;
 
 void setup() 
 {
@@ -61,8 +61,8 @@ void loop()
                 break;
         }
 
-        // Stop the current Daisy effect
-        DAISY.end();
+        // Stop the current Daisy effect (not necessary?)
+        //DAISY.end();
 
         // Start the new effect
         switch(readEffectState)
