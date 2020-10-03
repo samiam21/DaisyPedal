@@ -1,5 +1,6 @@
 #include "DaisyDuino.h"
 #include "Bypass/bypass.ino"
+#include "MonoDelay/MonoDelay.ino"
 
 // Global variables
 DaisyHardware hw;
@@ -13,6 +14,10 @@ void setup() {
     // Initialize Bypass and start
     BypassSetup(num_channels);
     DAISY.begin(BypassCallback);
+
+    // Initialize MonoDelay and start
+    // MonoDelaySetup();
+    // DAISY.begin(MonoDelayCallback);
 }
 
 void loop() {
