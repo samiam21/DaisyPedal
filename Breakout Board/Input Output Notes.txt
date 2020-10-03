@@ -1,0 +1,9 @@
+INPUTS/OUTPUTS:
+
+- SPST momentary switches (4)
+- 10K linear potentiometer (4)
+- Rotary hex switch (1)
+- TS jack (4)
+
+- MicroUSB (1)
+- 9v power (1)

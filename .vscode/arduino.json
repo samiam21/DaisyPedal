@@ -3,5 +3,5 @@
     "configuration": "pnum=DAISY_SEED,upload_method=dfuMethod,xserial=generic,usb=CDCgen,xusb=FS,opt=osstd,rtlib=nano",
     "port": "COM5",
     "output": "./build",
-    "sketch": "MonoDelay\\MonoDelay.ino"
+    "sketch": "DaisyPedal.ino"
 }

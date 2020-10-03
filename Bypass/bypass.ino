@@ -1,29 +1,19 @@
 #include "DaisyDuino.h"
 
-DaisyHardware hw;
+size_t numChannels;
 
-size_t num_channels;
+void BypassSetup(size_t pNumChannels)
+{
+    numChannels = pNumChannels;
+}
 
-void MyCallback(float **in, float **out, size_t size)
+void BypassCallback(float **in, float **out, size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
-        for (size_t chn = 0; chn < num_channels; chn++)
+        for (size_t chn = 0; chn < numChannels; chn++)
         {
             out[chn][i] = in[chn][i];
         }
     }
-}
-
-void setup() {
-    float samplerate;
-    // Initialize for Daisy pod at 48kHz
-    hw = DAISY.init(DAISY_SEED, AUDIO_SR_48K);
-    num_channels = hw.num_channels;
-    samplerate = DAISY.get_samplerate();
-
-    DAISY.begin(MyCallback);
-}
-
-void loop() {
 }
