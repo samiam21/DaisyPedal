@@ -8,8 +8,6 @@ const int audioOutChannel = 0;
 const size_t delayMaxSize = 96000;
 
 // Volatile parameters
-volatile bool addDelay = true;
-volatile int onOffButtonState = 0;
 volatile size_t tempoBpm = 90;
 
 // TEMPO NOTES:
@@ -60,45 +58,7 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         // Write to Delay with some feedback
         del_line.Write((wet * 0.5) + dry);
 
-        // Check if the button is pressed
-        if (addDelay)
-        {
-            // Mix Dry and Wet and send to I/O
-            out[audioOutChannel][i] = wet * 0.707 + dry * 0.707;
-        }
-        else
-        {
-            // Send only dry signal
-            out[audioOutChannel][i] = dry;
-        }
+        // Mix Dry and Wet and send to I/O
+        out[audioOutChannel][i] = wet * 0.707 + dry * 0.707;
     }
 }
-
-// void loop()
-// {
-//   // Read the state of the pushbutton value:
-//   int newOnOffButtonState = digitalRead(onOffButtonPin);
-
-//   // Check if the button has gone from low to high
-//   if (newOnOffButtonState == HIGH && onOffButtonState == LOW)
-//   {
-//     // Turn LED on
-//     digitalWrite(ledPin, HIGH);
-
-//     // Enable the delay
-//     addDelay = true;
-//   }
-
-//   // Check if the button has gone from high to low
-//   if (newOnOffButtonState == LOW && onOffButtonState == HIGH)
-//   {
-//     // Turn LED off
-//     digitalWrite(ledPin, LOW);
-
-//     // Disable the delay
-//     addDelay = false;
-//   }
-
-//   // Update the button state
-//   onOffButtonState = newOnOffButtonState;
-// }
