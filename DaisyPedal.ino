@@ -9,10 +9,10 @@ DaisyHardware hw;
 size_t num_channels;
 
 // Pin Definitions
-const int hexSwitchPin1 = 6;
-const int hexSwitchPin2 = 7;
-const int hexSwitchPin4 = 8;
-const int hexSwitchPin8 = 9;
+const int hexSwitchPin1 = 0;
+const int hexSwitchPin2 = 1;
+const int hexSwitchPin4 = 2;
+const int hexSwitchPin8 = 3;
 const int ledPin = 15; // Built in LED is LED_BUILTIN
 
 // Volatile parameters
@@ -40,7 +40,7 @@ void loop()
     std::bitset<4> pin1(digitalRead(hexSwitchPin1));
     std::bitset<4> pin2(digitalRead(hexSwitchPin2));
     std::bitset<4> pin4(digitalRead(hexSwitchPin4));
-    std::bitset<4> pin8(digitalRead(hexSwitchPin8));
+    std::bitset<4> pin8(digitalRead(hexSwitchPin8));    
 
     // Get the combined hex value and convert it to an int
     std::bitset<4> combined = pin1 | (pin2 << 1) | (pin4 << 2) | (pin8 << 3);
