@@ -2,7 +2,7 @@
 
 // Constant parameters
 const int onOffButtonPin = 6;
-const int ledPin = 15; // Built in LED is LED_BUILTIN
+const int delayLedPin = 15; // Built in LED is LED_BUILTIN
 const int audioInChannel = 0;
 const int audioOutChannel = 0;
 const size_t delayMaxSize = 96000;
@@ -39,6 +39,11 @@ void MonoDelaySetup()
     del_line.SetDelay(tempoSamples);
 }
 
+void MonoDelayCleanup()
+{
+    del_line.Reset();
+}
+
 // Audio callback when audio input occurs
 void MonoDelayCallback(float **in, float **out, size_t size)
 {
@@ -68,27 +73,6 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         }
     }
 }
-
-// void setup()
-// {
-//     float samplerate;
-//     // Initialize for Daisy pod at 96kHz
-//     hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
-
-//     // Initialize button inputs
-//     pinMode(onOffButtonPin, INPUT);
-//     pinMode(ledPin, OUTPUT);
-
-//     // Init Delay Line
-//     del_line.Init();
-
-//     // Set Delay Time in Samples
-//     size_t tempoSamples = (96000 / tempoBpm) * 30;
-//     del_line.SetDelay(tempoSamples);
-
-//     // Start Audio
-//     DAISY.begin(MyCallback);
-// }
 
 // void loop()
 // {
