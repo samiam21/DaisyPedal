@@ -3,13 +3,16 @@
     {
       "name": "Win32",
       "defines": [
-        "ARDUINO=10800"
+        "ARDUINO=10800",
+        "USBCON",
+        "USBD_USE_CDC"
       ],
       "includePath": [
         "${workspaceRoot}",
         "C:\\Users\\sfahnestock\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.9.0\\**",
         "C:\\Users\\sfahnestock\\AppData\\Local\\Arduino15\\packages\\STM32\\tools\\**",
         "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\**",
+        "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\**",
         "C:\\Program Files (x86)\\Arduino\\libraries\\**",
         "C:\\Users\\sfahnestock\\Documents\\Arduino\\libraries\\**",
         "C:\\Users\\sfahnestock\\Documents\\Arduino\\libraries\\DaisyDuino\\src"

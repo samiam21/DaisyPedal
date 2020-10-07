@@ -1,8 +1,8 @@
 #include "DaisyDuino.h"
 
 // Constant parameters
-const int onOffButtonPin = 6;
-const int delayLedPin = 15; // Built in LED is LED_BUILTIN
+const int tapTempoButtonPin = 28;
+const int tapTempoLedPin = 15;
 const int audioInChannel = 0;
 const int audioOutChannel = 0;
 const size_t delayMaxSize = 96000;
@@ -27,6 +27,7 @@ volatile size_t tempoBpm = 90;
 // Declare the DelayLine
 DelayLine<float, delayMaxSize> del_line;
 
+// Initialize the delay
 void MonoDelaySetup()
 {
     // Init Delay Line
@@ -35,8 +36,13 @@ void MonoDelaySetup()
     // Set Delay Time in Samples
     size_t tempoSamples = (96000 / tempoBpm) * 30;
     del_line.SetDelay(tempoSamples);
+
+    // Initialize the tap tempo button and led pins
+    pinMode(tapTempoButtonPin, INPUT);
+    pinMode(tapTempoLedPin, OUTPUT);
 }
 
+// Clean up the parameters for mono delay
 void MonoDelayCleanup()
 {
     del_line.Reset();
@@ -61,4 +67,12 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         // Mix Dry and Wet and send to I/O
         out[audioOutChannel][i] = wet * 0.707 + dry * 0.707;
     }
+}
+
+// Logic for mono delay to add into the main loop
+void MonoDelayLoop()
+{
+    // Read the state of the tap tempo button
+
+    // Turn on the LED when the button is pressed
 }

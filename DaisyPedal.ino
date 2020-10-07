@@ -1,6 +1,7 @@
 #include <bitset>
 #include "DaisyDuino.h"
 #include "EffectType.h"
+#include "PedalConfig.h"
 #include "Bypass/Bypass.ino"
 #include "MonoDelay/MonoDelay.ino"
 
@@ -13,13 +14,17 @@ const int hexSwitchPin1 = 0;
 const int hexSwitchPin2 = 1;
 const int hexSwitchPin4 = 2;
 const int hexSwitchPin8 = 3;
-const int ledPin = 15; // Built in LED is LED_BUILTIN
+const int ledPin = LED_BUILTIN; // Built in LED is LED_BUILTIN
 
 // Volatile parameters
 volatile EffectType currentEffect = Unset;
 
 void setup() 
 {
+    // Initialize the serial debug output
+    initDebugPrint();
+    debugPrint("Starting DaisyPedal...");
+
     // Initialize Daisy at 96kHz
     hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
     num_channels = hw.num_channels;
@@ -46,9 +51,11 @@ void loop()
     std::bitset<4> combined = pin1 | (pin2 << 1) | (pin4 << 2) | (pin8 << 3);
     int readEffectState = (int)(combined.to_ulong());
 
-    // Check if the state is new
+    // Check if the state is new and switch to the new state
     if (currentEffect != readEffectState)
     {
+        debugPrint("Setting a new effect type: " + combined);
+
         // A new effect has been chosen, stop the old effect
         switch(currentEffect)
         {
@@ -90,5 +97,16 @@ void loop()
 
         // Update the current effect
         currentEffect = (EffectType)readEffectState;
+    }
+
+    // Execute the effect loop commands
+    switch (currentEffect)
+    {
+        case MonoDelay:
+            MonoDelayLoop();
+            break;
+        case Bypass:
+        default:
+            break;
     }
 }
