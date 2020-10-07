@@ -23,10 +23,10 @@ void setup()
     num_channels = hw.num_channels;
 
     // Initialize the hex switch pins
-    pinMode(hexSwitchPin1, INPUT);
-    pinMode(hexSwitchPin2, INPUT);
-    pinMode(hexSwitchPin4, INPUT);
-    pinMode(hexSwitchPin8, INPUT);
+    pinMode(hexSwitchPin1, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin2, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin4, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin8, INPUT_PULLDOWN);
 
     // Initialize the LED
     pinMode(controlLedPin, OUTPUT);
@@ -47,8 +47,6 @@ void loop()
     // Check if the state is new and switch to the new state
     if (currentEffect != readEffectState)
     {
-        debugPrint("Setting a new effect type: " + readEffectState);
-
         // A new effect has been chosen, stop the old effect
         switch(currentEffect)
         {
@@ -68,6 +66,7 @@ void loop()
         switch(readEffectState)
         {
             case MonoDelay:
+                debugPrint("Switching to MonoDelay");
                 // Turn LED on
                 digitalWrite(controlLedPin, HIGH);
 
@@ -78,6 +77,8 @@ void loop()
                 break;
             case Bypass:
             default:
+                debugPrint("Switching to Bypass");
+
                 // Turn LED off
                 digitalWrite(controlLedPin, LOW);
 

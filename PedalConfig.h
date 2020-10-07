@@ -15,8 +15,8 @@ const int controlLedPin = LED_BUILTIN; // Built in LED is LED_BUILTIN
 
 // Pin Definitions - Effects
 const int effectButtonPin1 = 27;
-const int effectButtonPin2 = 20;
-const int effectButtonPin3 = 21;
+const int effectButtonPin2 = 28;
+const int effectButtonPin3 = 29;
 const int effectLedPin1    = 15;
 const int effectLedPin2    = 16;
 const int effectLedPin3    = 17;
