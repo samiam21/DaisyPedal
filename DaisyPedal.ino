@@ -9,13 +9,6 @@
 DaisyHardware hw;
 size_t num_channels;
 
-// Pin Definitions
-const int hexSwitchPin1 = 0;
-const int hexSwitchPin2 = 1;
-const int hexSwitchPin4 = 2;
-const int hexSwitchPin8 = 3;
-const int ledPin = LED_BUILTIN; // Built in LED is LED_BUILTIN
-
 // Volatile parameters
 volatile EffectType currentEffect = Unset;
 
@@ -36,7 +29,7 @@ void setup()
     pinMode(hexSwitchPin8, INPUT);
 
     // Initialize the LED
-    pinMode(ledPin, OUTPUT);
+    pinMode(controlLedPin, OUTPUT);
 }
 
 void loop() 
@@ -54,7 +47,7 @@ void loop()
     // Check if the state is new and switch to the new state
     if (currentEffect != readEffectState)
     {
-        debugPrint("Setting a new effect type: " + combined);
+        debugPrint("Setting a new effect type: " + readEffectState);
 
         // A new effect has been chosen, stop the old effect
         switch(currentEffect)
@@ -76,7 +69,7 @@ void loop()
         {
             case MonoDelay:
                 // Turn LED on
-                digitalWrite(ledPin, HIGH);
+                digitalWrite(controlLedPin, HIGH);
 
                 // Initialize MonoDelay and start Daisy
                 MonoDelaySetup();
@@ -86,7 +79,7 @@ void loop()
             case Bypass:
             default:
                 // Turn LED off
-                digitalWrite(ledPin, LOW);
+                digitalWrite(controlLedPin, LOW);
 
                 // Initialize Bypass and start Daisy
                 BypassSetup(num_channels);

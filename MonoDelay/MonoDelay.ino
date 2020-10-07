@@ -1,4 +1,5 @@
 #include "DaisyDuino.h"
+#include "PedalConfig.h"
 
 // Constant parameters
 const int tapTempoButtonPin = 28;
@@ -38,8 +39,15 @@ void MonoDelaySetup()
     del_line.SetDelay(tempoSamples);
 
     // Initialize the tap tempo button and led pins
-    pinMode(tapTempoButtonPin, INPUT);
-    pinMode(tapTempoLedPin, OUTPUT);
+    //pinMode(tapTempoButtonPin, INPUT);
+    //pinMode(tapTempoLedPin, OUTPUT);
+
+    pinMode(effectButtonPin1, INPUT);
+    pinMode(effectLedPin1, OUTPUT);
+    pinMode(effectButtonPin2, INPUT);
+    pinMode(effectLedPin2, OUTPUT);
+    pinMode(effectButtonPin3, INPUT);
+    pinMode(effectLedPin3, OUTPUT);
 }
 
 // Clean up the parameters for mono delay
@@ -75,4 +83,31 @@ void MonoDelayLoop()
     // Read the state of the tap tempo button
 
     // Turn on the LED when the button is pressed
+
+    if(digitalRead(effectButtonPin1) == HIGH)
+    {
+        digitalWrite(effectLedPin1, HIGH);
+    }
+    else
+    {
+        digitalWrite(effectLedPin1, LOW);
+    }
+
+    if (digitalRead(effectButtonPin2) == HIGH)
+    {
+        digitalWrite(effectLedPin2, HIGH);
+    }
+    else
+    {
+        digitalWrite(effectLedPin2, LOW);
+    }
+
+    if (digitalRead(effectButtonPin3) == HIGH)
+    {
+        digitalWrite(effectLedPin3, HIGH);
+    }
+    else
+    {
+        digitalWrite(effectLedPin3, LOW);
+    }
 }
