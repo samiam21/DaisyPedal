@@ -1,9 +1,9 @@
 #include <bitset>
 #include "DaisyDuino.h"
-#include "EffectType.h"
+#include "src/EffectType.h"
 #include "PedalConfig.h"
-#include "Bypass/Bypass.ino"
-#include "MonoDelay/MonoDelay.ino"
+#include "src/Bypass/Bypass.ino"
+#include "src/MonoDelay/MonoDelay.cpp"
 
 // Global variables
 DaisyHardware hw;

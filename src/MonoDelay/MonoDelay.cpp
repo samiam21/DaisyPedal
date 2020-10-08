@@ -1,5 +1,6 @@
 #include "DaisyDuino.h"
 #include "PedalConfig.h"
+#include "../../TempoArray.h"
 
 // Constant parameters
 const int tapTempoButtonPin = effectButtonPin1;
@@ -8,9 +9,10 @@ const int audioOutChannel = 0;
 const size_t delayMaxSize = 96000;
 const long debounce = 400;
 
-// Volatile parameters
+// Mutable parameters
 volatile size_t tempoBpm = 90;
 volatile unsigned long tapTempoTime = 0;
+TempoArray tempoArray;
 
 // TEMPO NOTES:
 //  - Max delay size is based on audio rate, currently 96kHz
@@ -85,7 +87,19 @@ void MonoDelayLoop()
         unsigned long duration = millis() - tapTempoTime;
         if (duration < 2000)
         {
+            debugPrint();
+            debugPrint("---------");
             debugPrint(duration);
+
+            // Add the duration to the tempo array
+            tempoArray.push(duration);
+
+            // Calculate the average duration of the items in the array
+            unsigned long avg = tempoArray.average();
+
+            debugPrint(avg);
+            debugPrint("---------");
+            debugPrint();
         } 
 
         // Update the time

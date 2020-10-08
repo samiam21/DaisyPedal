@@ -8,7 +8,7 @@
                 "USBD_USE_CDC"
             ],
             "includePath": [
-                "${workspaceRoot}",
+                "${workspaceRoot}\\**",
                 "C:\\Users\\sfahnestock\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.9.0\\**",
                 "C:\\Users\\sfahnestock\\AppData\\Local\\Arduino15\\packages\\STM32\\tools\\**",
                 "C:\\Users\\FahnFam\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.9.0\\**",

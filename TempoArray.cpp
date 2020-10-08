@@ -33,7 +33,7 @@ void TempoArray::clear()
 /**
  * Return the average value of the items in the array
  */
-unsigned long average()
+unsigned long TempoArray::average()
 {
     int numElements = MAX_ARRAY_SIZE;
     unsigned long average = 0;

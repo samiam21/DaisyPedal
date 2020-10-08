@@ -17,10 +17,10 @@ class TempoArray
 
     private:
         // Internal array for holding durations
-        unsigned long[MAX_ARRAY_SIZE] durationArray = {0};
+        unsigned long durationArray[MAX_ARRAY_SIZE] = {0};
 
         // Current pointer to where to place the next value into the array
         int entryIndex = 0;
-}
+};
 
 #endif
