@@ -5,7 +5,6 @@
 enum EffectType {
     Bypass = 0,
     MonoDelay = 1,
-    HWDebug = 7,
     Unset = 99
 };
 

@@ -4,7 +4,6 @@
 #include "PedalConfig.h"
 #include "src/Bypass/Bypass.h"
 #include "src/MonoDelay/MonoDelay.h"
-#include "src/HWDebug/HWDebug.h"
 
 // Global variables
 DaisyHardware hw;
@@ -55,7 +54,6 @@ void loop()
                 // Clean up the MonoDelay
                 MonoDelayCleanup();
                 break;
-            case HWDebug:
             case Bypass:
             default:
                 break;
@@ -76,17 +74,6 @@ void loop()
                 // Initialize MonoDelay and start Daisy
                 MonoDelaySetup();
                 DAISY.begin(MonoDelayCallback);
-
-                break;
-            case HWDebug:
-                debugPrint("Switching to HWDebug");
-
-                // Turn LED on
-                digitalWrite(controlLedPin, HIGH);
-
-                // Initialize HWDebug and start Daisy
-                HWDebugSetup(num_channels);
-                DAISY.begin(HWDebugCallback);
 
                 break;
             case Bypass:
@@ -113,10 +100,9 @@ void loop()
         case MonoDelay:
             MonoDelayLoop();
             break;
-        case HWDebug:
-            HWDebugLoop();
-            break;
         case Bypass:
+            BypassLoop();
+            break;
         default:
             break;
     }
