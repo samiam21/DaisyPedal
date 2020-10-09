@@ -3,7 +3,7 @@
 #include "src/EffectType.h"
 #include "PedalConfig.h"
 #include "src/Bypass/Bypass.ino"
-#include "src/MonoDelay/MonoDelay.cpp"
+#include "src/MonoDelay/MonoDelay.h"
 
 // Global variables
 DaisyHardware hw;
