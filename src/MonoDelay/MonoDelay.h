@@ -10,7 +10,7 @@ static const int tapTempoButtonPin = effectButtonPin1;
 static const int audioInChannel = 0;
 static const int audioOutChannel = 0;
 static const size_t delayMaxSize = 96000;
-static const long debounce = 400;
+static const long debounce = 300;
 
 // Mutable parameters
 static size_t tempoBpm = 90;

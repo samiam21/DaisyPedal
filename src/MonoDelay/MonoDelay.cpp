@@ -64,16 +64,12 @@ void MonoDelayLoop()
     // Debounce the button and check for it pressed
     if (reading == HIGH && millis() - tapTempoTime > debounce)
     {
-        debugPrint("tap tempo button pressed");
+        //debugPrint("tap tempo button pressed");
 
         // Calculate the duration (ignore a duration longer than 2 seconds)
         unsigned long duration = millis() - tapTempoTime;
         if (duration < 2000)
         {
-            // debugPrint();
-            // debugPrint("---------");
-            // debugPrint(duration);
-
             // Add the duration to the tempo array (cast is safe because duration will never be greater than 2000)
             tempoArray.push(duration);
 
@@ -83,18 +79,13 @@ void MonoDelayLoop()
             // Set the new delay based on the calculated duration
             size_t tempoSamples = (96000 * (size_t)avg) / 2000;
             del_line.SetDelay(tempoSamples);
-
-            // debugPrint(avg);
-            // debugPrint("---------");
-            // debugPrint();
         } 
         else
         {
             // Duration was too long, reset the array for new tempo calculations
             tempoArray.clear();
-            debugPrint("Cleared the tempo array");
+            //debugPrint("Cleared the tempo array");
         }
-        
 
         // Update the time
         tapTempoTime = millis();
