@@ -1,6 +1,4 @@
-#include "DaisyDuino.h"
-
-size_t numChannels;
+#include "Bypass.h"
 
 void BypassSetup(size_t pNumChannels)
 {

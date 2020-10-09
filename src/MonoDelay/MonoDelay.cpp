@@ -24,7 +24,7 @@ void MonoDelaySetup()
     size_t tempoSamples = (96000 / tempoBpm) * 30;
     del_line.SetDelay(tempoSamples);
 
-    // Initialize the tap tempo button and led pins
+    // Initialize the tap tempo button
     pinMode(tapTempoButtonPin, INPUT);
 }
 
