@@ -1,37 +1,35 @@
 #include <bitset>
 #include "DaisyDuino.h"
-#include "EffectType.h"
-#include "Bypass/Bypass.ino"
-#include "MonoDelay/MonoDelay.ino"
+#include "src/EffectType.h"
+#include "PedalConfig.h"
+#include "src/Bypass/Bypass.h"
+#include "src/MonoDelay/MonoDelay.h"
 
 // Global variables
 DaisyHardware hw;
 size_t num_channels;
-
-// Pin Definitions
-const int hexSwitchPin1 = 0;
-const int hexSwitchPin2 = 1;
-const int hexSwitchPin4 = 2;
-const int hexSwitchPin8 = 3;
-const int ledPin = 15; // Built in LED is LED_BUILTIN
 
 // Volatile parameters
 volatile EffectType currentEffect = Unset;
 
 void setup() 
 {
+    // Initialize the serial debug output
+    initDebugPrint();
+    debugPrint("Starting DaisyPedal...");
+
     // Initialize Daisy at 96kHz
     hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
     num_channels = hw.num_channels;
 
     // Initialize the hex switch pins
-    pinMode(hexSwitchPin1, INPUT);
-    pinMode(hexSwitchPin2, INPUT);
-    pinMode(hexSwitchPin4, INPUT);
-    pinMode(hexSwitchPin8, INPUT);
+    pinMode(hexSwitchPin1, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin2, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin4, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin8, INPUT_PULLDOWN);
 
     // Initialize the LED
-    pinMode(ledPin, OUTPUT);
+    pinMode(controlLedPin, OUTPUT);
 }
 
 void loop() 
@@ -46,7 +44,7 @@ void loop()
     std::bitset<4> combined = pin1 | (pin2 << 1) | (pin4 << 2) | (pin8 << 3);
     int readEffectState = (int)(combined.to_ulong());
 
-    // Check if the state is new
+    // Check if the state is new and switch to the new state
     if (currentEffect != readEffectState)
     {
         // A new effect has been chosen, stop the old effect
@@ -68,8 +66,10 @@ void loop()
         switch(readEffectState)
         {
             case MonoDelay:
+                debugPrint("Switching to MonoDelay");
+
                 // Turn LED on
-                digitalWrite(ledPin, HIGH);
+                digitalWrite(controlLedPin, HIGH);
 
                 // Initialize MonoDelay and start Daisy
                 MonoDelaySetup();
@@ -78,8 +78,10 @@ void loop()
                 break;
             case Bypass:
             default:
+                debugPrint("Switching to Bypass");
+
                 // Turn LED off
-                digitalWrite(ledPin, LOW);
+                digitalWrite(controlLedPin, LOW);
 
                 // Initialize Bypass and start Daisy
                 BypassSetup(num_channels);
@@ -90,5 +92,18 @@ void loop()
 
         // Update the current effect
         currentEffect = (EffectType)readEffectState;
+    }
+
+    // Execute the effect loop commands
+    switch (currentEffect)
+    {
+        case MonoDelay:
+            MonoDelayLoop();
+            break;
+        case Bypass:
+            BypassLoop();
+            break;
+        default:
+            break;
     }
 }
