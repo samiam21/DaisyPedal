@@ -24,10 +24,13 @@ void TempoArray::push(unsigned long duration)
 void TempoArray::clear()
 {
     // Clear all values out of the array
-    for (int i = 0; i < MAX_ARRAY_SIZE - 1; i++)
+    for (int i = 0; i < MAX_ARRAY_SIZE; i++)
     {
         durationArray[i] = 0;
     }
+
+    // Reset the index pointer
+    entryIndex = 0;
 }
 
 /**
@@ -39,7 +42,7 @@ unsigned long TempoArray::average()
     unsigned long average = 0;
 
     // Iterate through the array and add up all elements (ignore 0s)
-    for (int i = 0; i < MAX_ARRAY_SIZE - 1; i++)
+    for (int i = 0; i < MAX_ARRAY_SIZE ; i++)
     {
         if (durationArray[i] == 0)
         {

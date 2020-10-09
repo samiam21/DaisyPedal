@@ -80,10 +80,21 @@ void MonoDelayLoop()
             // Calculate the average duration of the items in the array
             unsigned long avg = tempoArray.average();
 
+            // Set the new delay based on the calculated duration
+            //size_t tempoSamples = (96000 * avg) / 2000;
+            //del_line.SetDelay(tempoSamples);
+
             debugPrint(avg);
             debugPrint("---------");
             debugPrint();
         } 
+        else
+        {
+            // Duration was too long, reset the array for new tempo calculations
+            tempoArray.clear();
+            debugPrint("Cleared the tempo array");
+        }
+        
 
         // Update the time
         tapTempoTime = millis();
