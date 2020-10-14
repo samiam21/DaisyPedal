@@ -5,12 +5,16 @@
 #include "../../PedalConfig.h"
 #include "TempoArray.h"
 
-// Constant parameters
+// Pin renaming
 static const int tapTempoButtonPin = effectButtonPin1;
+static const int decayKnobPin = effectKnobPin1;
+
+// Constant parameters
 static const int audioInChannel = 0;
 static const int audioOutChannel = 0;
 static const size_t delayMaxSize = 96000;
-static const long debounce = 300;
+static const long tapTempoDebounce = 300;
+static const int decayKnobFlutter = 5;
 
 // Mutable parameters
 static size_t tempoBpm = 90;
@@ -23,5 +27,9 @@ extern void MonoDelaySetup();
 extern void MonoDelayCleanup();
 extern void MonoDelayCallback(float **in, float **out, size_t size);
 extern void MonoDelayLoop();
+
+// "Internal" function definitions
+void TapTempoLoopControl();
+void DecayLoopControl();
 
 #endif

@@ -14,6 +14,8 @@
 //    - 500ms = 24000
 //    - Formula: (96000 * t) / 2000
 
+int decayKnobReading = 0;
+
 // Initialize the delay
 void MonoDelaySetup()
 {
@@ -26,6 +28,7 @@ void MonoDelaySetup()
 
     // Initialize the tap tempo button
     pinMode(tapTempoButtonPin, INPUT);
+    pinMode(decayKnobPin, INPUT);
 }
 
 // Clean up the parameters for mono delay
@@ -58,11 +61,33 @@ void MonoDelayCallback(float **in, float **out, size_t size)
 // Logic for mono delay to add into the main loop
 void MonoDelayLoop()
 {
+    // Handle tap tempo
+    TapTempoLoopControl();
+
+    // Handle decay
+    DecayLoopControl();
+}
+
+// Handle reading the decay knob and setting the decay
+void DecayLoopControl()
+{
+    int newDecayKnobReading = analogRead(decayKnobPin);
+
+    if (newDecayKnobReading > (decayKnobReading + decayKnobFlutter) && newDecayKnobReading < (decayKnobReading + decayKnobFlutter))
+    {
+        debugPrint(newDecayKnobReading);
+        decayKnobReading = newDecayKnobReading;
+    }
+}
+
+// Handle reading the tap tempo button and setting the tempo
+void TapTempoLoopControl()
+{
     // Read the tap tempo button
     int reading = digitalRead(tapTempoButtonPin);
 
     // Debounce the button and check for it pressed
-    if (reading == HIGH && millis() - tapTempoTime > debounce)
+    if (reading == HIGH && millis() - tapTempoTime > tapTempoDebounce)
     {
         //debugPrint("tap tempo button pressed");
 
