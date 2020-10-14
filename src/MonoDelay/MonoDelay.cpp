@@ -14,8 +14,6 @@
 //    - 500ms = 24000
 //    - Formula: (96000 * t) / 2000
 
-int decayKnobReading = 0;
-
 // Initialize the delay
 void MonoDelaySetup()
 {

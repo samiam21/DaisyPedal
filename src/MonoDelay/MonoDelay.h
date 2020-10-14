@@ -23,6 +23,7 @@ static size_t tempoBpm = 90;
 static unsigned long tapTempoTime = 0;
 static TempoArray tempoArray;
 static DelayLine<float, delayMaxSize> del_line;
+static int decayKnobReading = 0;
 
 // Function definitions
 extern void MonoDelaySetup();
