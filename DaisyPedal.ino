@@ -28,7 +28,7 @@ void setup()
     pinMode(hexSwitchPin4, INPUT_PULLDOWN);
     pinMode(hexSwitchPin8, INPUT_PULLDOWN);
 
-    // Initialize the LED
+    // Initialize the control LED
     pinMode(controlLedPin, OUTPUT);
 }
 
@@ -55,12 +55,11 @@ void loop()
                 MonoDelayCleanup();
                 break;
             case Bypass:
+                BypassCleanup();
+                break;
             default:
                 break;
         }
-
-        // Stop the current Daisy effect (not necessary?)
-        //DAISY.end();
 
         // Start the new effect
         switch(readEffectState)
