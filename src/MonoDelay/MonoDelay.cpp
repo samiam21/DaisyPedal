@@ -29,6 +29,9 @@ void MonoDelaySetup()
     // Initialize the tap tempo button
     pinMode(tapTempoButtonPin, INPUT);
     pinMode(decayKnobPin, INPUT);
+
+    // Initialize the decay knob reading
+    decayKnobReading = analogRead(decayKnobPin);
 }
 
 // Clean up the parameters for mono delay
@@ -71,12 +74,32 @@ void MonoDelayLoop()
 // Handle reading the decay knob and setting the decay
 void DecayLoopControl()
 {
+    // Read the decay knob
     int newDecayKnobReading = analogRead(decayKnobPin);
 
-    if (newDecayKnobReading > (decayKnobReading + decayKnobFlutter) && newDecayKnobReading < (decayKnobReading + decayKnobFlutter))
+    // Account for flutter so we aren't constantly changing the decay
+    if (newDecayKnobReading > (decayKnobReading + decayKnobFlutter) || newDecayKnobReading < (decayKnobReading - decayKnobFlutter))
     {
-        debugPrint(newDecayKnobReading);
-        decayKnobReading = newDecayKnobReading;
+        // Check for min value, accounting for flutter
+        if (newDecayKnobReading <= (minDecayKnobValue + decayKnobFlutter))
+        {
+            // Set the decay to min
+            decayKnobReading = minDecayKnobValue;
+            debugPrint("MIN!");
+        }
+        // Check for max value, accounting for flutter
+        else if (newDecayKnobReading >= (maxDecayKnobValue - decayKnobFlutter))
+        {
+            // Set the decay to max
+            decayKnobReading = maxDecayKnobValue;
+            debugPrint("MAX!");
+        }
+        // Standard reading
+        else 
+        {
+            debugPrint(newDecayKnobReading);
+            decayKnobReading = newDecayKnobReading;
+        }
     }
 }
 
