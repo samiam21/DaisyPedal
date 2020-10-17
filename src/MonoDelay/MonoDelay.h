@@ -9,16 +9,16 @@
  * Mono Delay Effect
  * 
  * Button 1 - Tap Tempo
- * Button 2 - N/U
+ * Button 2 - Type Switcher
  * Button 3 - N/U
  * 
  * Knob 1 - Effect Level
  * Knob 2 - Decay
  * Knob 3 - Mix
  * 
- * LED 1 - N/U
- * LED 2 - N/U
- * LED 3 - N/U
+ * LED 1 - Quarter
+ * LED 2 - Eighth
+ * LED 3 - Dotted Eighth
  **********************************************/
 
 // Pin renaming
