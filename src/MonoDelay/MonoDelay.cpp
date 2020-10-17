@@ -31,6 +31,10 @@ void MonoDelaySetup()
     // Initialize the decay
     decayKnobReading = analogRead(decayKnobPin);
     SetDecayValue(decayKnobReading);
+
+    // Initialize the level
+    levelKnobReading = analogRead(levelKnobPin);
+    SetLevelValue(levelKnobReading);
 }
 
 // Clean up the parameters for mono delay
@@ -52,11 +56,11 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         // Read Wet from Delay Line
         wet = del_line.Read();
 
-        // Write to Delay with some feedback
-        del_line.Write((wet * decayValue) + (dry * 0.5));
+        // Write to Delay with a controlled decay time
+        del_line.Write((wet * decayValue) + dry);
 
         // Mix Dry and Wet and send to I/O
-        out[audioOutChannel][i] = wet * 0.707 + dry * 0.707;
+        out[audioOutChannel][i] = (wet * levelValue) + dry;
     }
 }
 
@@ -68,6 +72,9 @@ void MonoDelayLoop()
 
     // Handle decay
     DecayLoopControl();
+
+    // Handle level
+    LevelLoopControl();
 }
 
 // Handle reading the decay knob and setting the decay
@@ -84,25 +91,25 @@ void DecayLoopControl()
         {
             // Set the decay to min
             decayKnobReading = minDecayKnobValue;
-            debugPrint("MIN!");
+            //debugPrint("MIN!");
         }
         // Check for max value, accounting for flutter
         else if (newDecayKnobReading >= (maxDecayKnobValue - decayKnobFlutter))
         {
             // Set the decay to max
             decayKnobReading = maxDecayKnobValue;
-            debugPrint("MAX!");
+            //debugPrint("MAX!");
         }
         // Standard reading
         else 
         {
             decayKnobReading = newDecayKnobReading;
-            debugPrint(newDecayKnobReading);
+            //debugPrint(newDecayKnobReading);
         }
 
         // Set the new decay value
         SetDecayValue(newDecayKnobReading);
-        debugPrint(decayValue);
+        //debugPrint(decayValue);
     }
 }
 
@@ -110,6 +117,48 @@ void DecayLoopControl()
 void SetDecayValue(int knobReading)
 {
     decayValue = ((float)knobReading / (float)maxDecayKnobValue) * maxDecayValue;
+}
+
+// Handle reading the level knob and setting the level
+void LevelLoopControl()
+{
+    // Read the level knob
+    int newLevelKnobReading = analogRead(levelKnobPin);
+
+    // Account for flutter so we aren't constantly changing the level
+    if (newLevelKnobReading > (levelKnobReading + levelKnobFlutter) || newLevelKnobReading < (levelKnobReading - levelKnobFlutter))
+    {
+        // Check for min value, accounting for flutter
+        if (newLevelKnobReading <= (minLevelKnobValue + levelKnobFlutter))
+        {
+            // Set the level to min
+            levelKnobReading = minLevelKnobValue;
+            debugPrint("MIN!");
+        }
+        // Check for max value, accounting for flutter
+        else if (newLevelKnobReading >= (maxLevelKnobValue - levelKnobFlutter))
+        {
+            // Set the level to max
+            levelKnobReading = maxLevelKnobValue;
+            debugPrint("MAX!");
+        }
+        // Standard reading
+        else
+        {
+            levelKnobReading = newLevelKnobReading;
+            debugPrint(newLevelKnobReading);
+        }
+
+        // Set the new level value
+        SetLevelValue(newLevelKnobReading);
+        debugPrint(levelValue);
+    }
+}
+
+// Sets the level value based on the passed in knob reading
+void SetLevelValue(int knobReading)
+{
+    levelValue = ((float)knobReading / (float)maxLevelKnobValue) * maxLevelValue;
 }
 
 // Handle reading the tap tempo button and setting the tempo
