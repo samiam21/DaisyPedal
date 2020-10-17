@@ -28,8 +28,9 @@ void MonoDelaySetup()
     pinMode(tapTempoButtonPin, INPUT);
     pinMode(decayKnobPin, INPUT);
 
-    // Initialize the decay knob reading
+    // Initialize the decay
     decayKnobReading = analogRead(decayKnobPin);
+    SetDecayValue(decayKnobReading);
 }
 
 // Clean up the parameters for mono delay
@@ -52,7 +53,7 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         wet = del_line.Read();
 
         // Write to Delay with some feedback
-        del_line.Write((wet * 0.5) + dry);
+        del_line.Write((wet * decayValue) + (dry * 0.5));
 
         // Mix Dry and Wet and send to I/O
         out[audioOutChannel][i] = wet * 0.707 + dry * 0.707;
@@ -95,10 +96,20 @@ void DecayLoopControl()
         // Standard reading
         else 
         {
-            debugPrint(newDecayKnobReading);
             decayKnobReading = newDecayKnobReading;
+            debugPrint(newDecayKnobReading);
         }
+
+        // Set the new decay value
+        SetDecayValue(newDecayKnobReading);
+        debugPrint(decayValue);
     }
+}
+
+// Sets the decay value based on the passed in knob reading
+void SetDecayValue(int knobReading)
+{
+    decayValue = ((float)knobReading / (float)maxDecayKnobValue) * maxDecayValue;
 }
 
 // Handle reading the tap tempo button and setting the tempo

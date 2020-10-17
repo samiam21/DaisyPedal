@@ -5,6 +5,22 @@
 #include "../../PedalConfig.h"
 #include "TempoArray.h"
 
+/**********************************************
+ * Mono Delay Effect
+ * 
+ * Button 1 - Tap Tempo
+ * Button 2 - N/U
+ * Button 3 - N/U
+ * 
+ * Knob 1 - Decay
+ * Knob 2 - First Hit Level
+ * Knob 3 - Mix
+ * 
+ * LED 1 - N/U
+ * LED 2 - N/U
+ * LED 3 - N/U
+ **********************************************/
+
 // Pin renaming
 static const int tapTempoButtonPin = effectButtonPin1;
 static const int decayKnobPin = effectKnobPin1;
@@ -13,10 +29,15 @@ static const int decayKnobPin = effectKnobPin1;
 static const int audioInChannel = 0;
 static const int audioOutChannel = 0;
 static const size_t delayMaxSize = 96000;
+
+// Tap tempo constants
 static const long tapTempoDebounce = 300;
+
+// Decay constants
 static const int decayKnobFlutter = 10;
 static const int minDecayKnobValue = 0;
 static const int maxDecayKnobValue = 1024;
+static const float maxDecayValue = 0.75;
 
 // Mutable parameters
 static size_t tempoBpm = 90;
@@ -24,6 +45,7 @@ static unsigned long tapTempoTime = 0;
 static TempoArray tempoArray;
 static DelayLine<float, delayMaxSize> del_line;
 static int decayKnobReading = 0;
+static float decayValue = 0.5f;
 
 // Function definitions
 extern void MonoDelaySetup();
@@ -34,5 +56,6 @@ extern void MonoDelayLoop();
 // "Internal" function definitions
 void TapTempoLoopControl();
 void DecayLoopControl();
+void SetDecayValue(int knobReading);
 
 #endif
