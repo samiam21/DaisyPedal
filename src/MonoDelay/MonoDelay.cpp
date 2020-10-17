@@ -56,7 +56,7 @@ void MonoDelayCallback(float **in, float **out, size_t size)
         // Read Wet from Delay Line
         wet = del_line.Read();
 
-        // Write to Delay with some feedback
+        // Write to Delay with a controlled decay time
         del_line.Write((wet * decayValue) + dry);
 
         // Mix Dry and Wet and send to I/O
