@@ -12,8 +12,8 @@
  * Button 2 - N/U
  * Button 3 - N/U
  * 
- * Knob 1 - Decay
- * Knob 2 - Effect Level
+ * Knob 1 - Effect Level
+ * Knob 2 - Decay
  * Knob 3 - Mix
  * 
  * LED 1 - N/U
@@ -23,8 +23,8 @@
 
 // Pin renaming
 static const int tapTempoButtonPin = effectButtonPin1;
-static const int decayKnobPin = effectKnobPin1;
-static const int levelKnobPin = effectKnobPin2;
+static const int levelKnobPin = effectKnobPin1;
+static const int decayKnobPin = effectKnobPin2;
 
 // Constant parameters
 static const int audioInChannel = 0;
