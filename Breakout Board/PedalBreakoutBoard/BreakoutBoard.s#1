@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1208,6 +1208,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="0603" urn="urn:adsk.eagle:footprint:39615/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
 <package name="AXIAL-0.3" urn="urn:adsk.eagle:footprint:39622/1" library_version="1">
 <description>&lt;h3&gt;AXIAL-0.3&lt;/h3&gt;
 &lt;p&gt;Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.&lt;/p&gt;</description>
@@ -1295,25 +1312,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="-3.3681" y="-0.0101" curve="-90.012967"/>
 </polygon>
 </package>
-<package name="0603" urn="urn:adsk.eagle:footprint:39615/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
 </packages>
 <packages3d>
+<package3d name="0603" urn="urn:adsk.eagle:package:39650/1" type="box" library_version="1">
+<description>Generic 1608 (0603) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="0603"/>
+</packageinstances>
+</package3d>
 <package3d name="AXIAL-0.3" urn="urn:adsk.eagle:package:39658/1" type="box" library_version="1">
 <description>AXIAL-0.3
 Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.</description>
@@ -1344,13 +1351,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <packageinstance name="AXIAL-0.3-KIT"/>
 </packageinstances>
 </package3d>
-<package3d name="0603" urn="urn:adsk.eagle:package:39650/1" type="box" library_version="1">
-<description>Generic 1608 (0603) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0603"/>
-</packageinstances>
-</package3d>
 </packages3d>
 <symbols>
 <symbol name="RESISTOR" urn="urn:adsk.eagle:symbol:39614/1" library_version="1">
@@ -1370,8 +1370,47 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1KOHM" urn="urn:adsk.eagle:component:39763/1" prefix="R" library_version="1">
-<description>&lt;h3&gt;1kΩ resistor&lt;/h3&gt;
+<deviceset name="330OHM" urn="urn:adsk.eagle:component:39761/1" prefix="R" library_version="1">
+<description>&lt;h3&gt;330Ω resistor&lt;/h3&gt;
+&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-1/10W-1%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-00818"/>
+<attribute name="VALUE" value="330"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/10W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39658/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-8371" constant="no"/>
+<attribute name="VALUE" value="330" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KOHM" urn="urn:adsk.eagle:component:39764/1" prefix="R" library_version="1">
+<description>&lt;h3&gt;10kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1387,8 +1426,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-12183" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1402,8 +1441,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-12183"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1417,23 +1456,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
-</technology>
-</technologies>
-</device>
-<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39661/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12182"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-12183" constant="no"/>
+<attribute name="VALUE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1447,8 +1471,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1462,8 +1486,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1477,8 +1501,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1492,8 +1516,23 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-08380"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-09435"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/4W-1%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39661/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12183"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1507,8 +1546,53 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09769"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-VERT_KIT-1/6W-5%" package="AXIAL-0.1-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39653/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ-1/6W-5%" package="AXIAL-0.3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39658/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-HORIZ_KIT-1/6W-5%" package="AXIAL-0.3-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:39661/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08375"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -1522,9 +1606,43 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-07856"/>
-<attribute name="VALUE" value="1k"/>
+<attribute name="PROD_ID" value="RES-00824"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1" urn="urn:adsk.eagle:library:371">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1543,6 +1661,7 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <groups>
 <schematic_group name="AUDIO_MOLEX"/>
 <schematic_group name="LED_MOLEX"/>
+<schematic_group name="SPST_MOLEX"/>
 </groups>
 <parts>
 <part name="U1" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
@@ -1552,9 +1671,16 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="X2" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-6" device="" package3d_urn="urn:adsk.eagle:package:8078581/1"/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="1k"/>
-<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="1k"/>
-<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="1k"/>
+<part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
+<part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
+<part name="R3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
+<part name="R4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="X3" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-8" device="" package3d_urn="urn:adsk.eagle:package:8078580/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -1633,6 +1759,53 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="NAME" x="152.4" y="59.944" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="152.4" y="56.896" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
+<instance part="R4" gate="G$1" x="-2.54" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="-4.064" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-1.016" y="109.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R5" gate="G$1" x="5.08" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.556" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="6.604" y="109.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R6" gate="G$1" x="12.7" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.176" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="14.224" y="109.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R7" gate="G$1" x="20.32" y="109.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="18.796" y="109.22" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="21.844" y="109.22" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="2.54" y="154.94" smashed="yes">
+<attribute name="VALUE" x="0" y="149.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY5" gate="GND" x="-15.24" y="99.06" smashed="yes">
+<attribute name="VALUE" x="-17.145" y="95.885" size="1.778" layer="96"/>
+</instance>
+<instance part="X3" gate="-1" x="-15.24" y="137.16" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="137.922" size="1.524" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-11.938" y="140.843" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="X3" gate="-2" x="-15.24" y="134.62" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="135.382" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-3" x="-15.24" y="132.08" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="132.842" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-4" x="-15.24" y="129.54" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="130.302" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-5" x="-15.24" y="127" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="127.762" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-6" x="-15.24" y="124.46" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="125.222" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-7" x="-15.24" y="121.92" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="122.682" size="1.524" layer="95" rot="R180"/>
+</instance>
+<instance part="X3" gate="-8" x="-15.24" y="119.38" smashed="yes" rot="R180" grouprefs="SPST_MOLEX">
+<attribute name="NAME" x="-17.78" y="120.142" size="1.524" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1683,6 +1856,24 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <wire x1="175.26" y1="66.04" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
 <junction x="175.26" y="63.5"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="104.14" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="-2.54" y1="101.6" x2="-15.24" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="104.14" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="101.6" x2="-2.54" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-2.54" y="101.6"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="104.14" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="101.6" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
+<junction x="5.08" y="101.6"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="104.14" x2="20.32" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
+<junction x="12.7" y="101.6"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -1715,15 +1906,15 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <net name="N$5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO18(ADC1_INP5)"/>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="X2" gate="-1" pin="S"/>
 <wire x1="157.48" y1="73.66" x2="177.8" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1731,8 +1922,8 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="U1" gate="G$1" pin="GPIO17(ADC1_INP15)"/>
 <wire x1="134.62" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="71.12" x2="144.78" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="66.04" x2="147.32" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -1740,26 +1931,98 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <pinref part="U1" gate="G$1" pin="GPIO16(ADC1_INP10)"/>
 <wire x1="134.62" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="58.42" x2="147.32" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="66.04" x2="160.02" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-2" pin="S"/>
 <wire x1="160.02" y1="71.12" x2="177.8" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="58.42" x2="162.56" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="58.42" x2="162.56" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="X2" gate="-3" pin="S"/>
 <wire x1="162.56" y1="68.58" x2="177.8" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="SPST1" class="0">
+<segment>
+<wire x1="-12.7" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="134.62" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-2" pin="S"/>
+<junction x="20.32" y="134.62"/>
+<wire x1="20.32" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="134.62" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIO1(USB_HS_ID)"/>
+<wire x1="53.34" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPST4" class="0">
+<segment>
+<wire x1="-12.7" y1="119.38" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="119.38" x2="-2.54" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-8" pin="S"/>
+<wire x1="-2.54" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-2.54" y="119.38"/>
+<wire x1="38.1" y1="119.38" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIO4(SDMMC1_D1)"/>
+<wire x1="38.1" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPST3" class="0">
+<segment>
+<wire x1="-12.7" y1="124.46" x2="5.08" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="124.46" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-6" pin="S"/>
+<wire x1="5.08" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
+<junction x="5.08" y="124.46"/>
+<wire x1="43.18" y1="124.46" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIO3(SDMMC1_D2)"/>
+<wire x1="43.18" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SPST2" class="0">
+<segment>
+<wire x1="-12.7" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="129.54" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-4" pin="S"/>
+<junction x="12.7" y="129.54"/>
+<wire x1="12.7" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="129.54" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GPIO2(SDMMC1_D3)"/>
+<wire x1="48.26" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<wire x1="-12.7" y1="132.08" x2="2.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="132.08" x2="2.54" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="2.54" y1="137.16" x2="2.54" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="137.16" x2="2.54" y2="137.16" width="0.1524" layer="91"/>
+<junction x="2.54" y="137.16"/>
+<wire x1="-12.7" y1="127" x2="2.54" y2="127" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="127" x2="2.54" y2="132.08" width="0.1524" layer="91"/>
+<junction x="2.54" y="132.08"/>
+<wire x1="-12.7" y1="121.92" x2="2.54" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="121.92" x2="2.54" y2="127" width="0.1524" layer="91"/>
+<junction x="2.54" y="127"/>
+<pinref part="X3" gate="-1" pin="S"/>
+<pinref part="X3" gate="-3" pin="S"/>
+<pinref part="X3" gate="-5" pin="S"/>
+<pinref part="X3" gate="-7" pin="S"/>
 </segment>
 </net>
 </nets>
