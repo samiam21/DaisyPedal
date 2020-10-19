@@ -6253,6 +6253,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <schematic_group name="LEDS"/>
 <schematic_group name="SPST"/>
 <schematic_group name="AUDIO"/>
+<schematic_group name="SPDT"/>
 </groups>
 <parts>
 <part name="U1" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
@@ -6283,6 +6284,12 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="SPST2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SPST3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SPST4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -6369,13 +6376,13 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="SUPPLY6" gate="GND" x="231.14" y="104.14" smashed="yes" grouprefs="POTS">
 <attribute name="VALUE" x="229.235" y="100.965" size="1.778" layer="96"/>
 </instance>
-<instance part="SPDT1" gate="J$1" x="-17.78" y="147.32" smashed="yes">
-<attribute name="VALUE" x="-20.32" y="139.954" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-20.32" y="152.908" size="1.778" layer="95" font="vector"/>
+<instance part="SPDT1" gate="J$1" x="-40.64" y="144.78" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="-43.18" y="137.414" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-43.18" y="150.368" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SPDT2" gate="J$1" x="-17.78" y="129.54" smashed="yes">
-<attribute name="VALUE" x="-20.32" y="122.174" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-20.32" y="135.128" size="1.778" layer="95" font="vector"/>
+<instance part="SPDT2" gate="J$1" x="-40.64" y="129.54" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="-43.18" y="122.174" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-43.18" y="135.128" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="SPST1" gate="G$1" x="53.34" y="218.44" smashed="yes" grouprefs="SPST">
 <attribute name="VALUE" x="50.8" y="213.614" size="1.778" layer="96" font="vector"/>
@@ -6392,6 +6399,28 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <instance part="SPST4" gate="G$1" x="53.34" y="180.34" smashed="yes" grouprefs="SPST">
 <attribute name="VALUE" x="50.8" y="175.514" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="50.8" y="185.928" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="-25.4" y="160.02" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="-27.94" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY7" gate="GND" x="-22.86" y="109.22" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="-24.765" y="106.045" size="1.778" layer="96"/>
+</instance>
+<instance part="R9" gate="G$1" x="-15.24" y="119.38" smashed="yes" rot="R90" grouprefs="SPDT">
+<attribute name="NAME" x="-16.764" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-13.716" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R10" gate="G$1" x="-7.62" y="119.38" smashed="yes" rot="R90" grouprefs="SPDT">
+<attribute name="NAME" x="-9.144" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="-6.096" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R11" gate="G$1" x="0" y="119.38" smashed="yes" rot="R90" grouprefs="SPDT">
+<attribute name="NAME" x="-1.524" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="1.524" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="R12" gate="G$1" x="7.62" y="119.38" smashed="yes" rot="R90" grouprefs="SPDT">
+<attribute name="NAME" x="6.096" y="119.38" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="9.144" y="119.38" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6482,6 +6511,24 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="POT_GND" gate="G$1" pin="4"/>
 <wire x1="236.22" y1="111.76" x2="231.14" y2="111.76" width="0.1524" layer="91" grouprefs="POTS"/>
 <junction x="231.14" y="111.76" grouprefs="POTS"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="114.3" x2="-15.24" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-15.24" y1="111.76" x2="-22.86" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="114.3" x2="7.62" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="7.62" y1="111.76" x2="0" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="-15.24" y="111.76" grouprefs="SPDT"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="0" y1="111.76" x2="-7.62" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-7.62" y1="111.76" x2="-15.24" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-7.62" y1="114.3" x2="-7.62" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="-7.62" y="111.76" grouprefs="SPDT"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="0" y1="114.3" x2="0" y2="111.76" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="0" y="111.76" grouprefs="SPDT"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="SPST1" class="0">
@@ -6592,6 +6639,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="SPST3" gate="G$1" pin="1"/>
 <wire x1="60.96" y1="193.04" x2="66.04" y2="193.04" width="0.1524" layer="91"/>
 <junction x="66.04" y="193.04"/>
+</segment>
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="2"/>
+<wire x1="-33.02" y1="129.54" x2="-25.4" y2="129.54" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="-25.4" y1="129.54" x2="-25.4" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="SPDT1" gate="J$1" pin="2"/>
+<wire x1="-25.4" y1="144.78" x2="-25.4" y2="157.48" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-33.02" y1="144.78" x2="-25.4" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="-25.4" y="144.78" grouprefs="SPDT"/>
 </segment>
 </net>
 <net name="IN_L" class="0">
@@ -6764,6 +6821,78 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <pinref part="AUDIO_INOUT" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91" grouprefs="AUDIO"/>
 <label x="-5.08" y="48.26" size="1.778" layer="95" grouprefs="AUDIO"/>
+</segment>
+</net>
+<net name="SPDT1_2" class="0">
+<segment>
+<pinref part="SPDT1" gate="J$1" pin="1"/>
+<wire x1="-33.02" y1="142.24" x2="-22.86" y2="142.24" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-22.86" y1="142.24" x2="-22.86" y2="139.7" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-22.86" y1="139.7" x2="0" y2="139.7" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="0" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="0" y1="124.46" x2="0" y2="139.7" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="0" y="139.7" grouprefs="SPDT"/>
+<label x="10.16" y="139.7" size="1.778" layer="95" grouprefs="SPDT"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
+<wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<label x="58.42" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT2_1" class="0">
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="3"/>
+<wire x1="-33.02" y1="132.08" x2="-22.86" y2="132.08" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-22.86" y1="132.08" x2="-22.86" y2="134.62" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-22.86" y1="134.62" x2="-7.62" y2="134.62" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="134.62" x2="20.32" y2="134.62" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-7.62" y1="124.46" x2="-7.62" y2="134.62" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="-7.62" y="134.62" grouprefs="SPDT"/>
+<label x="10.16" y="134.62" size="1.778" layer="95" grouprefs="SPDT"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
+<wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
+<label x="58.42" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT1_1" class="0">
+<segment>
+<pinref part="SPDT1" gate="J$1" pin="3"/>
+<wire x1="-33.02" y1="147.32" x2="-20.32" y2="147.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-20.32" y1="147.32" x2="-20.32" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-20.32" y1="144.78" x2="7.62" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="144.78" x2="20.32" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="7.62" y1="124.46" x2="7.62" y2="144.78" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="7.62" y="144.78" grouprefs="SPDT"/>
+<label x="10.16" y="144.78" size="1.778" layer="95" grouprefs="SPDT"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
+<wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<label x="58.42" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT2_2" class="0">
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="1"/>
+<wire x1="-33.02" y1="127" x2="-20.32" y2="127" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-20.32" y1="127" x2="-20.32" y2="129.54" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-20.32" y1="129.54" x2="-15.24" y2="129.54" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="129.54" x2="20.32" y2="129.54" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="-15.24" y1="124.46" x2="-15.24" y2="129.54" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="-15.24" y="129.54" grouprefs="SPDT"/>
+<label x="10.16" y="129.54" size="1.778" layer="95" grouprefs="SPDT"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
+<wire x1="73.66" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
+<label x="58.42" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

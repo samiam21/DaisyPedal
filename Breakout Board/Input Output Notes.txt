@@ -11,6 +11,6 @@ Off-Board
 On-Board
 - 9v power (1)
 - SPST switch pull-down resistors (4)
-- SPDT switch pull-down resistors (4)?
+- SPDT switch pull-down resistors (4)
 - Hex switch pull-down resistors (4)
 - LED resistors (4)
