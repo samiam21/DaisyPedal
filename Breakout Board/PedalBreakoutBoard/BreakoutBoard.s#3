@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5410,7 +5410,7 @@ resistor</text>
 for 4 individual mono (TS) jacks
 representing each channel of stereo
 input and output</text>
-<text x="78.74" y="27.94" size="2.54" layer="94">?????</text>
+<text x="96.52" y="25.4" size="2.54" layer="94" grouprefs="POWER">?????</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="104.14" y="91.44" smashed="yes">
@@ -5477,9 +5477,9 @@ input and output</text>
 <attribute name="VALUE" x="10.16" y="66.294" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="76.708" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J1" gate="G$1" x="63.5" y="20.32" smashed="yes" grouprefs="POWER">
-<attribute name="VALUE" x="53.34" y="30.48" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="53.34" y="20.32" size="1.778" layer="95" font="vector"/>
+<instance part="J1" gate="G$1" x="81.28" y="17.78" smashed="yes" grouprefs="POWER">
+<attribute name="VALUE" x="71.12" y="27.94" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="71.12" y="17.78" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -5491,9 +5491,7 @@ input and output</text>
 <wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="71.12" y1="66.04" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="AGND"/>
 <junction x="73.66" y="66.04"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <junction x="71.12" y="63.5"/>
 </segment>
 <segment>
@@ -5502,9 +5500,7 @@ input and output</text>
 <wire x1="137.16" y1="114.3" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="137.16" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <junction x="134.62" y="114.3"/>
-<pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <junction x="142.24" y="124.46"/>
 </segment>
 <segment>
@@ -5524,15 +5520,10 @@ input and output</text>
 <pinref part="LED4" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91" grouprefs="LED"/>
 <junction x="187.96" y="73.66" grouprefs="LED"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <junction x="187.96" y="66.04"/>
-<pinref part="LED1" gate="G$1" pin="2"/>
 <junction x="190.5" y="111.76"/>
-<pinref part="LED2" gate="G$1" pin="2"/>
 <junction x="190.5" y="99.06"/>
-<pinref part="LED3" gate="G$1" pin="2"/>
 <junction x="190.5" y="86.36"/>
-<pinref part="LED4" gate="G$1" pin="2"/>
 <junction x="190.5" y="73.66"/>
 </segment>
 <segment>
@@ -5552,15 +5543,10 @@ input and output</text>
 <pinref part="IN_R" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91" grouprefs="AUDIO"/>
 <junction x="22.86" y="96.52" grouprefs="AUDIO"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <junction x="22.86" y="63.5"/>
-<pinref part="IN_L" gate="G$1" pin="1"/>
 <junction x="20.32" y="109.22"/>
-<pinref part="IN_R" gate="G$1" pin="1"/>
 <junction x="20.32" y="96.52"/>
-<pinref part="OUT_L" gate="G$1" pin="1"/>
 <junction x="20.32" y="83.82"/>
-<pinref part="OUT_R" gate="G$1" pin="1"/>
 <junction x="20.32" y="71.12"/>
 </segment>
 </net>
@@ -5749,7 +5735,6 @@ input and output</text>
 <pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
 <wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
 <junction x="73.66" y="99.06"/>
 </segment>
 </net>
@@ -5758,7 +5743,6 @@ input and output</text>
 <pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
 <wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 <label x="58.42" y="96.52" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
 <junction x="73.66" y="96.52"/>
 </segment>
 </net>
@@ -5767,7 +5751,6 @@ input and output</text>
 <pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
 <wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <label x="58.42" y="101.6" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
 <junction x="73.66" y="101.6"/>
 </segment>
 </net>
@@ -5776,7 +5759,6 @@ input and output</text>
 <pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
 <wire x1="73.66" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <label x="58.42" y="93.98" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
 <junction x="73.66" y="93.98"/>
 </segment>
 </net>
@@ -5843,8 +5825,8 @@ input and output</text>
 <label x="142.24" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="96.52" y1="30.48" x2="119.38" y2="30.48" width="0.1524" layer="91" grouprefs="POWER"/>
-<label x="111.76" y="30.48" size="1.778" layer="95" grouprefs="POWER"/>
+<wire x1="114.3" y1="27.94" x2="137.16" y2="27.94" width="0.1524" layer="91" grouprefs="POWER"/>
+<label x="129.54" y="27.94" size="1.778" layer="95" grouprefs="POWER"/>
 </segment>
 </net>
 </nets>
@@ -5852,116 +5834,54 @@ input and output</text>
 <sheet>
 <description>Switches</description>
 <plain>
-<text x="147.32" y="81.28" size="1.778" layer="94" grouprefs="SPDT">This section provides connections
+<text x="68.58" y="60.96" size="1.778" layer="94" grouprefs="SPDT">This section provides connections
 for 2 SPDT switches with pull-down
 resistors for each 'on' pin</text>
-<attribute name="VALUE" x="12.7" y="63.754" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="12.7" y="76.708" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="12.7" y="48.514" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="12.7" y="61.468" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="27.94" y="81.28" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="31.115" y="32.385" size="1.778" layer="96"/>
-<attribute name="NAME" x="39.116" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="42.164" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="46.736" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="49.784" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="54.356" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="57.404" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="61.976" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="65.024" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<text x="68.58" y="81.28" size="1.778" layer="94" grouprefs="SPST">This section provides connections 
-for 4 SPST momentary switches 
-using pull-down resistors</text>
-<attribute name="NAME" x="143.256" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="146.304" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="150.876" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="153.924" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="158.496" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="161.544" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="166.116" y="43.18" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="169.164" y="43.18" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="VALUE" x="132.08" y="83.82" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="137.795" y="29.845" size="1.778" layer="96"/>
-<attribute name="VALUE" x="119.38" y="73.914" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="119.38" y="84.328" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="119.38" y="61.214" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="119.38" y="71.628" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="119.38" y="48.514" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="119.38" y="58.928" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="119.38" y="35.814" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="119.38" y="46.228" size="1.778" layer="95" font="vector"/>
-<text x="60.96" y="7.62" size="1.778" layer="94" grouprefs="SELECTOR">This section provides connections for
+<text x="-17.78" y="-12.7" size="1.778" layer="94" grouprefs="SELECTOR">This section provides connections for
 a 1P8T rotary selector switch with a 
 pull-down resistor for each selector pin</text>
-<attribute name="VALUE" x="208.28" y="56.134" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="208.28" y="84.328" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="220.98" y="86.36" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="213.995" y="29.845" size="1.778" layer="96"/>
-<attribute name="NAME" x="219.456" y="50.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="222.504" y="50.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="224.536" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="227.584" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="229.616" y="50.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="232.664" y="50.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="234.696" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="237.744" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="239.776" y="50.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="242.824" y="50.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="244.856" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="247.904" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="249.936" y="50.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="252.984" y="50.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<attribute name="NAME" x="255.016" y="45.72" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="258.064" y="45.72" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-<text x="137.16" y="20.32" size="1.778" layer="94" grouprefs="POT">This section provides connections
+<text x="58.42" y="0" size="1.778" layer="94" grouprefs="POT">This section provides connections
 for 4 potentiometers</text>
-<attribute name="VALUE" x="294.64" y="93.98" size="1.778" layer="96" rot="R90"/>
-<attribute name="VALUE" x="297.815" y="24.765" size="1.778" layer="96"/>
-<attribute name="VALUE" x="312.42" y="93.726" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="312.42" y="80.772" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="312.42" y="78.486" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="312.42" y="65.532" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="312.42" y="63.246" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="312.42" y="50.292" size="1.778" layer="95" font="vector" rot="R180"/>
-<attribute name="VALUE" x="312.42" y="48.006" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="312.42" y="35.052" size="1.778" layer="95" font="vector" rot="R180"/>
+<text x="-10.16" y="63.5" size="1.778" layer="94" grouprefs="SPST">This section provides connections 
+for 4 SPST momentary switches 
+using pull-down resistors</text>
 </plain>
 <instances>
-<instance part="SPDT1" gate="J$1" x="124.46" y="73.66" smashed="yes" grouprefs="SPDT"/>
-<instance part="SPDT2" gate="J$1" x="124.46" y="58.42" smashed="yes" grouprefs="SPDT"/>
-<instance part="+3V3" gate="G$1" x="139.7" y="88.9" smashed="yes" grouprefs="SPDT"/>
-<instance part="SUPPLY7" gate="GND" x="142.24" y="38.1" smashed="yes" grouprefs="SPDT"/>
-<instance part="R9" gate="G$1" x="149.86" y="48.26" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="R10" gate="G$1" x="157.48" y="48.26" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="R11" gate="G$1" x="165.1" y="48.26" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="R12" gate="G$1" x="172.72" y="48.26" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="R4" gate="G$1" x="66.04" y="40.64" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="R5" gate="G$1" x="73.66" y="40.64" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="R6" gate="G$1" x="81.28" y="40.64" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="R7" gate="G$1" x="88.9" y="40.64" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="+3V1" gate="G$1" x="55.88" y="86.36" smashed="yes" grouprefs="SPST"/>
-<instance part="SUPPLY5" gate="GND" x="60.96" y="30.48" smashed="yes" grouprefs="SPST"/>
-<instance part="SPST1" gate="G$1" x="43.18" y="76.2" smashed="yes" grouprefs="SPST"/>
-<instance part="SPST2" gate="G$1" x="43.18" y="63.5" smashed="yes" grouprefs="SPST"/>
-<instance part="SPST3" gate="G$1" x="43.18" y="50.8" smashed="yes" grouprefs="SPST"/>
-<instance part="SPST4" gate="G$1" x="43.18" y="38.1" smashed="yes" grouprefs="SPST"/>
-<instance part="1P8T" gate="G$1" x="40.64" y="-5.08" smashed="yes" grouprefs="SELECTOR"/>
-<instance part="+3V4" gate="G$1" x="55.88" y="15.24" smashed="yes" grouprefs="SELECTOR"/>
-<instance part="SUPPLY8" gate="GND" x="48.26" y="-43.18" smashed="yes" grouprefs="SELECTOR"/>
-<instance part="R13" gate="G$1" x="53.34" y="-25.4" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R14" gate="G$1" x="58.42" y="-30.48" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R15" gate="G$1" x="63.5" y="-25.4" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R16" gate="G$1" x="68.58" y="-30.48" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R17" gate="G$1" x="73.66" y="-25.4" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R18" gate="G$1" x="78.74" y="-30.48" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R19" gate="G$1" x="83.82" y="-25.4" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="R20" gate="G$1" x="88.9" y="-30.48" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="+3V2" gate="G$1" x="144.78" y="15.24" smashed="yes" grouprefs="POT"/>
-<instance part="SUPPLY6" gate="GND" x="147.32" y="-55.88" smashed="yes" grouprefs="POT"/>
-<instance part="POT1" gate="J$1" x="157.48" y="2.54" smashed="yes" rot="R180" grouprefs="POT"/>
-<instance part="POT2" gate="J$1" x="157.48" y="-12.7" smashed="yes" rot="R180" grouprefs="POT"/>
-<instance part="POT3" gate="J$1" x="157.48" y="-27.94" smashed="yes" rot="R180" grouprefs="POT"/>
-<instance part="POT4" gate="J$1" x="157.48" y="-43.18" smashed="yes" rot="R180" grouprefs="POT"/>
+<instance part="SPDT1" gate="J$1" x="45.72" y="53.34" smashed="yes" grouprefs="SPDT"/>
+<instance part="SPDT2" gate="J$1" x="45.72" y="38.1" smashed="yes" grouprefs="SPDT"/>
+<instance part="+3V3" gate="G$1" x="60.96" y="68.58" smashed="yes" grouprefs="SPDT"/>
+<instance part="SUPPLY7" gate="GND" x="63.5" y="17.78" smashed="yes" grouprefs="SPDT"/>
+<instance part="R9" gate="G$1" x="71.12" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="R10" gate="G$1" x="78.74" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="R11" gate="G$1" x="86.36" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="R12" gate="G$1" x="93.98" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="1P8T" gate="G$1" x="-38.1" y="-25.4" smashed="yes" grouprefs="SELECTOR"/>
+<instance part="+3V4" gate="G$1" x="-22.86" y="-5.08" smashed="yes" grouprefs="SELECTOR"/>
+<instance part="SUPPLY8" gate="GND" x="-30.48" y="-63.5" smashed="yes" grouprefs="SELECTOR"/>
+<instance part="R13" gate="G$1" x="-25.4" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R14" gate="G$1" x="-20.32" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R15" gate="G$1" x="-15.24" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R16" gate="G$1" x="-10.16" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R17" gate="G$1" x="-5.08" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R18" gate="G$1" x="0" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R19" gate="G$1" x="5.08" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="R20" gate="G$1" x="10.16" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
+<instance part="+3V2" gate="G$1" x="66.04" y="-5.08" smashed="yes" grouprefs="POT"/>
+<instance part="SUPPLY6" gate="GND" x="68.58" y="-76.2" smashed="yes" grouprefs="POT"/>
+<instance part="POT1" gate="J$1" x="78.74" y="-17.78" smashed="yes" rot="R180" grouprefs="POT"/>
+<instance part="POT2" gate="J$1" x="78.74" y="-33.02" smashed="yes" rot="R180" grouprefs="POT"/>
+<instance part="POT3" gate="J$1" x="78.74" y="-48.26" smashed="yes" rot="R180" grouprefs="POT"/>
+<instance part="POT4" gate="J$1" x="78.74" y="-63.5" smashed="yes" rot="R180" grouprefs="POT"/>
+<instance part="R4" gate="G$1" x="-12.7" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="R5" gate="G$1" x="-5.08" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="R6" gate="G$1" x="2.54" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="R7" gate="G$1" x="10.16" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="+3V1" gate="G$1" x="-22.86" y="68.58" smashed="yes" grouprefs="SPST"/>
+<instance part="SUPPLY5" gate="GND" x="-17.78" y="12.7" smashed="yes" grouprefs="SPST"/>
+<instance part="SPST1" gate="G$1" x="-35.56" y="58.42" smashed="yes" grouprefs="SPST"/>
+<instance part="SPST2" gate="G$1" x="-35.56" y="45.72" smashed="yes" grouprefs="SPST"/>
+<instance part="SPST3" gate="G$1" x="-35.56" y="33.02" smashed="yes" grouprefs="SPST"/>
+<instance part="SPST4" gate="G$1" x="-35.56" y="20.32" smashed="yes" grouprefs="SPST"/>
 </instances>
 <busses>
 </busses>
@@ -5969,459 +5889,412 @@ for 4 potentiometers</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="149.86" y1="43.18" x2="149.86" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="149.86" y1="40.64" x2="142.24" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="71.12" y1="22.86" x2="71.12" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="71.12" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="43.18" x2="172.72" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="172.72" y1="40.64" x2="165.1" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="149.86" y="40.64" grouprefs="SPDT"/>
+<wire x1="93.98" y1="22.86" x2="93.98" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="93.98" y1="20.32" x2="86.36" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="71.12" y="20.32" grouprefs="SPDT"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="40.64" x2="157.48" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="157.48" y1="40.64" x2="149.86" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="157.48" y1="43.18" x2="157.48" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="157.48" y="40.64" grouprefs="SPDT"/>
+<wire x1="86.36" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="78.74" y1="20.32" x2="71.12" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="78.74" y1="22.86" x2="78.74" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="78.74" y="20.32" grouprefs="SPDT"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="165.1" y1="43.18" x2="165.1" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="165.1" y="40.64" grouprefs="SPDT"/>
+<wire x1="86.36" y1="22.86" x2="86.36" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="86.36" y="20.32" grouprefs="SPDT"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<junction x="142.24" y="40.64"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<junction x="149.86" y="43.18"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<junction x="157.48" y="43.18"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<junction x="165.1" y="43.18"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<junction x="172.72" y="43.18"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="35.56" x2="66.04" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="66.04" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="35.56" x2="73.66" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="73.66" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="66.04" y="33.02" grouprefs="SPST"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="35.56" x2="81.28" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="81.28" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="73.66" y="33.02" grouprefs="SPST"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="35.56" x2="88.9" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="88.9" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="81.28" y="33.02" grouprefs="SPST"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<junction x="66.04" y="35.56"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<junction x="73.66" y="35.56"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<junction x="81.28" y="35.56"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<junction x="88.9" y="35.56"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<junction x="60.96" y="33.02"/>
+<junction x="63.5" y="20.32"/>
+<junction x="71.12" y="22.86"/>
+<junction x="78.74" y="22.86"/>
+<junction x="86.36" y="22.86"/>
+<junction x="93.98" y="22.86"/>
 </segment>
 <segment>
 <pinref part="R20" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="-35.56" x2="88.9" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="10.16" y1="-55.88" x2="10.16" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="-40.64" x2="83.82" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="10.16" y1="-60.96" x2="5.08" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
 <pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="-40.64" x2="78.74" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="78.74" y1="-40.64" x2="73.66" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="73.66" y1="-40.64" x2="68.58" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="68.58" y1="-40.64" x2="63.5" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="63.5" y1="-40.64" x2="58.42" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="58.42" y1="-40.64" x2="53.34" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="53.34" y1="-40.64" x2="48.26" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="83.82" y1="-30.48" x2="83.82" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="83.82" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="5.08" y1="-60.96" x2="0" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="0" y1="-60.96" x2="-5.08" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-5.08" y1="-60.96" x2="-10.16" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-10.16" y1="-60.96" x2="-15.24" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-15.24" y1="-60.96" x2="-20.32" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-20.32" y1="-60.96" x2="-25.4" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-25.4" y1="-60.96" x2="-30.48" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="5.08" y1="-50.8" x2="5.08" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="5.08" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-35.56" x2="78.74" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="78.74" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="0" y1="-55.88" x2="0" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="0" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="-30.48" x2="73.66" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="73.66" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="-5.08" y1="-50.8" x2="-5.08" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-5.08" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="-35.56" x2="68.58" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="68.58" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="-10.16" y1="-55.88" x2="-10.16" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-10.16" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="-30.48" x2="63.5" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="63.5" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="-15.24" y1="-50.8" x2="-15.24" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-15.24" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-35.56" x2="58.42" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="58.42" y="-40.64" grouprefs="SELECTOR"/>
+<wire x1="-20.32" y1="-55.88" x2="-20.32" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-20.32" y="-60.96" grouprefs="SELECTOR"/>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="-30.48" x2="53.34" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="53.34" y="-40.64" grouprefs="SELECTOR"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
-<junction x="48.26" y="-40.64"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-<junction x="53.34" y="-30.48"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<junction x="58.42" y="-35.56"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<junction x="63.5" y="-30.48"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<junction x="68.58" y="-35.56"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<junction x="73.66" y="-30.48"/>
-<pinref part="R18" gate="G$1" pin="1"/>
-<junction x="78.74" y="-35.56"/>
-<pinref part="R19" gate="G$1" pin="1"/>
-<junction x="83.82" y="-30.48"/>
-<pinref part="R20" gate="G$1" pin="1"/>
-<junction x="88.9" y="-35.56"/>
+<wire x1="-25.4" y1="-50.8" x2="-25.4" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-25.4" y="-60.96" grouprefs="SELECTOR"/>
+<junction x="-30.48" y="-60.96"/>
+<junction x="-25.4" y="-50.8"/>
+<junction x="-20.32" y="-55.88"/>
+<junction x="-15.24" y="-50.8"/>
+<junction x="-10.16" y="-55.88"/>
+<junction x="-5.08" y="-50.8"/>
+<junction x="0" y="-55.88"/>
+<junction x="5.08" y="-50.8"/>
+<junction x="10.16" y="-55.88"/>
 </segment>
 <segment>
 <pinref part="POT1" gate="J$1" pin="3"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="149.86" y1="0" x2="147.32" y2="0" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="147.32" y1="0" x2="147.32" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="68.58" y1="-20.32" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="POT"/>
 <pinref part="POT4" gate="J$1" pin="3"/>
-<wire x1="147.32" y1="-15.24" x2="147.32" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="147.32" y1="-30.48" x2="147.32" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="147.32" y1="-45.72" x2="147.32" y2="-53.34" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="149.86" y1="-45.72" x2="147.32" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="147.32" y="-45.72" grouprefs="POT"/>
+<wire x1="68.58" y1="-35.56" x2="68.58" y2="-50.8" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="68.58" y1="-50.8" x2="68.58" y2="-66.04" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="68.58" y1="-66.04" x2="68.58" y2="-73.66" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-66.04" x2="68.58" y2="-66.04" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="68.58" y="-66.04" grouprefs="POT"/>
 <pinref part="POT3" gate="J$1" pin="3"/>
-<wire x1="149.86" y1="-30.48" x2="147.32" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="147.32" y="-30.48" grouprefs="POT"/>
+<wire x1="71.12" y1="-50.8" x2="68.58" y2="-50.8" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="68.58" y="-50.8" grouprefs="POT"/>
 <pinref part="POT2" gate="J$1" pin="3"/>
-<wire x1="149.86" y1="-15.24" x2="147.32" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="147.32" y="-15.24" grouprefs="POT"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<junction x="147.32" y="-53.34"/>
-<pinref part="POT1" gate="J$1" pin="3"/>
-<junction x="149.86" y="0"/>
-<pinref part="POT2" gate="J$1" pin="3"/>
-<junction x="149.86" y="-15.24"/>
-<pinref part="POT3" gate="J$1" pin="3"/>
-<junction x="149.86" y="-30.48"/>
-<pinref part="POT4" gate="J$1" pin="3"/>
-<junction x="149.86" y="-45.72"/>
-</segment>
-</net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="SPDT2" gate="J$1" pin="2"/>
-<wire x1="132.08" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<wire x1="139.7" y1="58.42" x2="139.7" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="2"/>
-<wire x1="139.7" y1="73.66" x2="139.7" y2="86.36" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="132.08" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="139.7" y="73.66" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="2"/>
-<junction x="132.08" y="73.66"/>
-<pinref part="SPDT2" gate="J$1" pin="2"/>
-<junction x="132.08" y="58.42"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<junction x="139.7" y="86.36"/>
+<wire x1="71.12" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="68.58" y="-35.56" grouprefs="POT"/>
+<junction x="68.58" y="-73.66"/>
+<junction x="71.12" y="-20.32"/>
+<junction x="71.12" y="-35.56"/>
+<junction x="71.12" y="-50.8"/>
+<junction x="71.12" y="-66.04"/>
 </segment>
 <segment>
-<pinref part="SPST4" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="55.88" y1="38.1" x2="55.88" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SPST1" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="50.8" x2="55.88" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="55.88" y1="63.5" x2="55.88" y2="76.2" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="55.88" y1="76.2" x2="55.88" y2="83.82" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="50.8" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="55.88" y="76.2" grouprefs="SPST"/>
-<pinref part="SPST2" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="63.5" x2="55.88" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="55.88" y="63.5" grouprefs="SPST"/>
-<pinref part="SPST3" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="55.88" y="50.8" grouprefs="SPST"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<junction x="55.88" y="83.82"/>
-<pinref part="SPST1" gate="G$1" pin="1"/>
-<junction x="50.8" y="76.2"/>
-<pinref part="SPST2" gate="G$1" pin="1"/>
-<junction x="50.8" y="63.5"/>
-<pinref part="SPST3" gate="G$1" pin="1"/>
-<junction x="50.8" y="50.8"/>
-<pinref part="SPST4" gate="G$1" pin="1"/>
-<junction x="50.8" y="38.1"/>
-</segment>
-<segment>
-<pinref part="1P8T" gate="G$1" pin="9"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="50.8" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="55.88" y1="5.08" x2="55.88" y2="12.7" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="1P8T" gate="G$1" pin="9"/>
-<junction x="50.8" y="5.08"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<junction x="55.88" y="12.7"/>
-</segment>
-<segment>
-<pinref part="POT1" gate="J$1" pin="1"/>
-<wire x1="149.86" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91" grouprefs="POT"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="144.78" y1="5.08" x2="144.78" y2="12.7" width="0.1524" layer="91" grouprefs="POT"/>
-<pinref part="POT4" gate="J$1" pin="1"/>
-<wire x1="149.86" y1="-40.64" x2="144.78" y2="-40.64" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="144.78" y1="-40.64" x2="144.78" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="144.78" y="5.08" grouprefs="POT"/>
-<pinref part="POT2" gate="J$1" pin="1"/>
-<wire x1="144.78" y1="-25.4" x2="144.78" y2="-10.16" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="144.78" y1="-10.16" x2="144.78" y2="5.08" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="149.86" y1="-10.16" x2="144.78" y2="-10.16" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="144.78" y="-10.16" grouprefs="POT"/>
-<pinref part="POT3" gate="J$1" pin="1"/>
-<wire x1="149.86" y1="-25.4" x2="144.78" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="144.78" y="-25.4" grouprefs="POT"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<junction x="144.78" y="12.7"/>
-<pinref part="POT1" gate="J$1" pin="1"/>
-<junction x="149.86" y="5.08"/>
-<pinref part="POT2" gate="J$1" pin="1"/>
-<junction x="149.86" y="-10.16"/>
-<pinref part="POT3" gate="J$1" pin="1"/>
-<junction x="149.86" y="-25.4"/>
-<pinref part="POT4" gate="J$1" pin="1"/>
-<junction x="149.86" y="-40.64"/>
-</segment>
-</net>
-<net name="SPDT1_2" class="0">
-<segment>
-<pinref part="SPDT1" gate="J$1" pin="1"/>
-<wire x1="132.08" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="142.24" y1="71.12" x2="142.24" y2="68.58" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="142.24" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="165.1" y1="53.34" x2="165.1" y2="68.58" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="165.1" y="68.58" grouprefs="SPDT"/>
-<label x="175.26" y="68.58" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="1"/>
-<junction x="132.08" y="71.12"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-<junction x="165.1" y="53.34"/>
-</segment>
-</net>
-<net name="SPDT2_1" class="0">
-<segment>
-<pinref part="SPDT2" gate="J$1" pin="3"/>
-<wire x1="132.08" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="142.24" y1="60.96" x2="142.24" y2="63.5" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="142.24" y1="63.5" x2="157.48" y2="63.5" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="63.5" x2="185.42" y2="63.5" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="157.48" y1="53.34" x2="157.48" y2="63.5" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="157.48" y="63.5" grouprefs="SPDT"/>
-<label x="175.26" y="63.5" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT2" gate="J$1" pin="3"/>
-<junction x="132.08" y="60.96"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<junction x="157.48" y="53.34"/>
-</segment>
-</net>
-<net name="SPDT1_1" class="0">
-<segment>
-<pinref part="SPDT1" gate="J$1" pin="3"/>
-<wire x1="132.08" y1="76.2" x2="144.78" y2="76.2" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="144.78" y1="76.2" x2="144.78" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="144.78" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="73.66" x2="185.42" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="172.72" y1="53.34" x2="172.72" y2="73.66" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="172.72" y="73.66" grouprefs="SPDT"/>
-<label x="175.26" y="73.66" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="3"/>
-<junction x="132.08" y="76.2"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<junction x="172.72" y="53.34"/>
-</segment>
-</net>
-<net name="SPDT2_2" class="0">
-<segment>
-<pinref part="SPDT2" gate="J$1" pin="1"/>
-<wire x1="132.08" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="144.78" y1="55.88" x2="144.78" y2="58.42" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="144.78" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="58.42" x2="185.42" y2="58.42" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="149.86" y1="53.34" x2="149.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="149.86" y="58.42" grouprefs="SPDT"/>
-<label x="175.26" y="58.42" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT2" gate="J$1" pin="1"/>
-<junction x="132.08" y="55.88"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<junction x="149.86" y="53.34"/>
-</segment>
-</net>
-<net name="SPST1" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="66.04" x2="88.9" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="88.9" y1="66.04" x2="101.6" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="93.98" y="66.04" size="1.778" layer="95" grouprefs="SPST"/>
-<pinref part="SPST1" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="78.74" x2="60.96" y2="78.74" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="60.96" y1="78.74" x2="60.96" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="60.96" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="88.9" y="66.04" grouprefs="SPST"/>
-</segment>
-</net>
-<net name="SPST4" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="50.8" x2="66.04" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="66.04" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="93.98" y="50.8" size="1.778" layer="95" grouprefs="SPST"/>
-<pinref part="SPST4" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="40.64" x2="60.96" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="60.96" y1="40.64" x2="60.96" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="60.96" y1="50.8" x2="66.04" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="66.04" y="50.8" grouprefs="SPST"/>
-</segment>
-</net>
-<net name="SPST3" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="55.88" x2="73.66" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="73.66" y1="55.88" x2="101.6" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="93.98" y="55.88" size="1.778" layer="95" grouprefs="SPST"/>
-<pinref part="SPST3" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="58.42" y1="53.34" x2="58.42" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="58.42" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="73.66" y="55.88" grouprefs="SPST"/>
-</segment>
-</net>
-<net name="SPST2" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="60.96" x2="81.28" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="81.28" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="93.98" y="60.96" size="1.778" layer="95" grouprefs="SPST"/>
-<pinref part="SPST2" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="58.42" y1="66.04" x2="58.42" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="58.42" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="81.28" y="60.96" grouprefs="SPST"/>
-</segment>
-</net>
-<net name="1P8T_1" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="-15.24" x2="53.34" y2="-15.24" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="-15.24" x2="99.06" y2="-15.24" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="53.34" y1="-15.24" x2="53.34" y2="-20.32" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="53.34" y="-15.24" grouprefs="SELECTOR"/>
-<label x="91.44" y="-15.24" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_2" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="-12.7" x2="58.42" y2="-12.7" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="-12.7" x2="99.06" y2="-12.7" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="58.42" y1="-25.4" x2="58.42" y2="-12.7" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="58.42" y="-12.7" grouprefs="SELECTOR"/>
-<label x="91.44" y="-12.7" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_3" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="3"/>
-<wire x1="50.8" y1="-10.16" x2="63.5" y2="-10.16" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="-10.16" x2="99.06" y2="-10.16" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="63.5" y1="-20.32" x2="63.5" y2="-10.16" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="63.5" y="-10.16" grouprefs="SELECTOR"/>
-<label x="91.44" y="-10.16" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_4" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="-7.62" x2="68.58" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="68.58" y1="-25.4" x2="68.58" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="68.58" y="-7.62" grouprefs="SELECTOR"/>
-<label x="91.44" y="-7.62" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_5" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="5"/>
-<wire x1="50.8" y1="-5.08" x2="73.66" y2="-5.08" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="73.66" y1="-20.32" x2="73.66" y2="-5.08" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="73.66" y="-5.08" grouprefs="SELECTOR"/>
-<label x="91.44" y="-5.08" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_6" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="6"/>
-<wire x1="50.8" y1="-2.54" x2="78.74" y2="-2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R18" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="-2.54" x2="99.06" y2="-2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="78.74" y1="-25.4" x2="78.74" y2="-2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="78.74" y="-2.54" grouprefs="SELECTOR"/>
-<label x="91.44" y="-2.54" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_7" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="7"/>
-<wire x1="50.8" y1="0" x2="83.82" y2="0" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="0" x2="99.06" y2="0" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="83.82" y1="-20.32" x2="83.82" y2="0" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="83.82" y="0" grouprefs="SELECTOR"/>
-<label x="91.44" y="0" size="1.778" layer="95" grouprefs="SELECTOR"/>
-</segment>
-</net>
-<net name="1P8T_8" class="0">
-<segment>
-<pinref part="1P8T" gate="G$1" pin="8"/>
-<wire x1="50.8" y1="2.54" x2="88.9" y2="2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="-25.4" x2="88.9" y2="2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="88.9" y1="2.54" x2="99.06" y2="2.54" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<junction x="88.9" y="2.54" grouprefs="SELECTOR"/>
-<label x="91.44" y="2.54" size="1.778" layer="95" grouprefs="SELECTOR"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="-12.7" y1="15.24" x2="-17.78" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="17.78" x2="-5.08" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-5.08" y1="15.24" x2="-12.7" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-12.7" y="15.24" grouprefs="SPST"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="2.54" y1="15.24" x2="-5.08" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-5.08" y="15.24" grouprefs="SPST"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="10.16" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="2.54" y="15.24" grouprefs="SPST"/>
+<junction x="-12.7" y="17.78"/>
+<junction x="-5.08" y="17.78"/>
+<junction x="2.54" y="17.78"/>
+<junction x="10.16" y="17.78"/>
+<junction x="-17.78" y="15.24"/>
 </segment>
 </net>
 <net name="POT4" class="0">
 <segment>
 <pinref part="POT4" gate="J$1" pin="2"/>
-<wire x1="149.86" y1="-43.18" x2="132.08" y2="-43.18" width="0.1524" layer="91" grouprefs="POT"/>
-<label x="132.08" y="-43.18" size="1.778" layer="95" grouprefs="POT"/>
+<wire x1="71.12" y1="-63.5" x2="53.34" y2="-63.5" width="0.1524" layer="91" grouprefs="POT"/>
+<label x="53.34" y="-63.5" size="1.778" layer="95" grouprefs="POT"/>
 </segment>
 </net>
 <net name="POT3" class="0">
 <segment>
 <pinref part="POT3" gate="J$1" pin="2"/>
-<wire x1="149.86" y1="-27.94" x2="132.08" y2="-27.94" width="0.1524" layer="91" grouprefs="POT"/>
-<label x="132.08" y="-27.94" size="1.778" layer="95" grouprefs="POT"/>
+<wire x1="71.12" y1="-48.26" x2="53.34" y2="-48.26" width="0.1524" layer="91" grouprefs="POT"/>
+<label x="53.34" y="-48.26" size="1.778" layer="95" grouprefs="POT"/>
 </segment>
 </net>
 <net name="POT2" class="0">
 <segment>
 <pinref part="POT2" gate="J$1" pin="2"/>
-<wire x1="149.86" y1="-12.7" x2="132.08" y2="-12.7" width="0.1524" layer="91" grouprefs="POT"/>
-<label x="132.08" y="-12.7" size="1.778" layer="95" grouprefs="POT"/>
+<wire x1="71.12" y1="-33.02" x2="53.34" y2="-33.02" width="0.1524" layer="91" grouprefs="POT"/>
+<label x="53.34" y="-33.02" size="1.778" layer="95" grouprefs="POT"/>
 </segment>
 </net>
 <net name="POT1" class="0">
 <segment>
 <pinref part="POT1" gate="J$1" pin="2"/>
-<wire x1="149.86" y1="2.54" x2="132.08" y2="2.54" width="0.1524" layer="91" grouprefs="POT"/>
-<label x="132.08" y="2.54" size="1.778" layer="95" grouprefs="POT"/>
+<wire x1="71.12" y1="-17.78" x2="53.34" y2="-17.78" width="0.1524" layer="91" grouprefs="POT"/>
+<label x="53.34" y="-17.78" size="1.778" layer="95" grouprefs="POT"/>
+</segment>
+</net>
+<net name="SPDT1_2" class="0">
+<segment>
+<pinref part="SPDT1" gate="J$1" pin="1"/>
+<wire x1="53.34" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="63.5" y1="48.26" x2="86.36" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="86.36" y1="33.02" x2="86.36" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="86.36" y="48.26" grouprefs="SPDT"/>
+<label x="96.52" y="48.26" size="1.778" layer="95" grouprefs="SPDT"/>
+<junction x="53.34" y="50.8"/>
+<junction x="86.36" y="33.02"/>
+</segment>
+</net>
+<net name="SPDT2_1" class="0">
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="3"/>
+<wire x1="53.34" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="63.5" y1="40.64" x2="63.5" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="63.5" y1="43.18" x2="78.74" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="43.18" x2="106.68" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="78.74" y1="33.02" x2="78.74" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="78.74" y="43.18" grouprefs="SPDT"/>
+<label x="96.52" y="43.18" size="1.778" layer="95" grouprefs="SPDT"/>
+<junction x="53.34" y="40.64"/>
+<junction x="78.74" y="33.02"/>
+</segment>
+</net>
+<net name="SPDT1_1" class="0">
+<segment>
+<pinref part="SPDT1" gate="J$1" pin="3"/>
+<wire x1="53.34" y1="55.88" x2="66.04" y2="55.88" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="66.04" y1="55.88" x2="66.04" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="66.04" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="53.34" x2="106.68" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="93.98" y1="33.02" x2="93.98" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="93.98" y="53.34" grouprefs="SPDT"/>
+<label x="96.52" y="53.34" size="1.778" layer="95" grouprefs="SPDT"/>
+<junction x="53.34" y="55.88"/>
+<junction x="93.98" y="33.02"/>
+</segment>
+</net>
+<net name="SPDT2_2" class="0">
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="1"/>
+<wire x1="53.34" y1="35.56" x2="66.04" y2="35.56" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="66.04" y1="35.56" x2="66.04" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="66.04" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="38.1" x2="106.68" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="71.12" y1="33.02" x2="71.12" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="71.12" y="38.1" grouprefs="SPDT"/>
+<label x="96.52" y="38.1" size="1.778" layer="95" grouprefs="SPDT"/>
+<junction x="53.34" y="35.56"/>
+<junction x="71.12" y="33.02"/>
+</segment>
+</net>
+<net name="1P8T_1" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="-35.56" x2="-25.4" y2="-35.56" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="-35.56" x2="20.32" y2="-35.56" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-25.4" y1="-35.56" x2="-25.4" y2="-40.64" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-25.4" y="-35.56" grouprefs="SELECTOR"/>
+<label x="12.7" y="-35.56" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_2" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-33.02" x2="-20.32" y2="-33.02" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="-33.02" x2="20.32" y2="-33.02" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-20.32" y1="-45.72" x2="-20.32" y2="-33.02" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-20.32" y="-33.02" grouprefs="SELECTOR"/>
+<label x="12.7" y="-33.02" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_3" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="3"/>
+<wire x1="-27.94" y1="-30.48" x2="-15.24" y2="-30.48" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="-15.24" y1="-30.48" x2="20.32" y2="-30.48" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-15.24" y1="-40.64" x2="-15.24" y2="-30.48" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-15.24" y="-30.48" grouprefs="SELECTOR"/>
+<label x="12.7" y="-30.48" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_4" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="4"/>
+<wire x1="-27.94" y1="-27.94" x2="-10.16" y2="-27.94" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="-27.94" x2="20.32" y2="-27.94" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-10.16" y1="-45.72" x2="-10.16" y2="-27.94" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-10.16" y="-27.94" grouprefs="SELECTOR"/>
+<label x="12.7" y="-27.94" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_5" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="5"/>
+<wire x1="-27.94" y1="-25.4" x2="-5.08" y2="-25.4" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-25.4" x2="20.32" y2="-25.4" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-5.08" y1="-40.64" x2="-5.08" y2="-25.4" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-5.08" y="-25.4" grouprefs="SELECTOR"/>
+<label x="12.7" y="-25.4" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_6" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="6"/>
+<wire x1="-27.94" y1="-22.86" x2="0" y2="-22.86" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="0" y1="-22.86" x2="20.32" y2="-22.86" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="0" y1="-45.72" x2="0" y2="-22.86" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="0" y="-22.86" grouprefs="SELECTOR"/>
+<label x="12.7" y="-22.86" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_7" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="7"/>
+<wire x1="-27.94" y1="-20.32" x2="5.08" y2="-20.32" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="5.08" y1="-40.64" x2="5.08" y2="-20.32" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="5.08" y="-20.32" grouprefs="SELECTOR"/>
+<label x="12.7" y="-20.32" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="1P8T_8" class="0">
+<segment>
+<pinref part="1P8T" gate="G$1" pin="8"/>
+<wire x1="-27.94" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="-45.72" x2="10.16" y2="-17.78" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="10.16" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="10.16" y="-17.78" grouprefs="SELECTOR"/>
+<label x="12.7" y="-17.78" size="1.778" layer="95" grouprefs="SELECTOR"/>
+</segment>
+</net>
+<net name="+3V3" class="0">
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="2"/>
+<wire x1="53.34" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="SPDT1" gate="J$1" pin="2"/>
+<wire x1="60.96" y1="53.34" x2="60.96" y2="66.04" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="53.34" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="60.96" y="53.34" grouprefs="SPDT"/>
+<junction x="53.34" y="53.34"/>
+<junction x="53.34" y="38.1"/>
+<junction x="60.96" y="66.04"/>
+</segment>
+<segment>
+<pinref part="1P8T" gate="G$1" pin="9"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+<wire x1="-27.94" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-22.86" y1="-15.24" x2="-22.86" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-27.94" y="-15.24"/>
+<junction x="-22.86" y="-7.62"/>
+</segment>
+<segment>
+<pinref part="POT1" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-15.24" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<wire x1="66.04" y1="-15.24" x2="66.04" y2="-7.62" width="0.1524" layer="91" grouprefs="POT"/>
+<pinref part="POT4" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-60.96" x2="66.04" y2="-60.96" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="66.04" y1="-60.96" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-15.24" grouprefs="POT"/>
+<pinref part="POT2" gate="J$1" pin="1"/>
+<wire x1="66.04" y1="-45.72" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="66.04" y1="-30.48" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-30.48" grouprefs="POT"/>
+<pinref part="POT3" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-45.72" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-45.72" grouprefs="POT"/>
+<junction x="66.04" y="-7.62"/>
+<junction x="71.12" y="-15.24"/>
+<junction x="71.12" y="-30.48"/>
+<junction x="71.12" y="-45.72"/>
+<junction x="71.12" y="-60.96"/>
+</segment>
+<segment>
+<pinref part="SPST4" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<wire x1="-22.86" y1="20.32" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="SPST1" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="33.02" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-22.86" y1="45.72" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-22.86" y1="58.42" x2="-22.86" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-27.94" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="58.42" grouprefs="SPST"/>
+<pinref part="SPST2" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="45.72" grouprefs="SPST"/>
+<pinref part="SPST3" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="33.02" grouprefs="SPST"/>
+<junction x="-22.86" y="66.04"/>
+<junction x="-27.94" y="58.42"/>
+<junction x="-27.94" y="45.72"/>
+<junction x="-27.94" y="33.02"/>
+<junction x="-27.94" y="20.32"/>
+</segment>
+</net>
+<net name="SPST1" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="48.26" x2="10.16" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="10.16" y1="48.26" x2="22.86" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="15.24" y="48.26" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST1" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="60.96" x2="-17.78" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-17.78" y1="60.96" x2="-17.78" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-17.78" y1="48.26" x2="10.16" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="10.16" y="48.26" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-12.7" y1="33.02" x2="22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="15.24" y="33.02" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST4" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="22.86" x2="-17.78" y2="22.86" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-17.78" y1="22.86" x2="-17.78" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-17.78" y1="33.02" x2="-12.7" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-12.7" y="33.02" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST3" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="38.1" x2="-5.08" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-5.08" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="15.24" y="38.1" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST3" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="35.56" x2="-20.32" y2="35.56" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-20.32" y1="35.56" x2="-20.32" y2="38.1" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-20.32" y1="38.1" x2="-5.08" y2="38.1" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-5.08" y="38.1" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST2" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="2.54" y1="43.18" x2="2.54" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="2.54" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="15.24" y="43.18" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST2" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-20.32" y1="48.26" x2="-20.32" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-20.32" y1="43.18" x2="2.54" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="2.54" y="43.18" grouprefs="SPST"/>
 </segment>
 </net>
 </nets>

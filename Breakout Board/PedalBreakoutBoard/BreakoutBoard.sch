@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1432,40 +1432,6 @@ Warning: This is the KIT version of the AXIAL-0.3 package. This package has a sm
 <attribute name="PROD_ID" value="RES-00824"/>
 <attribute name="VALUE" value="10k"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="supply1" urn="urn:adsk.eagle:library:371">
-<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
- GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
- Please keep in mind, that these devices are necessary for the
- automatic wiring of the supply signals.&lt;p&gt;
- The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
- In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="+3V3" urn="urn:adsk.eagle:symbol:26950/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="+3V3" urn="urn:adsk.eagle:component:26981/1" prefix="+3V3" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -5357,10 +5323,8 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <part name="R5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="R6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="R7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
-<part name="+3V2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SPDT1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
 <part name="SPDT2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="" package3d_urn="urn:adsk.eagle:package:38063/1"/>
@@ -5368,7 +5332,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <part name="SPST2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SPST3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SPST4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
@@ -5387,7 +5350,6 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <part name="OUT_L" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="OUT_R" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="1P8T" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_09" device="" package3d_urn="urn:adsk.eagle:package:38153/1"/>
-<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R13" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="R14" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
@@ -5420,8 +5382,8 @@ input and output</text>
 <instance part="SUPPLY1" gate="GND" x="71.12" y="60.96" smashed="yes">
 <attribute name="VALUE" x="69.215" y="57.785" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY2" gate="GND" x="142.24" y="121.92" smashed="yes">
-<attribute name="VALUE" x="140.335" y="118.745" size="1.778" layer="96"/>
+<instance part="SUPPLY2" gate="GND" x="142.24" y="119.38" smashed="yes" rot="R90">
+<attribute name="VALUE" x="145.415" y="117.475" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY3" gate="GND" x="22.86" y="60.96" smashed="yes" grouprefs="AUDIO">
 <attribute name="VALUE" x="20.955" y="57.785" size="1.778" layer="96"/>
@@ -5491,21 +5453,17 @@ input and output</text>
 <wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="71.12" y1="66.04" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="AGND"/>
 <junction x="73.66" y="66.04"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <junction x="71.12" y="63.5"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="134.62" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="114.3" x2="137.16" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="114.3" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<wire x1="137.16" y1="124.46" x2="142.24" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="137.16" y1="119.38" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 <junction x="134.62" y="114.3"/>
-<pinref part="SUPPLY2" gate="GND" pin="GND"/>
-<junction x="142.24" y="124.46"/>
+<junction x="139.7" y="119.38"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="2"/>
@@ -5524,15 +5482,10 @@ input and output</text>
 <pinref part="LED4" gate="G$1" pin="2"/>
 <wire x1="190.5" y1="73.66" x2="187.96" y2="73.66" width="0.1524" layer="91" grouprefs="LED"/>
 <junction x="187.96" y="73.66" grouprefs="LED"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <junction x="187.96" y="66.04"/>
-<pinref part="LED1" gate="G$1" pin="2"/>
 <junction x="190.5" y="111.76"/>
-<pinref part="LED2" gate="G$1" pin="2"/>
 <junction x="190.5" y="99.06"/>
-<pinref part="LED3" gate="G$1" pin="2"/>
 <junction x="190.5" y="86.36"/>
-<pinref part="LED4" gate="G$1" pin="2"/>
 <junction x="190.5" y="73.66"/>
 </segment>
 <segment>
@@ -5552,15 +5505,10 @@ input and output</text>
 <pinref part="IN_R" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="96.52" x2="22.86" y2="96.52" width="0.1524" layer="91" grouprefs="AUDIO"/>
 <junction x="22.86" y="96.52" grouprefs="AUDIO"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <junction x="22.86" y="63.5"/>
-<pinref part="IN_L" gate="G$1" pin="1"/>
 <junction x="20.32" y="109.22"/>
-<pinref part="IN_R" gate="G$1" pin="1"/>
 <junction x="20.32" y="96.52"/>
-<pinref part="OUT_L" gate="G$1" pin="1"/>
 <junction x="20.32" y="83.82"/>
-<pinref part="OUT_R" gate="G$1" pin="1"/>
 <junction x="20.32" y="71.12"/>
 </segment>
 </net>
@@ -5744,42 +5692,6 @@ input and output</text>
 <pinref part="OUT_R" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="SPDT1_2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
-<wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<label x="58.42" y="99.06" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
-<junction x="73.66" y="99.06"/>
-</segment>
-</net>
-<net name="SPDT2_1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
-<wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-<label x="58.42" y="96.52" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
-<junction x="73.66" y="96.52"/>
-</segment>
-</net>
-<net name="SPDT1_1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
-<wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
-<label x="58.42" y="101.6" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
-<junction x="73.66" y="101.6"/>
-</segment>
-</net>
-<net name="SPDT2_2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
-<wire x1="73.66" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="93.98" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
-<junction x="73.66" y="93.98"/>
-</segment>
-</net>
 <net name="1P8T_1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
@@ -5847,6 +5759,48 @@ input and output</text>
 <label x="129.54" y="27.94" size="1.778" layer="95" grouprefs="POWER"/>
 </segment>
 </net>
+<net name="+3V3_A" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="+3V3_A"/>
+<wire x1="134.62" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
+<label x="139.7" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT1_1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO5(SDMMC1_D0)"/>
+<wire x1="73.66" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
+<label x="58.42" y="104.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT1_2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
+<wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<label x="58.42" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT2_1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
+<wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
+<label x="58.42" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SPDT2_2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
+<wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
+<label x="58.42" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="+3V3_D" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="+3V3_D"/>
+<wire x1="134.62" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
+<label x="139.7" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5867,14 +5821,12 @@ using pull-down resistors</text>
 <instances>
 <instance part="SPDT1" gate="J$1" x="45.72" y="53.34" smashed="yes" grouprefs="SPDT"/>
 <instance part="SPDT2" gate="J$1" x="45.72" y="38.1" smashed="yes" grouprefs="SPDT"/>
-<instance part="+3V3" gate="G$1" x="60.96" y="68.58" smashed="yes" grouprefs="SPDT"/>
 <instance part="SUPPLY7" gate="GND" x="63.5" y="17.78" smashed="yes" grouprefs="SPDT"/>
 <instance part="R9" gate="G$1" x="71.12" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="R10" gate="G$1" x="78.74" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="R11" gate="G$1" x="86.36" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="R12" gate="G$1" x="93.98" y="27.94" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="1P8T" gate="G$1" x="-38.1" y="-25.4" smashed="yes" grouprefs="SELECTOR"/>
-<instance part="+3V4" gate="G$1" x="-22.86" y="-5.08" smashed="yes" grouprefs="SELECTOR"/>
 <instance part="SUPPLY8" gate="GND" x="-30.48" y="-63.5" smashed="yes" grouprefs="SELECTOR"/>
 <instance part="R13" gate="G$1" x="-25.4" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
 <instance part="R14" gate="G$1" x="-20.32" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
@@ -5884,7 +5836,6 @@ using pull-down resistors</text>
 <instance part="R18" gate="G$1" x="0" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
 <instance part="R19" gate="G$1" x="5.08" y="-45.72" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
 <instance part="R20" gate="G$1" x="10.16" y="-50.8" smashed="yes" rot="R90" grouprefs="SELECTOR"/>
-<instance part="+3V2" gate="G$1" x="66.04" y="-5.08" smashed="yes" grouprefs="POT"/>
 <instance part="SUPPLY6" gate="GND" x="68.58" y="-76.2" smashed="yes" grouprefs="POT"/>
 <instance part="POT1" gate="J$1" x="78.74" y="-17.78" smashed="yes" rot="R180" grouprefs="POT"/>
 <instance part="POT2" gate="J$1" x="78.74" y="-33.02" smashed="yes" rot="R180" grouprefs="POT"/>
@@ -5894,7 +5845,6 @@ using pull-down resistors</text>
 <instance part="R5" gate="G$1" x="-5.08" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
 <instance part="R6" gate="G$1" x="2.54" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
 <instance part="R7" gate="G$1" x="10.16" y="22.86" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="+3V1" gate="G$1" x="-22.86" y="68.58" smashed="yes" grouprefs="SPST"/>
 <instance part="SUPPLY5" gate="GND" x="-17.78" y="12.7" smashed="yes" grouprefs="SPST"/>
 <instance part="SPST1" gate="G$1" x="-35.56" y="58.42" smashed="yes" grouprefs="SPST"/>
 <instance part="SPST2" gate="G$1" x="-35.56" y="45.72" smashed="yes" grouprefs="SPST"/>
@@ -5922,15 +5872,10 @@ using pull-down resistors</text>
 <wire x1="86.36" y1="22.86" x2="86.36" y2="20.32" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="86.36" y="20.32" grouprefs="SPDT"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <junction x="63.5" y="20.32"/>
-<pinref part="R9" gate="G$1" pin="1"/>
 <junction x="71.12" y="22.86"/>
-<pinref part="R10" gate="G$1" pin="1"/>
 <junction x="78.74" y="22.86"/>
-<pinref part="R11" gate="G$1" pin="1"/>
 <junction x="86.36" y="22.86"/>
-<pinref part="R12" gate="G$1" pin="1"/>
 <junction x="93.98" y="22.86"/>
 </segment>
 <segment>
@@ -5966,23 +5911,14 @@ using pull-down resistors</text>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-50.8" x2="-25.4" y2="-60.96" width="0.1524" layer="91" grouprefs="SELECTOR"/>
 <junction x="-25.4" y="-60.96" grouprefs="SELECTOR"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <junction x="-30.48" y="-60.96"/>
-<pinref part="R13" gate="G$1" pin="1"/>
 <junction x="-25.4" y="-50.8"/>
-<pinref part="R14" gate="G$1" pin="1"/>
 <junction x="-20.32" y="-55.88"/>
-<pinref part="R15" gate="G$1" pin="1"/>
 <junction x="-15.24" y="-50.8"/>
-<pinref part="R16" gate="G$1" pin="1"/>
 <junction x="-10.16" y="-55.88"/>
-<pinref part="R17" gate="G$1" pin="1"/>
 <junction x="-5.08" y="-50.8"/>
-<pinref part="R18" gate="G$1" pin="1"/>
 <junction x="0" y="-55.88"/>
-<pinref part="R19" gate="G$1" pin="1"/>
 <junction x="5.08" y="-50.8"/>
-<pinref part="R20" gate="G$1" pin="1"/>
 <junction x="10.16" y="-55.88"/>
 </segment>
 <segment>
@@ -6002,15 +5938,10 @@ using pull-down resistors</text>
 <pinref part="POT2" gate="J$1" pin="3"/>
 <wire x1="71.12" y1="-35.56" x2="68.58" y2="-35.56" width="0.1524" layer="91" grouprefs="POT"/>
 <junction x="68.58" y="-35.56" grouprefs="POT"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <junction x="68.58" y="-73.66"/>
-<pinref part="POT1" gate="J$1" pin="3"/>
 <junction x="71.12" y="-20.32"/>
-<pinref part="POT2" gate="J$1" pin="3"/>
 <junction x="71.12" y="-35.56"/>
-<pinref part="POT3" gate="J$1" pin="3"/>
 <junction x="71.12" y="-50.8"/>
-<pinref part="POT4" gate="J$1" pin="3"/>
 <junction x="71.12" y="-66.04"/>
 </segment>
 <segment>
@@ -6030,15 +5961,10 @@ using pull-down resistors</text>
 <wire x1="10.16" y1="17.78" x2="10.16" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
 <wire x1="10.16" y1="15.24" x2="2.54" y2="15.24" width="0.1524" layer="91" grouprefs="SPST"/>
 <junction x="2.54" y="15.24" grouprefs="SPST"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 <junction x="-12.7" y="17.78"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 <junction x="-5.08" y="17.78"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 <junction x="2.54" y="17.78"/>
-<pinref part="R7" gate="G$1" pin="1"/>
 <junction x="10.16" y="17.78"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <junction x="-17.78" y="15.24"/>
 </segment>
 </net>
@@ -6081,9 +6007,7 @@ using pull-down resistors</text>
 <wire x1="86.36" y1="33.02" x2="86.36" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="86.36" y="48.26" grouprefs="SPDT"/>
 <label x="96.52" y="48.26" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="1"/>
 <junction x="53.34" y="50.8"/>
-<pinref part="R11" gate="G$1" pin="2"/>
 <junction x="86.36" y="33.02"/>
 </segment>
 </net>
@@ -6098,9 +6022,7 @@ using pull-down resistors</text>
 <wire x1="78.74" y1="33.02" x2="78.74" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="78.74" y="43.18" grouprefs="SPDT"/>
 <label x="96.52" y="43.18" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT2" gate="J$1" pin="3"/>
 <junction x="53.34" y="40.64"/>
-<pinref part="R10" gate="G$1" pin="2"/>
 <junction x="78.74" y="33.02"/>
 </segment>
 </net>
@@ -6115,9 +6037,7 @@ using pull-down resistors</text>
 <wire x1="93.98" y1="33.02" x2="93.98" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="93.98" y="53.34" grouprefs="SPDT"/>
 <label x="96.52" y="53.34" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="3"/>
 <junction x="53.34" y="55.88"/>
-<pinref part="R12" gate="G$1" pin="2"/>
 <junction x="93.98" y="33.02"/>
 </segment>
 </net>
@@ -6132,9 +6052,7 @@ using pull-down resistors</text>
 <wire x1="71.12" y1="33.02" x2="71.12" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="71.12" y="38.1" grouprefs="SPDT"/>
 <label x="96.52" y="38.1" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="SPDT2" gate="J$1" pin="1"/>
 <junction x="53.34" y="35.56"/>
-<pinref part="R9" gate="G$1" pin="2"/>
 <junction x="71.12" y="33.02"/>
 </segment>
 </net>
@@ -6226,90 +6144,6 @@ using pull-down resistors</text>
 <label x="12.7" y="-17.78" size="1.778" layer="95" grouprefs="SELECTOR"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
-<segment>
-<pinref part="SPDT2" gate="J$1" pin="2"/>
-<wire x1="53.34" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<wire x1="60.96" y1="38.1" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="2"/>
-<wire x1="60.96" y1="53.34" x2="60.96" y2="66.04" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="53.34" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="60.96" y="53.34" grouprefs="SPDT"/>
-<pinref part="SPDT1" gate="J$1" pin="2"/>
-<junction x="53.34" y="53.34"/>
-<pinref part="SPDT2" gate="J$1" pin="2"/>
-<junction x="53.34" y="38.1"/>
-<pinref part="+3V3" gate="G$1" pin="+3V3"/>
-<junction x="60.96" y="66.04"/>
-</segment>
-<segment>
-<pinref part="1P8T" gate="G$1" pin="9"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<wire x1="-27.94" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<wire x1="-22.86" y1="-15.24" x2="-22.86" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
-<pinref part="1P8T" gate="G$1" pin="9"/>
-<junction x="-27.94" y="-15.24"/>
-<pinref part="+3V4" gate="G$1" pin="+3V3"/>
-<junction x="-22.86" y="-7.62"/>
-</segment>
-<segment>
-<pinref part="POT1" gate="J$1" pin="1"/>
-<wire x1="71.12" y1="-15.24" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="66.04" y1="-15.24" x2="66.04" y2="-7.62" width="0.1524" layer="91" grouprefs="POT"/>
-<pinref part="POT4" gate="J$1" pin="1"/>
-<wire x1="71.12" y1="-60.96" x2="66.04" y2="-60.96" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="66.04" y1="-60.96" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="66.04" y="-15.24" grouprefs="POT"/>
-<pinref part="POT2" gate="J$1" pin="1"/>
-<wire x1="66.04" y1="-45.72" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="66.04" y1="-30.48" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="71.12" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="66.04" y="-30.48" grouprefs="POT"/>
-<pinref part="POT3" gate="J$1" pin="1"/>
-<wire x1="71.12" y1="-45.72" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="66.04" y="-45.72" grouprefs="POT"/>
-<pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<junction x="66.04" y="-7.62"/>
-<pinref part="POT1" gate="J$1" pin="1"/>
-<junction x="71.12" y="-15.24"/>
-<pinref part="POT2" gate="J$1" pin="1"/>
-<junction x="71.12" y="-30.48"/>
-<pinref part="POT3" gate="J$1" pin="1"/>
-<junction x="71.12" y="-45.72"/>
-<pinref part="POT4" gate="J$1" pin="1"/>
-<junction x="71.12" y="-60.96"/>
-</segment>
-<segment>
-<pinref part="SPST4" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<wire x1="-22.86" y1="20.32" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SPST1" gate="G$1" pin="1"/>
-<wire x1="-22.86" y1="33.02" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-22.86" y1="45.72" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-22.86" y1="58.42" x2="-22.86" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-27.94" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-22.86" y="58.42" grouprefs="SPST"/>
-<pinref part="SPST2" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-22.86" y="45.72" grouprefs="SPST"/>
-<pinref part="SPST3" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-22.86" y="33.02" grouprefs="SPST"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
-<junction x="-22.86" y="66.04"/>
-<pinref part="SPST1" gate="G$1" pin="1"/>
-<junction x="-27.94" y="58.42"/>
-<pinref part="SPST2" gate="G$1" pin="1"/>
-<junction x="-27.94" y="45.72"/>
-<pinref part="SPST3" gate="G$1" pin="1"/>
-<junction x="-27.94" y="33.02"/>
-<pinref part="SPST4" gate="G$1" pin="1"/>
-<junction x="-27.94" y="20.32"/>
-</segment>
-</net>
 <net name="SPST1" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -6360,6 +6194,71 @@ using pull-down resistors</text>
 <wire x1="-20.32" y1="48.26" x2="-20.32" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
 <wire x1="-20.32" y1="43.18" x2="2.54" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
 <junction x="2.54" y="43.18" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="+3V3_A" class="0">
+<segment>
+<pinref part="SPST4" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-22.86" y1="20.32" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="SPST1" gate="G$1" pin="1"/>
+<wire x1="-22.86" y1="33.02" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-22.86" y1="45.72" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-22.86" y1="58.42" x2="-22.86" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-27.94" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="58.42" grouprefs="SPST"/>
+<pinref part="SPST2" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="45.72" grouprefs="SPST"/>
+<pinref part="SPST3" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="33.02" x2="-22.86" y2="33.02" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-22.86" y="33.02" grouprefs="SPST"/>
+<junction x="-27.94" y="58.42"/>
+<junction x="-27.94" y="45.72"/>
+<junction x="-27.94" y="33.02"/>
+<junction x="-27.94" y="20.32"/>
+<label x="-27.94" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SPDT2" gate="J$1" pin="2"/>
+<wire x1="53.34" y1="38.1" x2="60.96" y2="38.1" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="SPDT1" gate="J$1" pin="2"/>
+<wire x1="60.96" y1="53.34" x2="60.96" y2="66.04" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="53.34" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="60.96" y="53.34" grouprefs="SPDT"/>
+<junction x="53.34" y="53.34"/>
+<junction x="53.34" y="38.1"/>
+<label x="55.88" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POT1" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-15.24" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="66.04" y1="-15.24" x2="66.04" y2="-7.62" width="0.1524" layer="91" grouprefs="POT"/>
+<pinref part="POT4" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-60.96" x2="66.04" y2="-60.96" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="66.04" y1="-60.96" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-15.24" grouprefs="POT"/>
+<pinref part="POT2" gate="J$1" pin="1"/>
+<wire x1="66.04" y1="-45.72" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="66.04" y1="-30.48" x2="66.04" y2="-15.24" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-30.48" x2="66.04" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-30.48" grouprefs="POT"/>
+<pinref part="POT3" gate="J$1" pin="1"/>
+<wire x1="71.12" y1="-45.72" x2="66.04" y2="-45.72" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="66.04" y="-45.72" grouprefs="POT"/>
+<junction x="71.12" y="-15.24"/>
+<junction x="71.12" y="-30.48"/>
+<junction x="71.12" y="-45.72"/>
+<junction x="71.12" y="-60.96"/>
+<label x="60.96" y="-7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="1P8T" gate="G$1" pin="9"/>
+<wire x1="-27.94" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<wire x1="-22.86" y1="-15.24" x2="-22.86" y2="-7.62" width="0.1524" layer="91" grouprefs="SELECTOR"/>
+<junction x="-27.94" y="-15.24"/>
+<label x="-27.94" y="-7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
