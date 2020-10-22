@@ -47,69 +47,62 @@ void loop()
     // Check if the state is new and switch to the new state
     if (currentEffect != readEffectState)
     {
-        debugPrint((int)(pin1.to_ulong()));
-        debugPrint((int)(pin2.to_ulong()));
-        debugPrint((int)(pin3.to_ulong()));
-        debugPrint((int)(pin4.to_ulong()));
-        debugPrint((int)(combined.to_ulong()));
-        debugPrint("--------------");
+        // A new effect has been chosen, stop the old effect
+        switch(currentEffect)
+        {
+            case MonoDelay:
+                // Clean up the MonoDelay
+                MonoDelayCleanup();
+                break;
+            case Bypass:
+                BypassCleanup();
+                break;
+            default:
+                break;
+        }
 
-        // // A new effect has been chosen, stop the old effect
-        // switch(currentEffect)
-        // {
-        //     case MonoDelay:
-        //         // Clean up the MonoDelay
-        //         MonoDelayCleanup();
-        //         break;
-        //     case Bypass:
-        //         BypassCleanup();
-        //         break;
-        //     default:
-        //         break;
-        // }
+        // Start the new effect
+        switch(readEffectState)
+        {
+            case MonoDelay:
+                debugPrint("Switching to MonoDelay");
 
-        // // Start the new effect
-        // switch(readEffectState)
-        // {
-        //     case MonoDelay:
-        //         debugPrint("Switching to MonoDelay");
+                // Turn LED on
+                digitalWrite(controlLedPin, HIGH);
 
-        //         // Turn LED on
-        //         digitalWrite(controlLedPin, HIGH);
+                // Initialize MonoDelay and start Daisy
+                MonoDelaySetup();
+                DAISY.begin(MonoDelayCallback);
 
-        //         // Initialize MonoDelay and start Daisy
-        //         MonoDelaySetup();
-        //         DAISY.begin(MonoDelayCallback);
+                break;
+            case Bypass:
+            default:
+                debugPrint("Switching to Bypass");
 
-        //         break;
-        //     case Bypass:
-        //     default:
-        //         debugPrint("Switching to Bypass");
+                // Turn LED off
+                digitalWrite(controlLedPin, LOW);
 
-        //         // Turn LED off
-        //         digitalWrite(controlLedPin, LOW);
+                // Initialize Bypass and start Daisy
+                BypassSetup(num_channels);
+                DAISY.begin(BypassCallback);
 
-        //         // Initialize Bypass and start Daisy
-        //         BypassSetup(num_channels);
-        //         DAISY.begin(BypassCallback);
-
-        //         break;
-        // }
+                break;
+        }
 
         // Update the current effect
         currentEffect = (EffectType)readEffectState;
     }
 
-    // // Execute the effect loop commands
-    // switch (currentEffect)
-    // {
-    //     case MonoDelay:
-    //         MonoDelayLoop();
-    //         break;
-    //     case Bypass:
-    //         BypassLoop();
-    //         break;
-    //     default:
-    //         break;
-    // }
+    // Execute the effect loop commands
+    switch (currentEffect)
+    {
+        case MonoDelay:
+            MonoDelayLoop();
+            break;
+        case Bypass:
+            BypassLoop();
+            break;
+        default:
+            break;
+    }
 }
