@@ -9,8 +9,8 @@
 // Pin Definitions - Control App
 const int hexSwitchPin1 = 0;
 const int hexSwitchPin2 = 1;
-const int hexSwitchPin4 = 2;
-const int hexSwitchPin8 = 3;
+const int hexSwitchPin3 = 2;
+const int hexSwitchPin4 = 3;
 const int controlLedPin = LED_BUILTIN; // Built in LED is LED_BUILTIN
 
 // Pin Definitions - Effects

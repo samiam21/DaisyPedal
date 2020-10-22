@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6939,7 +6939,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <schematic_group name="EXTRA"/>
 </groups>
 <parts>
-<part name="U1" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
+<part name="SEED" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6960,10 +6960,10 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="D12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="D11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="8T5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="8T6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="8T7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="8T8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="H1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="H2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="H3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="H4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="C3" library="Electrosmith-Passives" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22UF"/>
 <part name="C2" library="Electrosmith-Passives" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100NF"/>
 <part name="D1" library="Electrosmith-Semiconductors" deviceset="S1B" device=""/>
@@ -7005,7 +7005,7 @@ used in other sections</text>
 barrel jack, feeding the V_IN pin on the Seed</text>
 </plain>
 <instances>
-<instance part="U1" gate="G$1" x="104.14" y="91.44" smashed="yes">
+<instance part="SEED" gate="G$1" x="104.14" y="91.44" smashed="yes">
 <attribute name="NAME" x="78.74" y="119.38" size="1.778" layer="94"/>
 <attribute name="VALUE" x="129.54" y="60.96" size="1.778" layer="94" rot="R180"/>
 </instance>
@@ -7105,13 +7105,13 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="SEED" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="134.62" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="114.3" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="AGND"/>
+<pinref part="SEED" gate="G$1" pin="AGND"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="66.04" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
@@ -7179,35 +7179,35 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="SPST1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
 <wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <label x="58.42" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPST4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
 <wire x1="73.66" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
 <label x="58.42" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPST3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
 <wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 <label x="58.42" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPST2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
 <wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="58.42" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_L" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="AUDIO_IN_L"/>
+<pinref part="SEED" gate="G$1" pin="AUDIO_IN_L"/>
 <wire x1="58.42" y1="76.2" x2="73.66" y2="76.2" width="0.1524" layer="91"/>
 <label x="58.42" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -7219,7 +7219,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="IN_R" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="AUDIO_IN_R"/>
+<pinref part="SEED" gate="G$1" pin="AUDIO_IN_R"/>
 <wire x1="58.42" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
 <label x="58.42" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -7236,7 +7236,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="167.64" y="81.28" size="1.778" layer="95" grouprefs="LED"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO17(ADC1_INP15)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO17(ADC1_INP15)"/>
 <wire x1="134.62" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
 <label x="142.24" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -7248,35 +7248,35 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="167.64" y="68.58" size="1.778" layer="95" grouprefs="LED"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO16(ADC1_INP10)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO16(ADC1_INP10)"/>
 <wire x1="134.62" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="142.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POT4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO21(ADC1_INP11)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO21(ADC1_INP11)"/>
 <wire x1="134.62" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <label x="142.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POT3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO22(ADC1_INP4)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO22(ADC1_INP4)"/>
 <wire x1="134.62" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="142.24" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POT2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO23(DAC1_OUT2)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO23(DAC1_OUT2)"/>
 <wire x1="134.62" y1="86.36" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="142.24" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POT1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
 <wire x1="134.62" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <label x="142.24" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -7288,7 +7288,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="167.64" y="93.98" size="1.778" layer="95" grouprefs="LED"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO18(ADC1_INP5)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO18(ADC1_INP5)"/>
 <wire x1="134.62" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
 <label x="142.24" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -7300,14 +7300,14 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="167.64" y="106.68" size="1.778" layer="95" grouprefs="LED"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO19(ADC1_INP7)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO19(ADC1_INP7)"/>
 <wire x1="134.62" y1="76.2" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
 <label x="142.24" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUT_L" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="AUDIO_OUT_L"/>
+<pinref part="SEED" gate="G$1" pin="AUDIO_OUT_L"/>
 <wire x1="58.42" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
 <label x="58.42" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -7319,7 +7319,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="OUT_R" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="AUDIO_OUT_R"/>
+<pinref part="SEED" gate="G$1" pin="AUDIO_OUT_R"/>
 <wire x1="58.42" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
 <label x="58.42" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -7331,35 +7331,35 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="HEX_1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO30(USB_HS_D_-)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO30(USB_HS_D_-)"/>
 <wire x1="134.62" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 <label x="139.7" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEX_2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO29(SAI2_SCK_B)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO29(SAI2_SCK_B)"/>
 <wire x1="134.62" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <label x="139.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEX_3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO28(SAI2_FS_B)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO28(SAI2_FS_B)"/>
 <wire x1="134.62" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <label x="139.7" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEX_4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO27(SAI2_SD_A)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO27(SAI2_SD_A)"/>
 <wire x1="134.62" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 <label x="139.7" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3_A" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="+3V3_A"/>
+<pinref part="SEED" gate="G$1" pin="+3V3_A"/>
 <wire x1="134.62" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="139.7" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -7384,35 +7384,35 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="SPDT1_1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO11(SPI1_MOSI)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO11(SPI1_MOSI)"/>
 <wire x1="73.66" y1="88.9" x2="58.42" y2="88.9" width="0.1524" layer="91"/>
 <label x="58.42" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPDT1_2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO12(I2C1_SCL)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO12(I2C1_SCL)"/>
 <wire x1="73.66" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <label x="58.42" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPDT2_1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO13(I2C1_SDA)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO13(I2C1_SDA)"/>
 <wire x1="73.66" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <label x="58.42" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPDT2_2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO14(USART1_TX)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO14(USART1_TX)"/>
 <wire x1="73.66" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
 <label x="58.42" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3_D" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="+3V3_D"/>
+<pinref part="SEED" gate="G$1" pin="+3V3_D"/>
 <wire x1="134.62" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 <label x="139.7" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -7426,7 +7426,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="+9V_IN" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="V_IN"/>
+<pinref part="SEED" gate="G$1" pin="V_IN"/>
 <wire x1="134.62" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 <label x="139.7" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -7481,7 +7481,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="GPIO4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO4(SDMMC1_D1)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO4(SDMMC1_D1)"/>
 <wire x1="58.42" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <label x="58.42" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -7493,7 +7493,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="GPIO3" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO3(SDMMC1_D2)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO3(SDMMC1_D2)"/>
 <wire x1="58.42" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
 <label x="58.42" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -7505,7 +7505,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="GPIO2" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO2(SDMMC1_D3)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO2(SDMMC1_D3)"/>
 <wire x1="58.42" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
 <label x="58.42" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -7517,7 +7517,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="GPIO1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO1(USB_HS_ID)"/>
+<pinref part="SEED" gate="G$1" pin="GPIO1(USB_HS_ID)"/>
 <wire x1="58.42" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
 <label x="58.42" y="114.3" size="1.778" layer="95"/>
 </segment>
@@ -7548,10 +7548,10 @@ momentary switches using pull-down resistors</text>
 <instance part="D12" gate="G$1" x="83.82" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="D11" gate="G$1" x="88.9" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="SUPPLY8" gate="GND" x="-30.48" y="-27.94" smashed="yes" grouprefs="HEX_SELECTOR"/>
-<instance part="8T5" gate="G$1" x="-25.4" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
-<instance part="8T6" gate="G$1" x="-20.32" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
-<instance part="8T7" gate="G$1" x="-15.24" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
-<instance part="8T8" gate="G$1" x="-10.16" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
+<instance part="H1" gate="G$1" x="-25.4" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
+<instance part="H2" gate="G$1" x="-20.32" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
+<instance part="H3" gate="G$1" x="-15.24" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
+<instance part="H4" gate="G$1" x="-10.16" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="SUPPLY6" gate="GND" x="71.12" y="-38.1" smashed="yes" grouprefs="POT"/>
 <instance part="S4" gate="G$1" x="-7.62" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
 <instance part="S3" gate="G$1" x="-2.54" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
@@ -7636,20 +7636,20 @@ momentary switches using pull-down resistors</text>
 <junction x="83.82" y="27.94" grouprefs="SPDT"/>
 </segment>
 <segment>
-<pinref part="8T8" gate="G$1" pin="1"/>
+<pinref part="H4" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="-22.86" x2="-10.16" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <wire x1="-10.16" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T7" gate="G$1" pin="1"/>
+<pinref part="H3" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="-25.4" x2="-20.32" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-20.32" y1="-25.4" x2="-25.4" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-25.4" y1="-25.4" x2="-30.48" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-15.24" y1="-22.86" x2="-15.24" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-15.24" y="-25.4" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T6" gate="G$1" pin="1"/>
+<pinref part="H2" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="-22.86" x2="-20.32" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-20.32" y="-25.4" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T5" gate="G$1" pin="1"/>
+<pinref part="H1" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-22.86" x2="-25.4" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-25.4" y="-25.4" grouprefs="HEX_SELECTOR"/>
 </segment>
@@ -7845,7 +7845,7 @@ momentary switches using pull-down resistors</text>
 <net name="HEX_1" class="0">
 <segment>
 <wire x1="-30.48" y1="-10.16" x2="-25.4" y2="-10.16" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T5" gate="G$1" pin="2"/>
+<pinref part="H1" gate="G$1" pin="2"/>
 <wire x1="-25.4" y1="-10.16" x2="0" y2="-10.16" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-25.4" y1="-12.7" x2="-25.4" y2="-10.16" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-25.4" y="-10.16" grouprefs="HEX_SELECTOR"/>
@@ -7856,7 +7856,7 @@ momentary switches using pull-down resistors</text>
 <net name="HEX_2" class="0">
 <segment>
 <wire x1="-30.48" y1="-7.62" x2="-20.32" y2="-7.62" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T6" gate="G$1" pin="2"/>
+<pinref part="H2" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-20.32" y1="-12.7" x2="-20.32" y2="-7.62" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-20.32" y="-7.62" grouprefs="HEX_SELECTOR"/>
@@ -7867,7 +7867,7 @@ momentary switches using pull-down resistors</text>
 <net name="HEX_3" class="0">
 <segment>
 <wire x1="-30.48" y1="-5.08" x2="-15.24" y2="-5.08" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T7" gate="G$1" pin="2"/>
+<pinref part="H3" gate="G$1" pin="2"/>
 <wire x1="-15.24" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-15.24" y1="-12.7" x2="-15.24" y2="-5.08" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-15.24" y="-5.08" grouprefs="HEX_SELECTOR"/>
@@ -7878,7 +7878,7 @@ momentary switches using pull-down resistors</text>
 <net name="HEX_4" class="0">
 <segment>
 <wire x1="-30.48" y1="-2.54" x2="-10.16" y2="-2.54" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="8T8" gate="G$1" pin="2"/>
+<pinref part="H4" gate="G$1" pin="2"/>
 <wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-2.54" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-10.16" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-10.16" y="-2.54" grouprefs="HEX_SELECTOR"/>
