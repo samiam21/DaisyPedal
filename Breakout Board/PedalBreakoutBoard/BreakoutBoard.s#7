@@ -8542,6 +8542,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <schematic_group name="SPDT"/>
 <schematic_group name="SELECTOR"/>
 <schematic_group name="LED"/>
+<schematic_group name="EXTRA"/>
 </groups>
 <parts>
 <part name="U1" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
@@ -8573,7 +8574,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="8T6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="8T7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="8T8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="GPIOS" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_07" device="" package3d_urn="urn:adsk.eagle:package:38129/1"/>
+<part name="EX_GPIOS" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_07" device="" package3d_urn="urn:adsk.eagle:package:38129/1"/>
 <part name="C3" library="Electrosmith-Passives" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="22UF"/>
 <part name="C2" library="Electrosmith-Passives" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100NF"/>
 <part name="D1" library="Electrosmith-Semiconductors" deviceset="S1B" device=""/>
@@ -8593,6 +8594,9 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="1P8T_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="LED_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="LED_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
+<part name="EX_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04X2" device="" package3d_urn="urn:adsk.eagle:package:38103/1"/>
+<part name="EX_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04X2" device="" package3d_urn="urn:adsk.eagle:package:38103/1"/>
+<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8604,9 +8608,8 @@ each behind a 330Ohm resistor</text>
 for 4 individual mono (TS) jacks
 representing each channel of stereo
 input and output</text>
-<text x="129.54" y="35.56" size="1.778" layer="94">This section provides direct
-connections to GPIO pins
-not used in other sections</text>
+<text x="137.16" y="43.18" size="1.778" layer="94" grouprefs="EXTRA">This section provides direct connections to 
+GPIO pins not used in other sections</text>
 <text x="50.8" y="33.02" size="1.778" layer="94" grouprefs="POWER">This section provides connection to a 9V
 barrel jack, feeding the V_IN pin on the Seed</text>
 </plain>
@@ -8643,9 +8646,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <attribute name="NAME" x="180.34" y="70.104" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="180.34" y="67.056" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GPIOS" gate="G$1" x="134.62" y="17.78" smashed="yes">
-<attribute name="VALUE" x="129.54" y="7.874" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="129.54" y="30.988" size="1.778" layer="95" font="vector"/>
+<instance part="EX_GPIOS" gate="G$1" x="160.02" y="15.24" smashed="yes" grouprefs="EXTRA">
+<attribute name="VALUE" x="154.94" y="5.334" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="154.94" y="28.448" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="C3" gate="G$1" x="91.44" y="20.32" smashed="yes" grouprefs="POWER">
 <attribute name="NAME" x="92.964" y="20.701" size="1.778" layer="95"/>
@@ -8683,6 +8686,17 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <instance part="LED_GND" gate="G$1" x="208.28" y="86.36" smashed="yes" grouprefs="LED">
 <attribute name="VALUE" x="203.2" y="78.994" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="203.2" y="94.488" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="EX_PWR" gate="G$1" x="142.24" y="25.4" smashed="yes" grouprefs="EXTRA">
+<attribute name="VALUE" x="138.43" y="18.034" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="138.176" y="33.528" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="EX_GND" gate="G$1" x="142.24" y="7.62" smashed="yes" grouprefs="EXTRA">
+<attribute name="VALUE" x="138.43" y="0.254" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="138.176" y="15.748" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="SUPPLY12" gate="GND" x="132.08" y="-5.08" smashed="yes" grouprefs="EXTRA">
+<attribute name="VALUE" x="130.175" y="-8.255" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8752,6 +8766,42 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <pinref part="AUDIO" gate="G$1" pin="7"/>
 <wire x1="2.54" y1="88.9" x2="0" y2="88.9" width="0.1524" layer="91" grouprefs="AUDIO_INOUT"/>
 <junction x="0" y="88.9" grouprefs="AUDIO_INOUT"/>
+</segment>
+<segment>
+<pinref part="EX_GND" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="12.7" x2="132.08" y2="12.7" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="12.7" x2="132.08" y2="10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="3"/>
+<wire x1="134.62" y1="10.16" x2="132.08" y2="10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="10.16" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="10.16" x2="132.08" y2="7.62" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="5"/>
+<wire x1="134.62" y1="7.62" x2="132.08" y2="7.62" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="7.62" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="7.62" x2="132.08" y2="5.08" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="7"/>
+<wire x1="134.62" y1="5.08" x2="132.08" y2="5.08" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="5.08" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="5.08" x2="132.08" y2="0" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="SUPPLY12" gate="GND" pin="GND"/>
+<pinref part="EX_GND" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="0" x2="132.08" y2="-2.54" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="149.86" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="12.7" x2="152.4" y2="10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="4"/>
+<wire x1="152.4" y1="10.16" x2="152.4" y2="7.62" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="7.62" x2="152.4" y2="5.08" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="5.08" x2="152.4" y2="0" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="149.86" y1="10.16" x2="152.4" y2="10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="10.16" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="6"/>
+<wire x1="149.86" y1="7.62" x2="152.4" y2="7.62" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="7.62" grouprefs="EXTRA"/>
+<pinref part="EX_GND" gate="G$1" pin="8"/>
+<wire x1="149.86" y1="5.08" x2="152.4" y2="5.08" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="5.08" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="0" x2="132.08" y2="0" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="0" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="SPST1" class="0">
@@ -8940,6 +8990,42 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <wire x1="134.62" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="139.7" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="EX_PWR" gate="G$1" pin="7"/>
+<wire x1="134.62" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="22.86" x2="132.08" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="8"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="27.94" x2="132.08" y2="30.48" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="30.48" x2="132.08" y2="38.1" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="149.86" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="22.86" x2="152.4" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="25.4" x2="152.4" y2="27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="27.94" x2="152.4" y2="30.48" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="30.48" x2="152.4" y2="38.1" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="152.4" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<wire x1="132.08" y1="38.1" x2="132.08" y2="40.64" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="38.1" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="6"/>
+<wire x1="149.86" y1="25.4" x2="152.4" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="25.4" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="4"/>
+<wire x1="149.86" y1="27.94" x2="152.4" y2="27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="27.94" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="30.48" x2="152.4" y2="30.48" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="152.4" y="30.48" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="30.48" x2="132.08" y2="30.48" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="30.48" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="3"/>
+<wire x1="134.62" y1="27.94" x2="132.08" y2="27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="27.94" grouprefs="EXTRA"/>
+<pinref part="EX_PWR" gate="G$1" pin="5"/>
+<wire x1="134.62" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<junction x="132.08" y="25.4" grouprefs="EXTRA"/>
+<label x="127" y="40.64" size="1.778" layer="95" grouprefs="EXTRA"/>
+</segment>
 </net>
 <net name="SPDT1_1" class="0">
 <segment>
@@ -9073,9 +9159,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
-<label x="142.24" y="12.7" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="10.16" x2="175.26" y2="10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="10.16" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
@@ -9085,9 +9171,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="15.24" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
-<label x="142.24" y="15.24" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="12.7" x2="175.26" y2="12.7" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="12.7" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
@@ -9097,9 +9183,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
-<label x="142.24" y="17.78" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="3"/>
+<wire x1="165.1" y1="15.24" x2="175.26" y2="15.24" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="15.24" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -9109,9 +9195,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="4"/>
-<wire x1="139.7" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
-<label x="142.24" y="20.32" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="4"/>
+<wire x1="165.1" y1="17.78" x2="175.26" y2="17.78" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="17.78" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
@@ -9121,9 +9207,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="5"/>
-<wire x1="139.7" y1="22.86" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
-<label x="142.24" y="22.86" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="5"/>
+<wire x1="165.1" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="20.32" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -9133,9 +9219,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="6"/>
-<wire x1="139.7" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
-<label x="142.24" y="25.4" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="6"/>
+<wire x1="165.1" y1="22.86" x2="175.26" y2="22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="22.86" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -9145,9 +9231,9 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <label x="58.42" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="GPIOS" gate="G$1" pin="7"/>
-<wire x1="139.7" y1="27.94" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
-<label x="142.24" y="27.94" size="1.778" layer="95"/>
+<pinref part="EX_GPIOS" gate="G$1" pin="7"/>
+<wire x1="165.1" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
+<label x="167.64" y="25.4" size="1.778" layer="95" grouprefs="EXTRA"/>
 </segment>
 </net>
 </nets>

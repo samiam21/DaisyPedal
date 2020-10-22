@@ -8535,7 +8535,6 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </class>
 </classes>
 <groups>
-<schematic_group name="EXTRA"/>
 <schematic_group name="POWER"/>
 <schematic_group name="AUDIO_INOUT"/>
 <schematic_group name="POT"/>
@@ -8605,7 +8604,7 @@ each behind a 330Ohm resistor</text>
 for 4 individual mono (TS) jacks
 representing each channel of stereo
 input and output</text>
-<text x="129.54" y="35.56" size="1.778" layer="94" grouprefs="EXTRA">This section provides direct
+<text x="129.54" y="35.56" size="1.778" layer="94">This section provides direct
 connections to GPIO pins
 not used in other sections</text>
 <text x="50.8" y="33.02" size="1.778" layer="94" grouprefs="POWER">This section provides connection to a 9V
@@ -8644,7 +8643,7 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <attribute name="NAME" x="180.34" y="70.104" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="180.34" y="67.056" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GPIOS" gate="G$1" x="134.62" y="17.78" smashed="yes" grouprefs="EXTRA">
+<instance part="GPIOS" gate="G$1" x="134.62" y="17.78" smashed="yes">
 <attribute name="VALUE" x="129.54" y="7.874" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="129.54" y="30.988" size="1.778" layer="95" font="vector"/>
 </instance>
@@ -9075,8 +9074,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="12.7" x2="157.48" y2="12.7" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="12.7" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
+<label x="142.24" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
@@ -9087,8 +9086,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="15.24" x2="157.48" y2="15.24" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="15.24" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="15.24" x2="149.86" y2="15.24" width="0.1524" layer="91"/>
+<label x="142.24" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO5" class="0">
@@ -9099,8 +9098,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="17.78" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="17.78" x2="149.86" y2="17.78" width="0.1524" layer="91"/>
+<label x="142.24" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO4" class="0">
@@ -9111,8 +9110,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="4"/>
-<wire x1="139.7" y1="20.32" x2="157.48" y2="20.32" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="20.32" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="20.32" x2="149.86" y2="20.32" width="0.1524" layer="91"/>
+<label x="142.24" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO3" class="0">
@@ -9123,8 +9122,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="5"/>
-<wire x1="139.7" y1="22.86" x2="157.48" y2="22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="22.86" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="22.86" x2="149.86" y2="22.86" width="0.1524" layer="91"/>
+<label x="142.24" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO2" class="0">
@@ -9135,8 +9134,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="6"/>
-<wire x1="139.7" y1="25.4" x2="157.48" y2="25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="25.4" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="25.4" x2="149.86" y2="25.4" width="0.1524" layer="91"/>
+<label x="142.24" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO1" class="0">
@@ -9147,8 +9146,8 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </segment>
 <segment>
 <pinref part="GPIOS" gate="G$1" pin="7"/>
-<wire x1="139.7" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="149.86" y="27.94" size="1.778" layer="95" grouprefs="EXTRA"/>
+<wire x1="139.7" y1="27.94" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
+<label x="142.24" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
