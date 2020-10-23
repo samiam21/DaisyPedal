@@ -7788,30 +7788,30 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 </net>
 <net name="POT4" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GPIO20(ADC1_INP3)"/>
-<wire x1="134.62" y1="78.74" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
-<label x="142.24" y="78.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="POT3" class="0">
-<segment>
 <pinref part="U1" gate="G$1" pin="GPIO21(ADC1_INP11)"/>
 <wire x1="134.62" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <label x="142.24" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POT2" class="0">
+<net name="POT3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO22(ADC1_INP4)"/>
 <wire x1="134.62" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="142.24" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="POT1" class="0">
+<net name="POT2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO23(DAC1_OUT2)"/>
 <wire x1="134.62" y1="86.36" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
 <label x="142.24" y="86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POT1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
+<wire x1="134.62" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
+<label x="142.24" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED2" class="0">
@@ -7862,32 +7862,32 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <pinref part="AUDIO" gate="G$1" pin="8"/>
 </segment>
 </net>
-<net name="1P8T_1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO31(USB_HS_D+)"/>
-<wire x1="134.62" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
-<label x="139.7" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="1P8T_2" class="0">
+<net name="HEX_1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO30(USB_HS_D_-)"/>
 <wire x1="134.62" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
 <label x="139.7" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="1P8T_3" class="0">
+<net name="HEX_2" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO29(SAI2_SCK_B)"/>
 <wire x1="134.62" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <label x="139.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="1P8T_4" class="0">
+<net name="HEX_3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GPIO28(SAI2_FS_B)"/>
 <wire x1="134.62" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <label x="139.7" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="HEX_4" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GPIO27(SAI2_SD_A)"/>
+<wire x1="134.62" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
+<label x="139.7" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3_A" class="0">
@@ -7994,34 +7994,6 @@ barrel jack, feeding the V_IN pin on the Seed</text>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="76.2" y1="25.4" x2="81.28" y2="25.4" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="81.28" y="25.4" grouprefs="POWER"/>
-</segment>
-</net>
-<net name="1P8T_5" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO27(SAI2_SD_A)"/>
-<wire x1="134.62" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
-<label x="139.7" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="1P8T_6" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO26(SAI2_SD_B)"/>
-<wire x1="134.62" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
-<label x="139.7" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="1P8T_7" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO25(SAI2_MCLK_B)"/>
-<wire x1="134.62" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
-<label x="139.7" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="1P8T_8" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
-<wire x1="134.62" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
-<label x="139.7" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

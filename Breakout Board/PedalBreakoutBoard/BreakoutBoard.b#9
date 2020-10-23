@@ -151,13 +151,19 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="64.44" y2="0" width="0" layer="20"/>
-<wire x1="64.44" y1="0" x2="64.44" y2="58.41" width="0" layer="20"/>
-<wire x1="64.44" y1="58.41" x2="0" y2="58.41" width="0" layer="20"/>
-<wire x1="0" y1="58.41" x2="0" y2="0" width="0" layer="20"/>
-<text x="2.54" y="3.81" size="1.778" layer="21">Saved
+<wire x1="-2.54" y1="-2.54" x2="66.98" y2="-2.54" width="0" layer="20"/>
+<wire x1="66.98" y1="-2.54" x2="66.98" y2="60.95" width="0" layer="20"/>
+<wire x1="66.98" y1="60.95" x2="-2.54" y2="60.95" width="0" layer="20"/>
+<wire x1="-2.54" y1="60.95" x2="-2.54" y2="-2.54" width="0" layer="20"/>
+<text x="2.54" y="2.54" size="1.016" layer="21">Pedal Breakout Board
+REV: A</text>
+<text x="2.54" y="6.35" size="1.778" layer="21">Saved
 By Grace
 Software</text>
+<hole x="0" y="58.42" drill="3.302"/>
+<hole x="64.77" y="58.42" drill="3.302"/>
+<hole x="64.77" y="0" drill="3.302"/>
+<hole x="0" y="0" drill="3.302"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
@@ -1086,22 +1092,23 @@ design rules under a new name.</description>
 <wire x1="50.25" y1="52.92" x2="46.99" y2="52.92" width="0.6096" layer="1"/>
 <wire x1="46.99" y1="52.92" x2="42.457" y2="52.92" width="0.6096" layer="1"/>
 <wire x1="42.457" y1="52.92" x2="42.037" y2="53.34" width="0.6096" layer="1"/>
-<wire x1="60.96" y1="46.99" x2="63.5" y2="49.53" width="0.6096" layer="1"/>
-<wire x1="63.5" y1="49.53" x2="63.5" y2="57.15" width="0.6096" layer="1"/>
-<wire x1="63.5" y1="57.15" x2="57.15" y2="57.15" width="0.6096" layer="1"/>
-<wire x1="57.15" y1="57.15" x2="57.15" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="63.5" y1="49.53" x2="60.96" y2="46.99" width="0.6096" layer="1"/>
+<wire x1="57.15" y1="54.61" x2="57.15" y2="57.15" width="0.6096" layer="1"/>
 <polygon width="0.1524" layer="1" isolate="0.3048">
-<vertex x="64.77" y="0"/>
-<vertex x="64.77" y="58.42"/>
-<vertex x="0" y="58.42"/>
-<vertex x="0" y="0"/>
+<vertex x="67.31" y="-2.54"/>
+<vertex x="67.31" y="60.96"/>
+<vertex x="-2.54" y="60.96"/>
+<vertex x="-2.54" y="-2.54"/>
 </polygon>
 <polygon width="0.1524" layer="16" isolate="0.3048">
-<vertex x="0" y="58.42"/>
-<vertex x="0" y="0"/>
-<vertex x="64.77" y="0"/>
-<vertex x="64.77" y="58.42"/>
+<vertex x="-2.54" y="60.96"/>
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="67.31" y="-2.54"/>
+<vertex x="67.31" y="60.96"/>
 </polygon>
+<wire x1="57.15" y1="57.15" x2="60.96" y2="57.15" width="0.6096" layer="1"/>
+<wire x1="60.96" y1="57.15" x2="63.5" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="63.5" y1="54.61" x2="63.5" y2="49.53" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPST1">
 <contactref element="S1" pad="P$2"/>
@@ -1218,19 +1225,21 @@ design rules under a new name.</description>
 <wire x1="3.81" y1="35.56" x2="3.81" y2="38.1" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="38.1" x2="3.81" y2="40.64" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="20.32" x2="1.27" y2="17.78" width="0.6096" layer="16"/>
-<wire x1="1.27" y1="17.78" x2="1.27" y2="1.27" width="0.6096" layer="16"/>
-<wire x1="63.5" y1="1.27" x2="63.5" y2="33.02" width="0.6096" layer="16"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="17.78" width="0.6096" layer="16"/>
+<wire x1="63.5" y1="5.08" x2="63.5" y2="33.02" width="0.6096" layer="16"/>
 <wire x1="60.96" y1="33.02" x2="63.5" y2="33.02" width="0.6096" layer="16"/>
 <wire x1="60.96" y1="33.02" x2="57.15" y2="29.21" width="0.6096" layer="16"/>
 <wire x1="41.783" y1="5.08" x2="45.72" y2="5.08" width="0.6096" layer="1"/>
 <wire x1="45.72" y1="5.08" x2="45.72" y2="1.27" width="0.6096" layer="1"/>
 <via x="45.72" y="1.27" extent="1-16" drill="0.6"/>
-<wire x1="45.72" y1="1.27" x2="63.5" y2="1.27" width="0.6096" layer="16"/>
-<wire x1="1.27" y1="1.27" x2="45.72" y2="1.27" width="0.6096" layer="16"/>
+<wire x1="45.72" y1="1.27" x2="59.69" y2="1.27" width="0.6096" layer="16"/>
+<wire x1="45.72" y1="1.27" x2="5.08" y2="1.27" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="40.64" x2="3.81" y2="45.72" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="45.72" x2="3.81" y2="48.26" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="48.26" x2="3.81" y2="50.8" width="0.6096" layer="16"/>
 <wire x1="3.81" y1="50.8" x2="3.81" y2="53.34" width="0.6096" layer="16"/>
+<wire x1="59.69" y1="1.27" x2="63.5" y2="5.08" width="0.6096" layer="16"/>
+<wire x1="5.08" y1="1.27" x2="1.27" y2="5.08" width="0.6096" layer="16"/>
 </signal>
 <signal name="SPDT1_1">
 <contactref element="D11" pad="P$2"/>
