@@ -25,8 +25,8 @@ void setup()
     // Initialize the hex switch pins
     pinMode(hexSwitchPin1, INPUT_PULLDOWN);
     pinMode(hexSwitchPin2, INPUT_PULLDOWN);
+    pinMode(hexSwitchPin3, INPUT_PULLDOWN);
     pinMode(hexSwitchPin4, INPUT_PULLDOWN);
-    pinMode(hexSwitchPin8, INPUT_PULLDOWN);
 
     // Initialize the control LED
     pinMode(controlLedPin, OUTPUT);
@@ -37,11 +37,11 @@ void loop()
     // Read the state of the hex switch pins
     std::bitset<4> pin1(digitalRead(hexSwitchPin1));
     std::bitset<4> pin2(digitalRead(hexSwitchPin2));
-    std::bitset<4> pin4(digitalRead(hexSwitchPin4));
-    std::bitset<4> pin8(digitalRead(hexSwitchPin8));    
+    std::bitset<4> pin3(digitalRead(hexSwitchPin3));
+    std::bitset<4> pin4(digitalRead(hexSwitchPin4));    
 
     // Get the combined hex value and convert it to an int
-    std::bitset<4> combined = pin1 | (pin2 << 1) | (pin4 << 2) | (pin8 << 3);
+    std::bitset<4> combined = pin1 | (pin2 << 1) | (pin3 << 2) | (pin4 << 3);
     int readEffectState = (int)(combined.to_ulong());
 
     // Check if the state is new and switch to the new state
