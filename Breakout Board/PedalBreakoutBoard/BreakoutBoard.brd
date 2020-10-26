@@ -905,9 +905,9 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="L1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="54.61" y="19.05" smashed="yes">
-<attribute name="PROD_ID" value="RES-8371" x="87.63" y="-40.64" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="54.61" y="18.034" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="L1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="57.15" y="19.05" smashed="yes">
+<attribute name="PROD_ID" value="RES-8371" x="90.17" y="-40.64" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="57.15" y="18.034" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="D21" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k" x="15.24" y="26.67" smashed="yes">
 <attribute name="PROD_ID" value="RES-09435" x="73.66" y="-39.37" size="1.778" layer="27" display="off"/>
@@ -933,17 +933,17 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-09435" x="33.02" y="115.57" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.96" y="42.926" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="L2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="54.61" y="16.51" smashed="yes">
-<attribute name="PROD_ID" value="RES-8371" x="97.79" y="-43.18" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="54.61" y="15.494" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="L2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="57.15" y="16.51" smashed="yes">
+<attribute name="PROD_ID" value="RES-8371" x="100.33" y="-43.18" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="57.15" y="15.494" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="H4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k" x="60.96" y="39.37" smashed="yes" rot="R180">
 <attribute name="PROD_ID" value="RES-09435" x="22.86" y="113.03" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="60.96" y="40.386" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="L3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="54.61" y="13.97" smashed="yes">
-<attribute name="PROD_ID" value="RES-8371" x="107.95" y="-45.72" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="54.61" y="12.954" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="L3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="57.15" y="13.97" smashed="yes">
+<attribute name="PROD_ID" value="RES-8371" x="110.49" y="-45.72" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="57.15" y="12.954" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="S4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k" x="15.24" y="36.83" smashed="yes">
 <attribute name="PROD_ID" value="RES-09435" x="78.74" y="-22.86" size="1.778" layer="27" display="off"/>
@@ -961,17 +961,17 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-09435" x="43.18" y="-21.59" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="15.24" y="43.434" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="L4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="54.61" y="11.43" smashed="yes">
-<attribute name="PROD_ID" value="RES-8371" x="92.71" y="-54.61" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="54.61" y="10.414" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="L4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="330" x="57.15" y="11.43" smashed="yes">
+<attribute name="PROD_ID" value="RES-8371" x="95.25" y="-54.61" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="57.15" y="10.414" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="D22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="AXIAL-0.3" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k" x="15.24" y="24.13" smashed="yes">
 <attribute name="PROD_ID" value="RES-09435" x="63.5" y="-41.91" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="15.24" y="23.114" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="SEED" library="Electrosmith-Boards" package="ES_DAISY_SEED" value="ES_DAISY_SEED_REV4" x="38.1" y="33.02" smashed="yes">
-<attribute name="IPN" value="Daisy Seed" x="60.96" y="3.81" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="29.1" y="58.595" size="1.778" layer="21"/>
+<element name="SEED" library="Electrosmith-Boards" package="ES_DAISY_SEED" value="ES_DAISY_SEED_REV4" x="38.1" y="40.64" smashed="yes">
+<attribute name="IPN" value="Daisy Seed" x="60.96" y="11.43" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.1" y="66.215" size="1.778" layer="21"/>
 </element>
 <element name="PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X02" package3d_urn="urn:adsk.eagle:package:38039/1" value="" x="62.23" y="59.69" smashed="yes" rot="R270">
 <attribute name="NAME" x="63.627" y="60.96" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
@@ -1019,10 +1019,10 @@ design rules under a new name.</description>
 <attribute name="NAME" x="63.5" y="38.227" size="0.6096" layer="25" font="vector" ratio="20"/>
 <attribute name="VALUE" x="63.5" y="35.306" size="0.6096" layer="27" font="vector" ratio="20" align="top-left"/>
 </element>
-<element name="LED_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="62.23" y="19.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="63.627" y="20.32" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-09696" x="62.23" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="60.198" y="20.32" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+<element name="LED_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="64.77" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="66.167" y="20.32" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09696" x="64.77" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="62.738" y="20.32" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="LED_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="60.96" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.23" y="6.223" size="0.6096" layer="25" font="vector" ratio="20" rot="R180"/>
@@ -1054,8 +1054,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="DIO-08378" x="59.69" y="53.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="59.69" y="54.483" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="CAP-PTH-SMALL-KIT" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF" x="52.07" y="55.88" smashed="yes" rot="R90">
-<attribute name="PROD_ID" value="CAP-08370" x="52.07" y="55.88" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="CAP-PTH-SMALL-KIT" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF" x="52.07" y="58.42" smashed="yes" rot="R90">
+<attribute name="PROD_ID" value="CAP-08370" x="52.07" y="58.42" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="CPOL-RADIAL-2.5MM-5MM" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF" x="57.15" y="58.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="59.817" y="58.42" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
@@ -1108,18 +1108,13 @@ design rules under a new name.</description>
 <contactref element="EX_GND" pad="2"/>
 <contactref element="EX_GND" pad="3"/>
 <contactref element="EX_GND" pad="4"/>
-<wire x1="30.353" y1="8.89" x2="30.48" y2="8.763" width="0.6096" layer="16"/>
-<wire x1="30.48" y1="8.763" x2="30.48" y2="6.4008" width="0.6096" layer="16"/>
+<wire x1="30.353" y1="16.51" x2="30.48" y2="16.383" width="0.6096" layer="16"/>
+<wire x1="30.48" y1="16.383" x2="30.48" y2="6.4008" width="0.6096" layer="16"/>
 <wire x1="30.48" y1="6.4008" x2="53.34" y2="6.4008" width="0.6096" layer="16"/>
 <wire x1="53.34" y1="6.4008" x2="53.34" y2="7.62" width="0.6096" layer="16"/>
-<wire x1="53.34" y1="20.32" x2="53.34" y2="7.62" width="0.6096" layer="16"/>
-<wire x1="57.15" y1="24.13" x2="53.34" y2="20.32" width="0.6096" layer="16"/>
 <wire x1="53.34" y1="7.62" x2="55.88" y2="7.62" width="0.6096" layer="16"/>
 <wire x1="55.88" y1="7.62" x2="58.42" y2="7.62" width="0.6096" layer="16"/>
 <wire x1="58.42" y1="7.62" x2="60.96" y2="7.62" width="0.6096" layer="16"/>
-<wire x1="30.353" y1="8.89" x2="21.59" y2="8.89" width="0.6096" layer="16"/>
-<wire x1="21.59" y1="8.89" x2="20.32" y2="10.16" width="0.6096" layer="16"/>
-<wire x1="20.32" y1="10.16" x2="20.32" y2="11.43" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="11.43" x2="20.32" y2="13.97" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="13.97" x2="20.32" y2="16.51" width="0.6096" layer="16"/>
 <wire x1="20.32" y1="16.51" x2="20.32" y2="19.05" width="0.6096" layer="16"/>
@@ -1165,103 +1160,125 @@ design rules under a new name.</description>
 <contactref element="C2" pad="2"/>
 <wire x1="62.23" y1="59.69" x2="62.21" y2="59.67" width="0.6096" layer="16"/>
 <wire x1="62.21" y1="59.67" x2="57.15" y2="59.67" width="0.6096" layer="16"/>
-<wire x1="57.15" y1="59.67" x2="54.463" y2="59.67" width="0.6096" layer="16"/>
-<wire x1="54.463" y1="59.67" x2="52.07" y2="57.277" width="0.6096" layer="16"/>
-<wire x1="52.07" y1="57.277" x2="45.974" y2="57.277" width="0.6096" layer="16"/>
-<wire x1="45.974" y1="57.277" x2="45.847" y2="57.15" width="0.6096" layer="16"/>
+<wire x1="57.15" y1="59.67" x2="52.217" y2="59.67" width="0.6096" layer="16"/>
+<wire x1="52.217" y1="59.67" x2="52.07" y2="59.817" width="0.6096" layer="16"/>
+<wire x1="52.07" y1="59.817" x2="50.8" y2="59.817" width="0.6096" layer="16"/>
+<wire x1="50.8" y1="59.817" x2="45.847" y2="64.77" width="0.6096" layer="16"/>
 <via x="64.77" y="50.8" extent="1-16" drill="0.6"/>
 <wire x1="64.77" y1="50.8" x2="64.77" y2="52.07" width="0.6096" layer="16"/>
 <wire x1="64.77" y1="52.07" x2="66.04" y2="53.34" width="0.6096" layer="16"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="55.88" width="0.6096" layer="16"/>
 <wire x1="66.04" y1="55.88" x2="62.23" y2="59.69" width="0.6096" layer="16"/>
+<wire x1="20.32" y1="11.43" x2="21.7678" y2="9.9822" width="0.6096" layer="16"/>
+<wire x1="30.353" y1="16.383" x2="30.353" y2="16.51" width="0.6096" layer="16"/>
+<wire x1="21.7678" y1="9.9822" x2="23.9522" y2="9.9822" width="0.6096" layer="16"/>
+<wire x1="23.9522" y1="9.9822" x2="30.353" y2="16.383" width="0.6096" layer="16"/>
+<wire x1="57.15" y1="8.89" x2="55.88" y2="7.62" width="0.6096" layer="16"/>
+<wire x1="57.15" y1="24.13" x2="57.15" y2="8.89" width="0.6096" layer="16"/>
 </signal>
 <signal name="SPST1">
 <contactref element="S1" pad="P$2"/>
 <contactref element="SPST_GPIO" pad="4"/>
 <contactref element="SEED" pad="6"/>
-<wire x1="22.86" y1="44.45" x2="30.353" y2="44.45" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="44.45" x2="30.353" y2="51.943" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="52.07" x2="30.353" y2="51.943" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="44.45" x2="22.86" y2="44.45" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPST4">
 <contactref element="S4" pad="P$2"/>
 <contactref element="SPST_GPIO" pad="1"/>
 <contactref element="SEED" pad="9"/>
-<wire x1="22.86" y1="36.83" x2="30.607" y2="36.83" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="44.45" x2="30.48" y2="44.45" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="36.83" x2="30.48" y2="44.45" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="36.83" x2="22.86" y2="36.83" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPST3">
 <contactref element="S3" pad="P$2"/>
 <contactref element="SPST_GPIO" pad="2"/>
 <contactref element="SEED" pad="8"/>
-<wire x1="22.86" y1="39.37" x2="30.353" y2="39.37" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="46.99" x2="30.353" y2="46.863" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="39.37" x2="30.353" y2="46.863" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="39.37" x2="22.86" y2="39.37" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPST2">
 <contactref element="S2" pad="P$2"/>
 <contactref element="SPST_GPIO" pad="3"/>
 <contactref element="SEED" pad="7"/>
-<wire x1="22.86" y1="41.91" x2="30.607" y2="41.91" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="41.91" x2="30.48" y2="49.53" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="49.53" x2="30.48" y2="49.53" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="41.91" x2="22.86" y2="41.91" width="0.6096" layer="1"/>
 </signal>
 <signal name="IN_L">
 <contactref element="SEED" pad="16"/>
 <contactref element="AUDIO" pad="2"/>
-<wire x1="22.86" y1="19.05" x2="30.353" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="19.05" x2="30.353" y2="26.543" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="26.67" x2="30.353" y2="26.543" width="0.6096" layer="1"/>
 </signal>
 <signal name="IN_R">
 <contactref element="SEED" pad="17"/>
 <contactref element="AUDIO" pad="4"/>
-<wire x1="22.86" y1="16.51" x2="30.607" y2="16.51" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="24.13" x2="30.48" y2="24.13" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="16.51" x2="30.48" y2="24.13" width="0.6096" layer="1"/>
 </signal>
 <signal name="LED3">
 <contactref element="L3" pad="P$1"/>
 <contactref element="SEED" pad="23"/>
-<wire x1="45.593" y1="13.97" x2="50.8" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="45.593" y1="21.59" x2="53.213" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="53.213" y1="13.97" x2="53.34" y2="13.97" width="0.6096" layer="1"/>
 </signal>
 <signal name="LED4">
 <contactref element="L4" pad="P$1"/>
 <contactref element="SEED" pad="22"/>
-<wire x1="45.847" y1="11.43" x2="50.8" y2="11.43" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="19.05" x2="53.34" y2="11.557" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="11.557" x2="53.34" y2="11.43" width="0.6096" layer="1"/>
 </signal>
 <signal name="POT4">
 <contactref element="POT_GPIO" pad="4"/>
 <contactref element="SEED" pad="27"/>
-<wire x1="53.34" y1="24.13" x2="45.593" y2="24.13" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="24.13" x2="45.72" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="45.72" y1="31.75" x2="45.593" y2="31.75" width="0.6096" layer="1"/>
 </signal>
 <signal name="POT3">
 <contactref element="POT_GPIO" pad="3"/>
 <contactref element="SEED" pad="28"/>
-<wire x1="53.34" y1="26.67" x2="45.847" y2="26.67" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="34.29" x2="45.847" y2="34.163" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="26.67" x2="45.847" y2="34.163" width="0.6096" layer="1"/>
 </signal>
 <signal name="POT2">
 <contactref element="POT_GPIO" pad="2"/>
 <contactref element="SEED" pad="29"/>
-<wire x1="53.34" y1="29.21" x2="45.593" y2="29.21" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="29.21" x2="45.72" y2="36.83" width="0.6096" layer="1"/>
+<wire x1="45.72" y1="36.83" x2="45.593" y2="36.83" width="0.6096" layer="1"/>
 </signal>
 <signal name="POT1">
 <contactref element="POT_GPIO" pad="1"/>
 <contactref element="SEED" pad="30"/>
-<wire x1="53.34" y1="31.75" x2="45.847" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="39.37" x2="45.847" y2="39.243" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="31.75" x2="45.847" y2="39.243" width="0.6096" layer="1"/>
 </signal>
 <signal name="LED2">
 <contactref element="L2" pad="P$1"/>
 <contactref element="SEED" pad="24"/>
-<wire x1="45.847" y1="16.51" x2="50.8" y2="16.51" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="24.13" x2="53.34" y2="16.637" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="16.637" x2="53.34" y2="16.51" width="0.6096" layer="1"/>
 </signal>
 <signal name="LED1">
 <contactref element="L1" pad="P$1"/>
 <contactref element="SEED" pad="25"/>
-<wire x1="45.593" y1="19.05" x2="50.8" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="45.593" y1="26.67" x2="53.213" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="53.213" y1="19.05" x2="53.34" y2="19.05" width="0.6096" layer="1"/>
 </signal>
 <signal name="OUT_L">
 <contactref element="SEED" pad="18"/>
 <contactref element="AUDIO" pad="6"/>
-<wire x1="22.86" y1="13.97" x2="30.353" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="21.59" x2="30.353" y2="21.463" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="13.97" x2="30.353" y2="21.463" width="0.6096" layer="1"/>
 </signal>
 <signal name="OUT_R">
 <contactref element="SEED" pad="19"/>
 <contactref element="AUDIO" pad="8"/>
-<wire x1="22.86" y1="11.43" x2="30.607" y2="11.43" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="19.05" x2="30.48" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="11.43" x2="30.48" y2="19.05" width="0.6096" layer="1"/>
 </signal>
 <signal name="+3V3_A">
 <contactref element="SEED" pad="21"/>
@@ -1292,8 +1309,6 @@ design rules under a new name.</description>
 <wire x1="67.31" y1="8.89" x2="67.31" y2="36.83" width="0.6096" layer="16"/>
 <wire x1="64.77" y1="36.83" x2="67.31" y2="36.83" width="0.6096" layer="16"/>
 <wire x1="64.77" y1="36.83" x2="60.96" y2="33.02" width="0.6096" layer="16"/>
-<wire x1="45.593" y1="8.89" x2="49.53" y2="8.89" width="0.6096" layer="1"/>
-<wire x1="49.53" y1="8.89" x2="49.53" y2="5.08" width="0.6096" layer="1"/>
 <via x="49.53" y="5.08" extent="1-16" drill="0.6"/>
 <wire x1="49.53" y1="5.08" x2="63.5" y2="5.08" width="0.6096" layer="16"/>
 <wire x1="49.53" y1="5.08" x2="21.59" y2="5.08" width="0.6096" layer="16"/>
@@ -1308,33 +1323,39 @@ design rules under a new name.</description>
 <wire x1="15.24" y1="20.32" x2="17.78" y2="17.78" width="0.6096" layer="16"/>
 <wire x1="17.78" y1="17.78" x2="17.78" y2="8.89" width="0.6096" layer="16"/>
 <wire x1="17.78" y1="8.89" x2="21.59" y2="5.08" width="0.6096" layer="16"/>
+<wire x1="45.593" y1="16.51" x2="49.53" y2="12.573" width="0.6096" layer="1"/>
+<wire x1="49.53" y1="12.573" x2="49.53" y2="5.08" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPDT1_1">
 <contactref element="D11" pad="P$2"/>
 <contactref element="SPDT_GPIO" pad="4"/>
 <contactref element="SEED" pad="11"/>
-<wire x1="22.86" y1="31.75" x2="30.607" y2="31.75" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="39.37" x2="30.48" y2="39.37" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="31.75" x2="30.48" y2="39.37" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="31.75" x2="22.86" y2="31.75" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPDT1_2">
 <contactref element="D12" pad="P$2"/>
 <contactref element="SPDT_GPIO" pad="3"/>
 <contactref element="SEED" pad="12"/>
-<wire x1="22.86" y1="29.21" x2="30.353" y2="29.21" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="29.21" x2="30.353" y2="36.703" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="36.83" x2="30.353" y2="36.703" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="29.21" x2="22.86" y2="29.21" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPDT2_1">
 <contactref element="D21" pad="P$2"/>
 <contactref element="SPDT_GPIO" pad="2"/>
 <contactref element="SEED" pad="13"/>
-<wire x1="22.86" y1="26.67" x2="30.607" y2="26.67" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="26.67" x2="30.48" y2="34.29" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="34.29" x2="30.48" y2="34.29" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="26.67" x2="22.86" y2="26.67" width="0.6096" layer="1"/>
 </signal>
 <signal name="SPDT2_2">
 <contactref element="D22" pad="P$2"/>
 <contactref element="SPDT_GPIO" pad="1"/>
 <contactref element="SEED" pad="14"/>
-<wire x1="22.86" y1="24.13" x2="30.353" y2="24.13" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="31.75" x2="30.353" y2="31.623" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="24.13" x2="30.353" y2="31.623" width="0.6096" layer="1"/>
 <wire x1="19.05" y1="24.13" x2="22.86" y2="24.13" width="0.6096" layer="1"/>
 </signal>
 <signal name="+3V3_D">
@@ -1351,80 +1372,88 @@ design rules under a new name.</description>
 <contactref element="D2" pad="C"/>
 <contactref element="C1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="45.593" y1="54.61" x2="51.943" y2="54.61" width="0.6096" layer="16"/>
-<wire x1="51.943" y1="54.61" x2="52.07" y2="54.483" width="0.6096" layer="16"/>
-<wire x1="55.88" y1="53.34" x2="53.213" y2="53.34" width="0.6096" layer="16"/>
-<wire x1="52.07" y1="54.483" x2="53.213" y2="53.34" width="0.6096" layer="16"/>
+<wire x1="52.07" y1="57.023" x2="46.863" y2="62.23" width="0.6096" layer="16"/>
+<wire x1="45.593" y1="62.23" x2="46.863" y2="62.23" width="0.6096" layer="16"/>
+<wire x1="55.88" y1="53.34" x2="55.753" y2="53.34" width="0.6096" layer="16"/>
+<wire x1="52.07" y1="57.023" x2="55.753" y2="53.34" width="0.6096" layer="16"/>
 <wire x1="55.88" y1="53.34" x2="55.88" y2="55.9" width="0.6096" layer="16"/>
 <wire x1="55.88" y1="55.9" x2="57.15" y2="57.17" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="L1" pad="P$2"/>
 <contactref element="LED_GPIO" pad="1"/>
-<wire x1="58.42" y1="19.05" x2="62.23" y2="19.05" width="0.6096" layer="1"/>
+<wire x1="60.96" y1="19.05" x2="64.77" y2="19.05" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="L2" pad="P$2"/>
 <contactref element="LED_GPIO" pad="2"/>
-<wire x1="58.42" y1="16.51" x2="62.23" y2="16.51" width="0.6096" layer="1"/>
+<wire x1="60.96" y1="16.51" x2="64.77" y2="16.51" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="L3" pad="P$2"/>
 <contactref element="LED_GPIO" pad="3"/>
-<wire x1="58.42" y1="13.97" x2="62.23" y2="13.97" width="0.6096" layer="1"/>
+<wire x1="60.96" y1="13.97" x2="64.77" y2="13.97" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="L4" pad="P$2"/>
 <contactref element="LED_GPIO" pad="4"/>
-<wire x1="58.42" y1="11.43" x2="62.23" y2="11.43" width="0.6096" layer="1"/>
+<wire x1="60.96" y1="11.43" x2="64.77" y2="11.43" width="0.6096" layer="1"/>
 </signal>
 <signal name="GPIO4">
 <contactref element="SEED" pad="4"/>
 <contactref element="EX_GPIOS" pad="1"/>
-<wire x1="22.86" y1="49.53" x2="30.353" y2="49.53" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="57.15" x2="30.353" y2="57.023" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="49.53" x2="30.353" y2="57.023" width="0.6096" layer="1"/>
 </signal>
 <signal name="GPIO3">
 <contactref element="SEED" pad="3"/>
 <contactref element="EX_GPIOS" pad="2"/>
-<wire x1="22.86" y1="52.07" x2="30.607" y2="52.07" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="59.69" x2="30.48" y2="59.69" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="52.07" x2="30.48" y2="59.69" width="0.6096" layer="1"/>
 </signal>
 <signal name="GPIO2">
 <contactref element="SEED" pad="2"/>
 <contactref element="EX_GPIOS" pad="3"/>
-<wire x1="22.86" y1="54.61" x2="30.353" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="30.353" y1="62.23" x2="30.353" y2="62.103" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="54.61" x2="30.353" y2="62.103" width="0.6096" layer="1"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="SEED" pad="1"/>
 <contactref element="EX_GPIOS" pad="4"/>
-<wire x1="22.86" y1="57.15" x2="30.607" y2="57.15" width="0.6096" layer="1"/>
+<wire x1="30.607" y1="64.77" x2="30.48" y2="64.77" width="0.6096" layer="1"/>
+<wire x1="22.86" y1="57.15" x2="30.48" y2="64.77" width="0.6096" layer="1"/>
 </signal>
 <signal name="HEX_1">
 <contactref element="H1" pad="P$2"/>
 <contactref element="HEX_GPIO" pad="1"/>
 <contactref element="SEED" pad="36"/>
 <wire x1="57.15" y1="46.99" x2="53.34" y2="46.99" width="0.6096" layer="1"/>
-<wire x1="53.34" y1="46.99" x2="45.847" y2="46.99" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="54.61" x2="45.847" y2="54.483" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="46.99" x2="45.847" y2="54.483" width="0.6096" layer="1"/>
 </signal>
 <signal name="HEX_2">
 <contactref element="H2" pad="P$2"/>
 <contactref element="HEX_GPIO" pad="2"/>
 <contactref element="SEED" pad="35"/>
 <wire x1="57.15" y1="44.45" x2="53.34" y2="44.45" width="0.6096" layer="1"/>
-<wire x1="53.34" y1="44.45" x2="45.593" y2="44.45" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="44.45" x2="45.72" y2="52.07" width="0.6096" layer="1"/>
+<wire x1="45.72" y1="52.07" x2="45.593" y2="52.07" width="0.6096" layer="1"/>
 </signal>
 <signal name="HEX_3">
 <contactref element="H3" pad="P$2"/>
 <contactref element="HEX_GPIO" pad="3"/>
 <contactref element="SEED" pad="34"/>
 <wire x1="57.15" y1="41.91" x2="53.34" y2="41.91" width="0.6096" layer="1"/>
-<wire x1="53.34" y1="41.91" x2="45.847" y2="41.91" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="41.91" x2="45.847" y2="49.403" width="0.6096" layer="1"/>
+<wire x1="45.847" y1="49.53" x2="45.847" y2="49.403" width="0.6096" layer="1"/>
 </signal>
 <signal name="HEX_4">
 <contactref element="H4" pad="P$2"/>
 <contactref element="HEX_GPIO" pad="4"/>
 <contactref element="SEED" pad="33"/>
 <wire x1="57.15" y1="39.37" x2="53.34" y2="39.37" width="0.6096" layer="1"/>
-<wire x1="53.34" y1="39.37" x2="45.593" y2="39.37" width="0.6096" layer="1"/>
+<wire x1="53.34" y1="39.37" x2="45.72" y2="46.99" width="0.6096" layer="1"/>
+<wire x1="45.72" y1="46.99" x2="45.593" y2="46.99" width="0.6096" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
