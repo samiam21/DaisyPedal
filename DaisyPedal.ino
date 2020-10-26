@@ -23,10 +23,10 @@ void setup()
     num_channels = hw.num_channels;
 
     // Initialize the hex switch pins
-    pinMode(hexSwitchPin1, INPUT_PULLDOWN);
-    pinMode(hexSwitchPin2, INPUT_PULLDOWN);
-    pinMode(hexSwitchPin3, INPUT_PULLDOWN);
-    pinMode(hexSwitchPin4, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin1, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin2, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin3, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin4, INPUT_PULLDOWN);
 
     // Initialize the control LED
     pinMode(controlLedPin, OUTPUT);
@@ -35,10 +35,10 @@ void setup()
 void loop() 
 {
     // Read the state of the hex switch pins
-    std::bitset<4> pin1(digitalRead(hexSwitchPin1));
-    std::bitset<4> pin2(digitalRead(hexSwitchPin2));
-    std::bitset<4> pin3(digitalRead(hexSwitchPin3));
-    std::bitset<4> pin4(digitalRead(hexSwitchPin4));    
+    std::bitset<4> pin1(digitalRead(effectSelectorPin1));
+    std::bitset<4> pin2(digitalRead(effectSelectorPin2));
+    std::bitset<4> pin3(digitalRead(effectSelectorPin3));
+    std::bitset<4> pin4(digitalRead(effectSelectorPin4));    
 
     // Get the combined hex value and convert it to an int
     std::bitset<4> combined = pin1 | (pin2 << 1) | (pin3 << 2) | (pin4 << 3);

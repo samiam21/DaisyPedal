@@ -17,8 +17,8 @@
  * Knob 3 - Mix
  * 
  * LED 1 - Quarter
- * LED 2 - Eighth
- * LED 3 - Dotted Eighth
+ * LED 2 - Dotted Eighth
+ * LED 3 - Triplet
  **********************************************/
 
 // Pin renaming
