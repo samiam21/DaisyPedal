@@ -11,4 +11,12 @@ extern void BypassCleanup();
 extern void BypassCallback(float **in, float **out, size_t size);
 extern void BypassLoop();
 
+
+class BypassTest
+{
+    public:
+        void AudioCallback(float **in, float **out, size_t size);
+};
+
+
 #endif

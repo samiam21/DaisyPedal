@@ -8,6 +8,7 @@
 // Global variables
 DaisyHardware hw;
 size_t num_channels;
+BypassTest test;
 
 // Volatile parameters
 volatile EffectType currentEffect = Unset;
@@ -30,79 +31,82 @@ void setup()
 
     // Initialize the control LED
     pinMode(controlLedPin, OUTPUT);
+    
+    // Example of how to use a class for the callback
+    DAISY.begin((DaisyDuinoCallback)[](float **in, float **out, size_t size) {return test.AudioCallback(in, out, size);});
 }
 
 void loop() 
 {
-    // Read the state of the hex switch pins
-    std::bitset<4> pin1(digitalRead(effectSelectorPin1));
-    std::bitset<4> pin2(digitalRead(effectSelectorPin2));
-    std::bitset<4> pin3(digitalRead(effectSelectorPin3));
-    std::bitset<4> pin4(digitalRead(effectSelectorPin4));    
+    // // Read the state of the hex switch pins
+    // std::bitset<4> pin1(digitalRead(effectSelectorPin1));
+    // std::bitset<4> pin2(digitalRead(effectSelectorPin2));
+    // std::bitset<4> pin3(digitalRead(effectSelectorPin3));
+    // std::bitset<4> pin4(digitalRead(effectSelectorPin4));    
 
-    // Get the combined hex value and convert it to an int
-    std::bitset<4> combined = pin1 | (pin2 << 1) | (pin3 << 2) | (pin4 << 3);
-    int readEffectState = (int)(combined.to_ulong());
+    // // Get the combined hex value and convert it to an int
+    // std::bitset<4> combined = pin1 | (pin2 << 1) | (pin3 << 2) | (pin4 << 3);
+    // int readEffectState = (int)(combined.to_ulong());
 
-    // Check if the state is new and switch to the new state
-    if (currentEffect != readEffectState)
-    {
-        // A new effect has been chosen, stop the old effect
-        switch(currentEffect)
-        {
-            case MonoDelay:
-                // Clean up the MonoDelay
-                MonoDelayCleanup();
-                break;
-            case Bypass:
-                BypassCleanup();
-                break;
-            default:
-                break;
-        }
+    // // Check if the state is new and switch to the new state
+    // if (currentEffect != readEffectState)
+    // {
+    //     // A new effect has been chosen, stop the old effect
+    //     switch(currentEffect)
+    //     {
+    //         case MonoDelay:
+    //             // Clean up the MonoDelay
+    //             MonoDelayCleanup();
+    //             break;
+    //         case Bypass:
+    //             BypassCleanup();
+    //             break;
+    //         default:
+    //             break;
+    //     }
 
-        // Start the new effect
-        switch(readEffectState)
-        {
-            case MonoDelay:
-                debugPrint("Switching to MonoDelay");
+    //     // Start the new effect
+    //     switch(readEffectState)
+    //     {
+    //         case MonoDelay:
+    //             debugPrint("Switching to MonoDelay");
 
-                // Turn LED on
-                digitalWrite(controlLedPin, HIGH);
+    //             // Turn LED on
+    //             digitalWrite(controlLedPin, HIGH);
 
-                // Initialize MonoDelay and start Daisy
-                MonoDelaySetup();
-                DAISY.begin(MonoDelayCallback);
+    //             // Initialize MonoDelay and start Daisy
+    //             MonoDelaySetup();
+    //             DAISY.begin(MonoDelayCallback);
 
-                break;
-            case Bypass:
-            default:
-                debugPrint("Switching to Bypass");
+    //             break;
+    //         case Bypass:
+    //         default:
+    //             debugPrint("Switching to Bypass");
 
-                // Turn LED off
-                digitalWrite(controlLedPin, LOW);
+    //             // Turn LED off
+    //             digitalWrite(controlLedPin, LOW);
 
-                // Initialize Bypass and start Daisy
-                BypassSetup(num_channels);
-                DAISY.begin(BypassCallback);
+    //             // Initialize Bypass and start Daisy
+    //             BypassSetup(num_channels);
+    //             DAISY.begin(BypassCallback);
 
-                break;
-        }
+    //             break;
+    //     }
 
-        // Update the current effect
-        currentEffect = (EffectType)readEffectState;
-    }
+    //     // Update the current effect
+    //     currentEffect = (EffectType)readEffectState;
+    // }
 
-    // Execute the effect loop commands
-    switch (currentEffect)
-    {
-        case MonoDelay:
-            MonoDelayLoop();
-            break;
-        case Bypass:
-            BypassLoop();
-            break;
-        default:
-            break;
-    }
+    // // Execute the effect loop commands
+    // switch (currentEffect)
+    // {
+    //     case MonoDelay:
+    //         MonoDelayLoop();
+    //         break;
+    //     case Bypass:
+    //         BypassLoop();
+    //         break;
+    //     default:
+    //         break;
+    // }
 }

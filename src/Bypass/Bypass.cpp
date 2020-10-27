@@ -63,3 +63,8 @@ void BypassLoop()
     //  (map the 10bit input value to an 8 bit PWM output)
     analogWrite(effectLedPin3, analogRead(effectPotPin3) / 4);
 }
+
+void BypassTest::AudioCallback(float **in, float **out, size_t size)
+{
+    debugPrint("test");
+}

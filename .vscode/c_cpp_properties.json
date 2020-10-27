@@ -19,7 +19,7 @@
                 "C:\\Users\\sfahnestock\\Documents\\Arduino\\libraries\\**",
                 "C:\\Users\\sfahnestock\\Documents\\Arduino\\libraries\\DaisyDuino\\src",
                 "C:\\Users\\FahnFam\\Documents\\Arduino\\libraries\\**",
-                "C:\\Users\\FahnFam\\Documents\\Arduino\\libraries\\DaisyDuino\\src",
+                "C:\\Users\\FahnFam\\Documents\\Arduino\\libraries\\DaisyDuino\\src"
             ],
             "forcedInclude": [
                 "C:\\Users\\sfahnestock\\AppData\\Local\\Arduino15\\packages\\STM32\\hardware\\stm32\\1.9.0\\cores\\arduino\\Arduino.h",
