@@ -5,12 +5,12 @@ void BypassSetup(size_t pNumChannels)
     numChannels = pNumChannels;
 
     // Initialize the LEDs and buttons
-    pinMode(effectButtonPin1, INPUT);
-    pinMode(effectButtonPin2, INPUT);
-    pinMode(effectButtonPin3, INPUT);
-    pinMode(effectKnobPin1, INPUT);
-    pinMode(effectKnobPin2, INPUT);
-    pinMode(effectKnobPin3, INPUT);
+    pinMode(effectSPSTPin1, INPUT);
+    pinMode(effectSPSTPin2, INPUT);
+    pinMode(effectSPSTPin3, INPUT);
+    pinMode(effectPotPin1, INPUT);
+    pinMode(effectPotPin2, INPUT);
+    pinMode(effectPotPin3, INPUT);
     pinMode(effectLedPin1, OUTPUT);
     pinMode(effectLedPin2, OUTPUT);
     pinMode(effectLedPin3, OUTPUT);
@@ -39,7 +39,7 @@ void BypassCleanup()
 void BypassLoop()
 {
     // Button1 turns on LED 1
-    if (digitalRead(effectButtonPin1) == HIGH)
+    if (digitalRead(effectSPSTPin1) == HIGH)
     {
         digitalWrite(effectLedPin1, HIGH);
     }
@@ -49,7 +49,7 @@ void BypassLoop()
     }
 
     // Button 2 turns on LED 2
-    if (digitalRead(effectButtonPin2) == HIGH)
+    if (digitalRead(effectSPSTPin2) == HIGH)
     {
         digitalWrite(effectLedPin2, HIGH);
     }
@@ -61,5 +61,5 @@ void BypassLoop()
     // Knob 3 controls intensity of LED 3
     // Turn on the LED, at the level dictated by the knob
     //  (map the 10bit input value to an 8 bit PWM output)
-    analogWrite(effectLedPin3, analogRead(effectKnobPin3) / 4);
+    analogWrite(effectLedPin3, analogRead(effectPotPin3) / 4);
 }

@@ -22,9 +22,9 @@
  **********************************************/
 
 // Pin renaming
-static const int tapTempoButtonPin = effectButtonPin1;
-static const int levelKnobPin = effectKnobPin1;
-static const int decayKnobPin = effectKnobPin2;
+static const int tapTempoButtonPin = effectSPSTPin1;
+static const int levelKnobPin = effectPotPin1;
+static const int decayKnobPin = effectPotPin2;
 
 // Constant parameters
 static const int audioInChannel = 0;
