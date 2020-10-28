@@ -2,13 +2,22 @@
 #define BYPASS_H
 
 #include "DaisyDuino.h"
+#include "../IEffect.h"
 #include "../../PedalConfig.h"
 
-static size_t numChannels;
+class Bypass: public IEffect
+{
+    public:
+        void Setup(size_t pNumChannels);
+        void Cleanup();
+        void AudioCallback(float **in, float **out, size_t size);
+        void Loop();
+        String GetEffectName();
 
-extern void BypassSetup(size_t pNumChannels);
-extern void BypassCleanup();
-extern void BypassCallback(float **in, float **out, size_t size);
-extern void BypassLoop();
+    private:
+        size_t numChannels;
+        const int LED_MAX_VALUE = 256;
+        const int LED_MIN_VALUE = 0;
+};
 
 #endif
