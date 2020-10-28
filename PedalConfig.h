@@ -21,8 +21,8 @@ const int effectSPSTPin3 = 29;
 const int effectSPSTPin4 = -1;
 
 // Pin Definitions - SPDT
-const int effectSPDT1Pin1 = -1;
-const int effectSPDT1Pin2 = -1;
+const int effectSPDT1Pin1 = 23;
+const int effectSPDT1Pin2 = 24;
 const int effectSPDT2Pin1 = -1;
 const int effectSPDT2Pin2 = -1;
 

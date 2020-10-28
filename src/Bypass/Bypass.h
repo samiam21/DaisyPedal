@@ -16,6 +16,8 @@ class Bypass: public IEffect
 
     private:
         size_t numChannels;
+        const int LED_MAX_VALUE = 256;
+        const int LED_MIN_VALUE = 0;
 };
 
 #endif
