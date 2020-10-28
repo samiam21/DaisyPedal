@@ -155,7 +155,7 @@
 <wire x1="68.25" y1="0" x2="68.25" y2="58.41" width="0" layer="20"/>
 <wire x1="68.25" y1="58.41" x2="0" y2="58.41" width="0" layer="20"/>
 <wire x1="0" y1="58.41" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.27" y="8.89" size="1.016" layer="21">Pedal Breakout Board
+<text x="1.27" y="8.89" size="1.016" layer="21">Pedal Board
 REV: A</text>
 <text x="1.27" y="12.7" size="1.778" layer="21">Saved
 By Grace
