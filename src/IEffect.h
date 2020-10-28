@@ -8,6 +8,7 @@ class IEffect
         virtual void Cleanup();
         virtual void AudioCallback(float **in, float **out, size_t size);
         virtual void Loop();
+        virtual String GetEffectName();
 };
 
 #endif

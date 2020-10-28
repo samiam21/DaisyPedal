@@ -63,3 +63,8 @@ void Bypass::Loop()
     //  (map the 10bit input value to an 8 bit PWM output)
     analogWrite(effectLedPin3, analogRead(effectPotPin3) / 4);
 }
+
+String Bypass::GetEffectName()
+{
+    return "Bypass";
+}

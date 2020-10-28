@@ -197,3 +197,8 @@ void MonoDelay::TapTempoLoopControl()
         tapTempoTime = millis();
     }
 }
+
+String MonoDelay::GetEffectName()
+{
+    return "MonoDelay";
+}

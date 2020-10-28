@@ -12,6 +12,7 @@ class Bypass: public IEffect
         void Cleanup();
         void AudioCallback(float **in, float **out, size_t size);
         void Loop();
+        String GetEffectName();
 
     private:
         size_t numChannels;

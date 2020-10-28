@@ -54,6 +54,7 @@ class MonoDelay: public IEffect
         void Cleanup();
         void AudioCallback(float **in, float **out, size_t size);
         void Loop();
+        String GetEffectName();
 
     private:
         void TapTempoLoopControl();
@@ -63,7 +64,7 @@ class MonoDelay: public IEffect
         void SetLevelValue(int knobReading);
 
         // Mutable parameters
-        static DelayLine<float, delayMaxSize> del_line;
+        DelayLine<float, delayMaxSize> del_line;
 
         // Tap tempo mutables
         size_t tempoBpm = 90;
