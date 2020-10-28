@@ -2,8 +2,6 @@
 #include "DaisyDuino.h"
 #include "src/EffectType.h"
 #include "PedalConfig.h"
-#include "src/Bypass/Bypass.h"
-#include "src/MonoDelay/MonoDelay.h"
 
 // Global variables
 DaisyHardware hw;

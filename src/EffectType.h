@@ -4,10 +4,9 @@
 #include "DaisyDuino.h"
 #include "IEffect.h"
 #include "Bypass\Bypass.h"
-#include "MonoDelay\MonoDelay.h"
 
+// Effect Objects
 Bypass bypass;
-MonoDelay monoDelay;
 
 /**
  * The rotary encoder is using Gray code, not standard hex.
@@ -16,11 +15,8 @@ MonoDelay monoDelay;
  */
 enum EffectType {
     BYPASS = 0,
-    MONODELAY = 1,
 
-    // Possible future effects
-    DOUBLEDELAY = 3,
-    FUZZ = 2,
+    // Add effect types here
 
     UNSET = 99
 };
@@ -32,8 +28,6 @@ extern IEffect* GetEffectObject(EffectType type)
 {
     switch(type)
     {
-        case MONODELAY:
-            return (IEffect*)&monoDelay;
         case BYPASS:
         case UNSET:
         default:
