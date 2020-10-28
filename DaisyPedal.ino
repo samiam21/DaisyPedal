@@ -8,7 +8,8 @@
 // Global variables
 DaisyHardware hw;
 size_t num_channels;
-BypassTest test;
+Bypass bypass;
+MonoDelay monoDelay;
 
 // Volatile parameters
 volatile EffectType currentEffect = Unset;
@@ -33,7 +34,7 @@ void setup()
     pinMode(controlLedPin, OUTPUT);
     
     // Example of how to use a class for the callback
-    DAISY.begin((DaisyDuinoCallback)[](float **in, float **out, size_t size) {return test.AudioCallback(in, out, size);});
+    DAISY.begin((DaisyDuinoCallback)[](float **in, float **out, size_t size) {return bypass.AudioCallback(in, out, size);});
 }
 
 void loop() 

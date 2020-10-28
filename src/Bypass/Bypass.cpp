@@ -1,6 +1,6 @@
 #include "Bypass.h"
 
-void BypassSetup(size_t pNumChannels)
+void Bypass::Setup(size_t pNumChannels)
 {
     numChannels = pNumChannels;
 
@@ -16,7 +16,7 @@ void BypassSetup(size_t pNumChannels)
     pinMode(effectLedPin3, OUTPUT);
 }
 
-void BypassCallback(float **in, float **out, size_t size)
+void Bypass::AudioCallback(float **in, float **out, size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
@@ -27,7 +27,7 @@ void BypassCallback(float **in, float **out, size_t size)
     }
 }
 
-void BypassCleanup()
+void Bypass::Cleanup()
 {
     // Turn off the LEDs
     debugPrint("Turning off LEDs");
@@ -36,7 +36,7 @@ void BypassCleanup()
     digitalWrite(effectLedPin3, LOW);
 }
 
-void BypassLoop()
+void Bypass::Loop()
 {
     // Button1 turns on LED 1
     if (digitalRead(effectSPSTPin1) == HIGH)
@@ -62,9 +62,4 @@ void BypassLoop()
     // Turn on the LED, at the level dictated by the knob
     //  (map the 10bit input value to an 8 bit PWM output)
     analogWrite(effectLedPin3, analogRead(effectPotPin3) / 4);
-}
-
-void BypassTest::AudioCallback(float **in, float **out, size_t size)
-{
-    debugPrint("test");
 }

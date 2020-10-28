@@ -15,7 +15,7 @@
 //    - Formula: (96000 * t) / 2000
 
 // Initialize the delay
-void MonoDelaySetup()
+void MonoDelay::Setup(size_t pNumChannels)
 {
     // Init Delay Line
     del_line.Init();
@@ -38,13 +38,13 @@ void MonoDelaySetup()
 }
 
 // Clean up the parameters for mono delay
-void MonoDelayCleanup()
+void MonoDelay::Cleanup()
 {
     del_line.Reset();
 }
 
 // Audio callback when audio input occurs
-void MonoDelayCallback(float **in, float **out, size_t size)
+void MonoDelay::AudioCallback(float **in, float **out, size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
@@ -65,7 +65,7 @@ void MonoDelayCallback(float **in, float **out, size_t size)
 }
 
 // Logic for mono delay to add into the main loop
-void MonoDelayLoop()
+void MonoDelay::Loop()
 {
     // Handle tap tempo
     TapTempoLoopControl();
@@ -78,7 +78,7 @@ void MonoDelayLoop()
 }
 
 // Handle reading the decay knob and setting the decay
-void DecayLoopControl()
+void MonoDelay::DecayLoopControl()
 {
     // Read the decay knob
     int newDecayKnobReading = analogRead(decayKnobPin);
@@ -114,13 +114,13 @@ void DecayLoopControl()
 }
 
 // Sets the decay value based on the passed in knob reading
-void SetDecayValue(int knobReading)
+void MonoDelay::SetDecayValue(int knobReading)
 {
     decayValue = ((float)knobReading / (float)maxDecayKnobValue) * maxDecayValue;
 }
 
 // Handle reading the level knob and setting the level
-void LevelLoopControl()
+void MonoDelay::LevelLoopControl()
 {
     // Read the level knob
     int newLevelKnobReading = analogRead(levelKnobPin);
@@ -156,13 +156,13 @@ void LevelLoopControl()
 }
 
 // Sets the level value based on the passed in knob reading
-void SetLevelValue(int knobReading)
+void MonoDelay::SetLevelValue(int knobReading)
 {
     levelValue = ((float)knobReading / (float)maxLevelKnobValue) * maxLevelValue;
 }
 
 // Handle reading the tap tempo button and setting the tempo
-void TapTempoLoopControl()
+void MonoDelay::TapTempoLoopControl()
 {
     // Read the tap tempo button
     int reading = digitalRead(tapTempoButtonPin);

@@ -9,8 +9,8 @@
 
 // Effect type enum
 enum EffectType {
-    Bypass = 0,
-    MonoDelay = 1,
+    Bypass1 = 0,
+    MonoDelay1 = 1,
 
     // Possible future effects
     DoubleDelay = 3,
