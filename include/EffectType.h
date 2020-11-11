@@ -3,10 +3,10 @@
 
 #include "DaisyDuino.h"
 #include "IEffect.h"
-#include "Bypass\Bypass.h"
+#include "../lib/HWTest/HWTest.h"
 
 // Effect Objects
-Bypass bypass;
+HWTest hwTest;
 
 /**
  * The rotary encoder is using Gray code, not standard hex.
@@ -14,7 +14,7 @@ Bypass bypass;
  * 0, 1, 3, 2, 6, 7, 5, 4, 12, 13, 15, 14, 10, 11, 9, 8
  */
 enum EffectType {
-    BYPASS = 0,
+    HWTEST = 0,
 
     // Add effect types here
 
@@ -28,10 +28,10 @@ extern IEffect* GetEffectObject(EffectType type)
 {
     switch(type)
     {
-        case BYPASS:
+        case HWTEST:
         case UNSET:
         default:
-            return (IEffect*)&bypass;
+            return (IEffect*)&hwTest;
     }
 };
 

@@ -1,11 +1,11 @@
-#ifndef BYPASS_H
-#define BYPASS_H
+#ifndef HWTEST_H
+#define HWTEST_H
 
 #include "DaisyDuino.h"
-#include "../IEffect.h"
-#include "../../PedalConfig.h"
+#include "../../include/IEffect.h"
+#include "../../include/PedalConfig.h"
 
-class Bypass: public IEffect
+class HWTest: public IEffect
 {
     public:
         void Setup(size_t pNumChannels);
