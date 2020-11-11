@@ -13,27 +13,10 @@ EffectType currentEffectType = UNSET;
 IEffect* currentEffect;
 IEffect* newEffect;
 
-void setup() {
-    // // Initialize the serial debug output
-    // initDebugPrint();
-    // debugPrint("Starting DaisyPedal...");
-
-    // Initialize Daisy at 96kHz
-    hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
-    num_channels = hw.num_channels;
-
-    // Initialize the hex switch pins
-    pinMode(effectSelectorPin1, INPUT_PULLDOWN);
-    pinMode(effectSelectorPin2, INPUT_PULLDOWN);
-    pinMode(effectSelectorPin3, INPUT_PULLDOWN);
-    pinMode(effectSelectorPin4, INPUT_PULLDOWN);
-
-    // Initialize and turn on the control LED
-    pinMode(controlLedPin, OUTPUT);
-    digitalWrite(controlLedPin, HIGH);
-}
-
-void loop() {
+/**
+ * Changes the effect based on a reading of the selector pins
+ */
+void ChangeEffect() {
     // Read the state of the hex switch pins
     std::bitset<4> pin1(digitalRead(effectSelectorPin1));
     std::bitset<4> pin2(digitalRead(effectSelectorPin2));
@@ -62,7 +45,43 @@ void loop() {
         // Update the current effect
         currentEffectType = newEffectType;
     }
+}
 
+void setup() {
+    // // Initialize the serial debug output
+    // initDebugPrint();
+    // debugPrint("Starting DaisyPedal...");
+
+    // Initialize Daisy at 96kHz
+    hw = DAISY.init(DAISY_SEED, AUDIO_SR_96K);
+    num_channels = hw.num_channels;
+
+    // Initialize the encoder pins
+    pinMode(effectSelectorPin1, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin2, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin3, INPUT_PULLDOWN);
+    pinMode(effectSelectorPin4, INPUT_PULLDOWN);
+
+    // Attach interrupts to each of the encoder pins
+    //  the encoder is grey coded so only one of these will happen at a time
+    attachInterrupt(effectSelectorPin1, ChangeEffect, FALLING);
+    attachInterrupt(effectSelectorPin1, ChangeEffect, RISING);
+    attachInterrupt(effectSelectorPin2, ChangeEffect, FALLING);
+    attachInterrupt(effectSelectorPin2, ChangeEffect, RISING);
+    attachInterrupt(effectSelectorPin3, ChangeEffect, FALLING);
+    attachInterrupt(effectSelectorPin3, ChangeEffect, RISING);
+    attachInterrupt(effectSelectorPin4, ChangeEffect, FALLING);
+    attachInterrupt(effectSelectorPin4, ChangeEffect, RISING);
+
+    // TODO: Initialize the first effect
+    ChangeEffect();
+
+    // Initialize and turn on the control LED
+    pinMode(controlLedPin, OUTPUT);
+    digitalWrite(controlLedPin, HIGH);
+}
+
+void loop() {
     // Execute the effect loop commands
     currentEffect->Loop();
 }
