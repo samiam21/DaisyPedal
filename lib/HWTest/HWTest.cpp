@@ -32,7 +32,7 @@ void HWTest::AudioCallback(float **in, float **out, size_t size)
 void HWTest::Cleanup()
 {
     // Turn off the LEDs
-    debugPrint("Turning off LEDs");
+    debugPrintln("Turning off LEDs");
     pinMode(effectLedPin1, OUTPUT);
     pinMode(effectLedPin2, OUTPUT);
     pinMode(effectLedPin3, OUTPUT);
