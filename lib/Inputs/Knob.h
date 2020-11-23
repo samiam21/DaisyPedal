@@ -12,18 +12,24 @@
 class Knob
 {
 public:
-    void Init(uint32_t pin, uint32_t pMode);
-    void Init(uint32_t pin, uint32_t pMode, float pMinValue, float pMaxValue);
+    /**
+     * These functions will initialize the knob and set the initial value
+     */
+    void Init(uint32_t pin, uint32_t pMode, float &valueToSet);
+    void Init(uint32_t pin, uint32_t pMode, float &valueToSet, float pMinValue, float pMaxValue);
 
     /**
      * This function will set a new value to the float passed in
      * If the knob value has not changed, or is within the jitter 
      * threshold, the value will not be changed.
      * @param valueToSet
+     * @return Returns true if a new value was set, false if not
      */
-    void SetNewValue(float &valueToSet);
+    bool SetNewValue(float &valueToSet);
 
 private:
+    float GetNewValue(int newKnobReading);
+
     // Knob constants
     const int knobJitter = 10;
     const int minKnobReadingValue = 0;
