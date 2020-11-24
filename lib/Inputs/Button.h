@@ -23,15 +23,15 @@ public:
     void Init(uint32_t pin, uint32_t pMode, callback_function_t callback, uint32_t pInterruptMode);
 
     /**
+     * Detaches the interrupt(s) that are configured in the init function
+     */
+    void DetachInterrupt();
+
+    /**
      * Checks if the button is pressed, accounting for debounce
      * @return Returns true if the button is pressed, false if not
      */
-    bool IsPressed();
-
-    /**
-     * Detaches the interrupt that was configured in the init function
-     */
-    void DetachInterrupt();
+    bool IsPressed(bool debounce = true);
 
 private:
     void LocalInterruptHandler(callback_function_t callback);

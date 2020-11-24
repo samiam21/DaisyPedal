@@ -27,18 +27,27 @@ void Button::DetachInterrupt()
     detachInterrupt(digitalPinToInterrupt(buttonPin));
 }
 
-bool Button::IsPressed()
+bool Button::IsPressed(bool debounce)
 {
     bool ret = false;
 
     // Read the button
     int reading = digitalRead(buttonPin);
 
-    // Debounce the button and check for it pressed
-    if (millis() - lastButtonPress > buttonDebounce)
+    // Check for debounce command
+    if (debounce)
     {
-        // Update last pressed time and set the return
-        lastButtonPress = millis();
+        // Debounce the button and check for it pressed
+        if (millis() - lastButtonPress > buttonDebounce)
+        {
+            // Update last pressed time and set the return
+            lastButtonPress = millis();
+            ret = (reading == HIGH);
+        }
+    }
+    else
+    {
+        // Check if the button is pressed
         ret = (reading == HIGH);
     }
 

@@ -51,20 +51,20 @@ float Knob::GetNewValue(int newKnobReading)
     {
         // Set the reading to min
         knobReading = minKnobReadingValue;
-        debugPrintln("MIN!");
+        //debugPrintln("MIN!");
     }
     // Check for max value, accounting for jitter
     else if (newKnobReading >= (maxKnobReadingValue - knobJitter))
     {
         // Set the reading to max
         knobReading = maxKnobReadingValue;
-        debugPrintln("MAX!");
+        //debugPrintln("MAX!");
     }
     // Standard reading
     else
     {
         knobReading = newKnobReading;
-        debugPrintln(newKnobReading);
+        //debugPrintln(newKnobReading);
     }
 
     // Get the new value
