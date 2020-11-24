@@ -14,9 +14,10 @@ void HWTest::Setup(size_t pNumChannels)
     knob2.Init(effectPotPin2, INPUT, led2Value);
     knob3.Init(effectPotPin3, INPUT, volumeBoost);
 
-    pinMode(effectSPDT1Pin1, INPUT);
-    pinMode(effectSPDT1Pin2, INPUT);
-    pinMode(effectPotPin3, INPUT);
+    // Initialize the toggle
+    toggle.Init(effectSPDT1Pin1, INPUT, effectSPDT1Pin2, INPUT);
+
+    // Initialize the LEDs
     pinMode(effectLedPin1, OUTPUT);
     pinMode(effectLedPin2, OUTPUT);
     pinMode(effectLedPin3, OUTPUT);
@@ -45,7 +46,7 @@ void HWTest::Cleanup()
 void HWTest::Loop()
 {
     // SPDT controls whether the LEDs are turned on by buttons or POTs
-    if (digitalRead(effectSPDT1Pin1) == HIGH)
+    if (toggle.ReadToggle() == 0)
     {
         // Button1 turns on LED 1
         if (button1.IsPressed(false))
@@ -67,7 +68,7 @@ void HWTest::Loop()
             analogWrite(effectLedPin2, LED_MIN_VALUE);
         }
     }
-    else if (digitalRead(effectSPDT1Pin2) == HIGH)
+    else if (toggle.ReadToggle() == 2)
     {
         // Knob 1 controls intensity of LED 1
         if (knob1.SetNewValue(led1Value))

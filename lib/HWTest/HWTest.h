@@ -6,6 +6,7 @@
 #include "../../include/PedalConfig.h"
 #include "../Inputs/Button.h"
 #include "../Inputs/Knob.h"
+#include "../Inputs/NFNToggle.h"
 
 /**********************************************
  * HWTest Effect
@@ -61,6 +62,8 @@ private:
     Knob knob1;
     Knob knob2;
     Knob knob3;
+
+    NFNToggle toggle;
 };
 
 #endif
