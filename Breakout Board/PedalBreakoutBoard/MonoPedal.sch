@@ -2338,65 +2338,6 @@ part number 2062-2P from STA</description>
 <pad name="2" x="-1.27" y="-5.85" drill="0.8"/>
 <pad name="1" x="1.27" y="-5.85" drill="0.8"/>
 </package>
-<package name="2X4" urn="urn:adsk.eagle:footprint:37720/1" library_version="1">
-<description>&lt;h3&gt;Plated Through Hole - 2x4&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
-&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_04x2&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-5.08" y1="-1.905" x2="-4.445" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-2.54" x2="-2.54" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-1.905" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="-2.54" x2="0" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="0" y1="-1.905" x2="0.635" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="2.54" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="3.175" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="-2.54" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-4.445" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="1.905" x2="3.175" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="2.54" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-2.54" x2="4.445" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-2.54" x2="1.905" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-4.445" y1="-2.794" x2="-3.175" y2="-2.794" width="0.2032" layer="21"/>
-<wire x1="-3.175" y1="-2.794" x2="-4.445" y2="-2.794" width="0.2032" layer="22"/>
-<wire x1="-5.08" y1="-1.905" x2="-4.445" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-4.445" y2="2.54" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="2" x="-3.81" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="-1.27" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="5" x="1.27" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="6" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
-<pad name="7" x="3.81" y="-1.27" drill="1.016" diameter="1.8796"/>
-<pad name="8" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
-<rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
-<rectangle x1="-4.064" y1="1.016" x2="-3.556" y2="1.524" layer="51"/>
-<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
-<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
-<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
-<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
-<rectangle x1="3.556" y1="1.016" x2="4.064" y2="1.524" layer="51"/>
-<rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
-<text x="-5.08" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-5.08" y="-3.683" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
 <package name="1X04" urn="urn:adsk.eagle:footprint:37702/1" library_version="1">
 <description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
@@ -3458,19 +3399,6 @@ part number 2062-2P from STA</description>
 <packageinstance name="1X02_RA_PTH_FEMALE"/>
 </packageinstances>
 </package3d>
-<package3d name="2X4" urn="urn:adsk.eagle:package:38103/1" type="box" library_version="1">
-<description>Plated Through Hole - 2x4
-Specifications:
-Pin count:8
-Pin pitch:0.1"
-
-Example device(s):
-CONN_04x2
-</description>
-<packageinstances>
-<packageinstance name="2X4"/>
-</packageinstances>
-</package3d>
 <package3d name="1X04" urn="urn:adsk.eagle:package:38085/1" type="box" library_version="1">
 <description>Plated Through Hole - 4 Pin
 Specifications:
@@ -3880,32 +3808,6 @@ CONN_01
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="CONN_04X2" urn="urn:adsk.eagle:symbol:37719/1" library_version="1">
-<description>&lt;h3&gt;8 Pin Connection&lt;/h3&gt;
-4x2 pin layout</description>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-5.08" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
-<text x="-3.81" y="-7.366" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<text x="-4.064" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="1" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="2" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="6" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="8" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
 <symbol name="CONN_04" urn="urn:adsk.eagle:symbol:37701/1" library_version="1">
 <description>&lt;h3&gt;4 Pin Connection&lt;/h3&gt;</description>
 <wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
@@ -4273,42 +4175,6 @@ CONN_01
 <technology name="">
 <attribute name="PROD_ID" value="CONN-13700"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONN_04X2" urn="urn:adsk.eagle:component:38326/1" prefix="J" uservalue="yes" library_version="1">
-<description>&lt;h3&gt;Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections&lt;/h3&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="CONN_04X2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2X4">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:38103/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6532,7 +6398,6 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <schematic_group name="SPDT"/>
 <schematic_group name="HEX_SELECTOR"/>
 <schematic_group name="LED"/>
-<schematic_group name="EXTRA"/>
 <schematic_group name="MOUNT"/>
 <schematic_group name="POWER"/>
 <schematic_group name="AUDIO_OUTPUT"/>
@@ -6547,18 +6412,10 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
-<part name="L2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
-<part name="L3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
-<part name="S4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="S3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="S2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="S1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="L4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="D22" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="D21" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="D12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="D11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -6570,22 +6427,11 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="AUDIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04X2" device="" package3d_urn="urn:adsk.eagle:package:38103/1"/>
 <part name="POT_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="POT_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="POT_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="SPST_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="SPST_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="SPDT_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="SPDT_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="HEX_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
-<part name="LED_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="LED_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="HEX_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="EX_GPIOS" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="EX_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
-<part name="EX_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="D2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="DIODE" device="-1N4148" package3d_urn="urn:adsk.eagle:package:38452/1" value="200mA/100V/1V"/>
 <part name="C2" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
 <part name="H5" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
@@ -6613,10 +6459,6 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="R3" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="R4" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="R5" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="R6" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="C10" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
-<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U1" library="Custom-Parts" deviceset="OPA1652AID" device=""/>
 <part name="R7" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="R8" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
@@ -6626,21 +6468,23 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="C12" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R10" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="R11" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="R12" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="R13" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="C13" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C14" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF-POLAR" device="-RADIAL-2.5MM-25V-20%" package3d_urn="urn:adsk.eagle:package:37423/1" value="10uF"/>
-<part name="R14" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="SUPPLY22" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SPST_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="SPST_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="SPDT_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="SPDT_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="LED_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="LED_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
+<part name="AUD_PIN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="AUD_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 </parts>
 <sheets>
 <sheet>
 <description>Audio &amp; Power</description>
 <plain>
-<text x="-20.32" y="157.48" size="1.778" layer="94" grouprefs="AUDIO_JACKS">Through-hole connectors wired out to 4 mono-TS jacks</text>
+<text x="-20.32" y="157.48" size="1.778" layer="94" grouprefs="AUDIO_JACKS">Through-hole connectors wired out to 2 mono-TS jacks</text>
 <text x="7.62" y="25.4" size="1.778" layer="94" grouprefs="POWER">This section provides connection to a 9V
 barrel jack, feeding the V_IN pin on the Seed 
 and providing isolated 5V power to the audio components</text>
@@ -6656,8 +6500,8 @@ and providing isolated 5V power to the audio components</text>
 <instance part="SUPPLY2" gate="GND" x="142.24" y="119.38" smashed="yes" rot="R90">
 <attribute name="VALUE" x="145.415" y="117.475" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY3" gate="GND" x="-15.24" y="134.62" smashed="yes" grouprefs="AUDIO_JACKS">
-<attribute name="VALUE" x="-17.145" y="131.445" size="1.778" layer="96"/>
+<instance part="SUPPLY3" gate="GND" x="-7.62" y="142.24" smashed="yes" grouprefs="AUDIO_JACKS">
+<attribute name="VALUE" x="-9.525" y="139.065" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY9" gate="GND" x="22.86" y="0" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="20.955" y="-3.175" size="1.778" layer="96"/>
@@ -6671,10 +6515,6 @@ and providing isolated 5V power to the audio components</text>
 <instance part="PWR" gate="G$1" x="12.7" y="7.62" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="10.16" y="2.794" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="13.208" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="AUDIO" gate="G$1" x="-5.08" y="144.78" smashed="yes" grouprefs="AUDIO_JACKS">
-<attribute name="VALUE" x="-8.89" y="137.414" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-9.144" y="152.908" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="D2" gate="G$1" x="30.48" y="10.16" smashed="yes" grouprefs="POWER">
 <attribute name="NAME" x="27.94" y="12.192" size="1.778" layer="95" font="vector"/>
@@ -6750,13 +6590,13 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="VALUE" x="93.98" y="167.64" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="P" x="71.12" y="218.44" smashed="yes" grouprefs="AUDIO_PWR"/>
-<instance part="IC2" gate="B" x="198.12" y="198.12" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="200.66" y="201.295" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="193.04" size="1.778" layer="96"/>
+<instance part="IC2" gate="B" x="200.66" y="203.2" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="NAME" x="203.2" y="206.375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="203.2" y="198.12" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2" gate="C" x="198.12" y="154.94" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="200.66" y="158.115" size="1.778" layer="95"/>
-<attribute name="VALUE" x="200.66" y="149.86" size="1.778" layer="96"/>
+<instance part="IC2" gate="C" x="200.66" y="167.64" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="NAME" x="203.2" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="203.2" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="IC2" gate="D" x="88.9" y="142.24" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="NAME" x="91.44" y="145.415" size="1.778" layer="95"/>
@@ -6776,35 +6616,20 @@ and providing isolated 5V power to the audio components</text>
 <instance part="SUPPLY16" gate="GND" x="71.12" y="203.2" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="VALUE" x="69.215" y="200.025" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="175.26" y="157.48" smashed="yes" rot="R270" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="175.895" y="156.464" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="171.069" y="156.464" size="1.778" layer="96" font="vector" rot="R270"/>
+<instance part="C9" gate="G$1" x="177.8" y="170.18" smashed="yes" rot="R270" grouprefs="AUDIO_INPUT">
+<attribute name="NAME" x="178.435" y="169.164" size="1.778" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="173.609" y="169.164" size="1.778" layer="96" font="vector" rot="R270"/>
 </instance>
-<instance part="R3" gate="G$1" x="182.88" y="165.1" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="181.356" y="165.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="184.404" y="165.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R3" gate="G$1" x="185.42" y="177.8" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
+<attribute name="NAME" x="183.896" y="177.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="186.944" y="177.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="R4" gate="G$1" x="165.1" y="149.86" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="163.576" y="149.86" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="166.624" y="149.86" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="R4" gate="G$1" x="167.64" y="162.56" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
+<attribute name="NAME" x="166.116" y="162.56" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="169.164" y="162.56" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY17" gate="GND" x="165.1" y="139.7" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="VALUE" x="163.195" y="136.525" size="1.778" layer="96"/>
-</instance>
-<instance part="R5" gate="G$1" x="182.88" y="208.28" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="181.356" y="208.28" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="184.404" y="208.28" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R6" gate="G$1" x="165.1" y="193.04" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="163.576" y="193.04" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="166.624" y="193.04" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="C10" gate="G$1" x="175.26" y="200.66" smashed="yes" rot="R270" grouprefs="AUDIO_INPUT">
-<attribute name="NAME" x="175.895" y="199.644" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="171.069" y="199.644" size="1.778" layer="96" font="vector" rot="R270"/>
-</instance>
-<instance part="SUPPLY18" gate="GND" x="165.1" y="182.88" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="VALUE" x="163.195" y="179.705" size="1.778" layer="96"/>
+<instance part="SUPPLY17" gate="GND" x="167.64" y="152.4" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="VALUE" x="165.735" y="149.225" size="1.778" layer="96"/>
 </instance>
 <instance part="U1" gate="A" x="210.82" y="93.98" smashed="yes" grouprefs="AUDIO_OUTPUT">
 <attribute name="NAME" x="239.1156" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -6840,38 +6665,22 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="246.38" y="107.696" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="246.38" y="110.744" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
 </instance>
-<instance part="R11" gate="G$1" x="284.48" y="93.98" smashed="yes" rot="R90" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="282.956" y="93.98" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="286.004" y="93.98" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R12" gate="G$1" x="284.48" y="78.74" smashed="yes" rot="R90" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="282.956" y="78.74" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="286.004" y="78.74" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="R13" gate="G$1" x="266.7" y="76.2" smashed="yes" rot="R180" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="266.7" y="74.676" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="266.7" y="77.724" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
-</instance>
-<instance part="C13" gate="G$1" x="294.64" y="86.36" smashed="yes" rot="R270" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="295.275" y="85.344" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="290.449" y="85.344" size="1.778" layer="96" font="vector" rot="R270"/>
-</instance>
-<instance part="SUPPLY21" gate="GND" x="284.48" y="68.58" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="282.575" y="65.405" size="1.778" layer="96"/>
-</instance>
-<instance part="C14" gate="G$1" x="256.54" y="76.2" smashed="yes" rot="R270" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="257.175" y="75.184" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="252.349" y="75.184" size="1.778" layer="96" font="vector" rot="R270"/>
-</instance>
-<instance part="R14" gate="G$1" x="231.14" y="73.66" smashed="yes" rot="R180" grouprefs="AUDIO_OUTPUT">
-<attribute name="NAME" x="231.14" y="72.136" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="231.14" y="75.184" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
-</instance>
-<instance part="SUPPLY22" gate="GND" x="220.98" y="68.58" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="219.075" y="65.405" size="1.778" layer="96"/>
+<instance part="SUPPLY21" gate="GND" x="274.32" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
+<attribute name="VALUE" x="272.415" y="78.105" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY23" gate="GND" x="210.82" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
 <attribute name="VALUE" x="208.915" y="78.105" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY18" gate="GND" x="180.34" y="195.58" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="VALUE" x="178.435" y="192.405" size="1.778" layer="96"/>
+</instance>
+<instance part="AUD_PIN" gate="G$1" x="12.7" y="147.32" smashed="yes" grouprefs="AUDIO_JACKS">
+<attribute name="VALUE" x="10.16" y="142.494" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="10.16" y="152.908" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="AUD_GND" gate="G$1" x="2.54" y="149.86" smashed="yes" rot="R180" grouprefs="AUDIO_JACKS">
+<attribute name="VALUE" x="5.08" y="154.686" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="5.08" y="154.432" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -6900,24 +6709,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="20.32" y1="7.62" x2="22.86" y2="7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="22.86" y1="7.62" x2="22.86" y2="2.54" width="0.1524" layer="91" grouprefs="POWER"/>
-</segment>
-<segment>
-<pinref part="AUDIO" gate="G$1" pin="1"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="-12.7" y1="149.86" x2="-15.24" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<wire x1="-15.24" y1="149.86" x2="-15.24" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="3"/>
-<wire x1="-15.24" y1="147.32" x2="-15.24" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<wire x1="-15.24" y1="144.78" x2="-15.24" y2="142.24" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<wire x1="-15.24" y1="142.24" x2="-15.24" y2="137.16" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<wire x1="-12.7" y1="147.32" x2="-15.24" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<junction x="-15.24" y="147.32" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="5"/>
-<wire x1="-12.7" y1="144.78" x2="-15.24" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<junction x="-15.24" y="144.78" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="7"/>
-<wire x1="-12.7" y1="142.24" x2="-15.24" y2="142.24" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<junction x="-15.24" y="142.24" grouprefs="AUDIO_JACKS"/>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
@@ -6983,12 +6774,7 @@ and providing isolated 5V power to the audio components</text>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="165.1" y1="144.78" x2="165.1" y2="142.24" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="165.1" y1="187.96" x2="165.1" y2="185.42" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="167.64" y1="157.48" x2="167.64" y2="154.94" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -7002,21 +6788,32 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="254" y1="109.22" x2="254" y2="106.68" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 </segment>
 <segment>
-<pinref part="R12" gate="G$1" pin="1"/>
-<pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="284.48" y1="73.66" x2="284.48" y2="71.12" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="226.06" y1="73.66" x2="220.98" y2="73.66" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="SUPPLY22" gate="GND" pin="GND"/>
-<wire x1="220.98" y1="73.66" x2="220.98" y2="71.12" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="V-"/>
 <wire x1="213.36" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <pinref part="SUPPLY23" gate="GND" pin="GND"/>
 <wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="193.04" y1="205.74" x2="180.34" y2="205.74" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<pinref part="SUPPLY18" gate="GND" pin="GND"/>
+<wire x1="180.34" y1="205.74" x2="180.34" y2="198.12" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="INB+"/>
+<wire x1="269.24" y1="86.36" x2="274.32" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="SUPPLY21" gate="GND" pin="GND"/>
+<wire x1="274.32" y1="86.36" x2="274.32" y2="83.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="AUD_GND" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="149.86" x2="-7.62" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
+<wire x1="-7.62" y1="149.86" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<pinref part="AUD_GND" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="147.32" x2="-7.62" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<wire x1="-5.08" y1="147.32" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<junction x="-7.62" y="147.32" grouprefs="AUDIO_JACKS"/>
 </segment>
 </net>
 <net name="SPST1" class="0">
@@ -7024,27 +6821,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SEED" gate="G$1" pin="GPIO6(SDMMC1_CMD)"/>
 <wire x1="73.66" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
 <label x="58.42" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPST4" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO9(SPI1_SCK)"/>
-<wire x1="73.66" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPST3" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO8(SPI1_NSS)"/>
-<wire x1="73.66" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
-<label x="58.42" y="96.52" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPST2" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO7(SDMMC1_CK)"/>
-<wire x1="73.66" y1="99.06" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
-<label x="58.42" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN_L" class="0">
@@ -7055,34 +6831,15 @@ and providing isolated 5V power to the audio components</text>
 </segment>
 <segment>
 <pinref part="IC2" gate="C" pin="OUT"/>
-<wire x1="205.74" y1="154.94" x2="215.9" y2="154.94" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="215.9" y1="154.94" x2="220.98" y2="154.94" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="215.9" y1="154.94" x2="215.9" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="215.9" y="154.94" grouprefs="AUDIO_INPUT"/>
-<wire x1="215.9" y1="144.78" x2="187.96" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="187.96" y1="144.78" x2="187.96" y2="152.4" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="208.28" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="218.44" y1="167.64" x2="223.52" y2="167.64" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="218.44" y1="167.64" x2="218.44" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<junction x="218.44" y="167.64" grouprefs="AUDIO_INPUT"/>
+<wire x1="218.44" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="190.5" y1="157.48" x2="190.5" y2="165.1" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
 <pinref part="IC2" gate="C" pin="-IN"/>
-<wire x1="187.96" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<label x="220.98" y="154.94" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
-</segment>
-</net>
-<net name="IN_R" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="AUDIO_IN_R"/>
-<wire x1="58.42" y1="73.66" x2="73.66" y2="73.66" width="0.1524" layer="91"/>
-<label x="58.42" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="B" pin="OUT"/>
-<wire x1="205.74" y1="198.12" x2="213.36" y2="198.12" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="213.36" y1="198.12" x2="218.44" y2="198.12" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="213.36" y1="198.12" x2="213.36" y2="187.96" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="213.36" y="198.12" grouprefs="AUDIO_INPUT"/>
-<wire x1="213.36" y1="187.96" x2="187.96" y2="187.96" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="187.96" y1="187.96" x2="187.96" y2="195.58" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
-<wire x1="187.96" y1="195.58" x2="190.5" y2="195.58" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<label x="218.44" y="198.12" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
+<wire x1="190.5" y1="165.1" x2="193.04" y2="165.1" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<label x="223.52" y="167.64" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
 </segment>
 </net>
 <net name="LED3" class="0">
@@ -7153,18 +6910,6 @@ and providing isolated 5V power to the audio components</text>
 <label x="172.72" y="86.36" size="1.778" layer="95" grouprefs="AUDIO_OUTPUT"/>
 </segment>
 </net>
-<net name="OUT_R" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="AUDIO_OUT_R"/>
-<wire x1="58.42" y1="68.58" x2="73.66" y2="68.58" width="0.1524" layer="91"/>
-<label x="58.42" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="+"/>
-<wire x1="297.18" y1="86.36" x2="304.8" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<label x="302.26" y="86.36" size="1.778" layer="95" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-</net>
 <net name="HEX_1" class="0">
 <segment>
 <pinref part="SEED" gate="G$1" pin="GPIO30(USB_HS_D_-)"/>
@@ -7214,20 +6959,6 @@ and providing isolated 5V power to the audio components</text>
 <label x="58.42" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SPDT2_1" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO13(I2C1_SDA)"/>
-<wire x1="73.66" y1="83.82" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
-<label x="58.42" y="83.82" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SPDT2_2" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO14(USART1_TX)"/>
-<wire x1="73.66" y1="81.28" x2="58.42" y2="81.28" width="0.1524" layer="91"/>
-<label x="58.42" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="+3V3_D" class="0">
 <segment>
 <pinref part="SEED" gate="G$1" pin="+3V3_D"/>
@@ -7267,34 +6998,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="C2" gate="G$1" pin="+"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="10.16" x2="48.26" y2="7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-</segment>
-</net>
-<net name="GPIO4" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO4(SDMMC1_D1)"/>
-<wire x1="58.42" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<label x="58.42" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO3" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO3(SDMMC1_D2)"/>
-<wire x1="58.42" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
-<label x="58.42" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO2" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO2(SDMMC1_D3)"/>
-<wire x1="58.42" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
-<label x="58.42" y="111.76" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="GPIO1" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO1(USB_HS_ID)"/>
-<wire x1="58.42" y1="114.3" x2="73.66" y2="114.3" width="0.1524" layer="91"/>
-<label x="58.42" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -7358,11 +7061,6 @@ and providing isolated 5V power to the audio components</text>
 <label x="185.42" y="104.14" size="1.778" layer="95" grouprefs="AUDIO_OUTPUT"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="284.48" y1="99.06" x2="284.48" y2="101.6" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<label x="284.48" y="101.6" size="1.778" layer="95" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="V+"/>
 <wire x1="269.24" y1="93.98" x2="274.32" y2="93.98" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <wire x1="274.32" y1="93.98" x2="274.32" y2="101.6" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
@@ -7395,13 +7093,8 @@ and providing isolated 5V power to the audio components</text>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="170.18" x2="182.88" y2="172.72" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<label x="182.88" y="172.72" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="213.36" x2="182.88" y2="215.9" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<label x="182.88" y="215.9" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
+<wire x1="185.42" y1="182.88" x2="185.42" y2="185.42" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<label x="185.42" y="185.42" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -7419,54 +7112,27 @@ and providing isolated 5V power to the audio components</text>
 <segment>
 <pinref part="C9" gate="G$1" pin="+"/>
 <pinref part="IC2" gate="C" pin="+IN"/>
-<wire x1="177.8" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="180.34" y1="170.18" x2="185.42" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="182.88" y1="160.02" x2="182.88" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="182.88" y="157.48" grouprefs="AUDIO_INPUT"/>
+<wire x1="185.42" y1="170.18" x2="193.04" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="185.42" y1="172.72" x2="185.42" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<junction x="185.42" y="170.18" grouprefs="AUDIO_INPUT"/>
 </segment>
 </net>
 <net name="IN_L_JACK" class="0">
 <segment>
-<wire x1="2.54" y1="149.86" x2="10.16" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<label x="5.08" y="149.86" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<label x="22.86" y="149.86" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
+<pinref part="AUD_PIN" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="-"/>
-<wire x1="170.18" y1="157.48" x2="165.1" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="172.72" y1="170.18" x2="167.64" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="157.48" x2="157.48" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="165.1" y1="154.94" x2="165.1" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="165.1" y="157.48" grouprefs="AUDIO_INPUT"/>
-<label x="149.86" y="154.94" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="C10" gate="G$1" pin="+"/>
-<pinref part="IC2" gate="B" pin="+IN"/>
-<wire x1="177.8" y1="200.66" x2="182.88" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="182.88" y1="203.2" x2="182.88" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="182.88" y="200.66" grouprefs="AUDIO_INPUT"/>
-</segment>
-</net>
-<net name="IN_R_JACK" class="0">
-<segment>
-<wire x1="2.54" y1="147.32" x2="10.16" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<label x="5.08" y="147.32" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="-"/>
-<wire x1="170.18" y1="200.66" x2="165.1" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="200.66" x2="157.48" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<wire x1="165.1" y1="198.12" x2="165.1" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<junction x="165.1" y="200.66" grouprefs="AUDIO_INPUT"/>
-<label x="149.86" y="198.12" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
+<wire x1="167.64" y1="170.18" x2="160.02" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="167.64" y1="167.64" x2="167.64" y2="170.18" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<junction x="167.64" y="170.18" grouprefs="AUDIO_INPUT"/>
+<label x="152.4" y="167.64" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -7484,9 +7150,9 @@ and providing isolated 5V power to the audio components</text>
 </net>
 <net name="OUT_L_JACK" class="0">
 <segment>
-<wire x1="2.54" y1="144.78" x2="10.16" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<label x="5.08" y="144.78" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="6"/>
+<wire x1="20.32" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<label x="22.86" y="147.32" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
+<pinref part="AUD_PIN" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="-"/>
@@ -7497,23 +7163,6 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="238.76" y1="109.22" x2="238.76" y2="114.3" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <wire x1="238.76" y1="109.22" x2="241.3" y2="109.22" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <junction x="238.76" y="109.22" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-</net>
-<net name="OUT_R_JACK" class="0">
-<segment>
-<wire x1="2.54" y1="142.24" x2="10.16" y2="142.24" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<label x="5.08" y="142.24" size="1.778" layer="95" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUDIO" gate="G$1" pin="8"/>
-</segment>
-<segment>
-<pinref part="C14" gate="G$1" pin="-"/>
-<wire x1="251.46" y1="76.2" x2="238.76" y2="76.2" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="238.76" y1="76.2" x2="238.76" y2="73.66" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="73.66" x2="238.76" y2="66.04" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="238.76" y1="73.66" x2="236.22" y2="73.66" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<junction x="238.76" y="73.66" grouprefs="AUDIO_OUTPUT"/>
-<label x="236.22" y="63.5" size="1.778" layer="95" grouprefs="AUDIO_OUTPUT"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -7536,38 +7185,24 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="218.44" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 </segment>
 </net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="IC2" gate="B" pin="-IN"/>
+<wire x1="193.04" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="190.5" y1="200.66" x2="190.5" y2="193.04" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="190.5" y1="193.04" x2="218.44" y2="193.04" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="218.44" y1="193.04" x2="218.44" y2="203.2" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
+<wire x1="218.44" y1="203.2" x2="208.28" y2="203.2" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+</segment>
+</net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="C13" gate="G$1" pin="-"/>
-<pinref part="U1" gate="A" pin="INB+"/>
-<wire x1="289.56" y1="86.36" x2="284.48" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="284.48" y1="86.36" x2="269.24" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="284.48" y1="83.82" x2="284.48" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<junction x="284.48" y="86.36" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="88.9" x2="284.48" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="INB-"/>
-<wire x1="269.24" y1="88.9" x2="276.86" y2="88.9" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="276.86" y1="88.9" x2="276.86" y2="91.44" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <pinref part="U1" gate="A" pin="OUTB"/>
-<wire x1="276.86" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="274.32" y1="91.44" x2="269.24" y2="91.44" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="274.32" y1="91.44" x2="274.32" y2="76.2" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<wire x1="274.32" y1="76.2" x2="271.78" y2="76.2" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<junction x="274.32" y="91.44" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="R13" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<pinref part="C14" gate="G$1" pin="+"/>
-<wire x1="261.62" y1="76.2" x2="259.08" y2="76.2" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<wire x1="269.24" y1="91.44" x2="274.32" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="91.44" x2="274.32" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U1" gate="A" pin="INB-"/>
+<wire x1="274.32" y1="88.9" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -7575,37 +7210,29 @@ and providing isolated 5V power to the audio components</text>
 <sheet>
 <description>I/O</description>
 <plain>
-<text x="43.18" y="60.96" size="1.778" layer="94" grouprefs="SPDT">This section provides connections for 2 SPDT 
-switches with pull-down resistors for each 'on' pin</text>
+<text x="43.18" y="60.96" size="1.778" layer="94" grouprefs="SPDT">This section provides connections for the SPDT 
+switch with a pull-down resistor for each 'on' pin</text>
 <text x="-50.8" y="5.08" size="1.778" layer="94" grouprefs="HEX_SELECTOR">This section provides connections for a 1P8T rotary selector
 switch with a pull-down resistor for each selector pin</text>
 <text x="38.1" y="5.08" size="1.778" layer="94" grouprefs="POT">This section provides connections
 for 4 potentiometers</text>
-<text x="-38.1" y="60.96" size="1.778" layer="94" grouprefs="SPST">This section provides connections for 4 SPST 
-momentary switches using pull-down resistors</text>
-<text x="124.46" y="63.5" size="1.778" layer="94" grouprefs="LED">This section provides connections for 4 LEDs,
+<text x="-43.18" y="60.96" size="1.778" layer="94" grouprefs="SPST">This section provides connections for the SPST 
+momentary switch using a pull-down resistor</text>
+<text x="93.98" y="5.08" size="1.778" layer="94" grouprefs="LED">This section provides connections for 4 LEDs,
 each behind a 330Ohm resistor</text>
-<text x="114.3" y="-7.62" size="1.778" layer="94" grouprefs="EXTRA">This section provides direct
-connections to GPIO pins not
-used in other sections</text>
 </plain>
 <instances>
-<instance part="SUPPLY7" gate="GND" x="71.12" y="25.4" smashed="yes" grouprefs="SPDT"/>
-<instance part="D22" gate="G$1" x="73.66" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="D21" gate="G$1" x="78.74" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="D12" gate="G$1" x="83.82" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="D11" gate="G$1" x="88.9" y="35.56" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="SUPPLY7" gate="GND" x="83.82" y="27.94" smashed="yes" grouprefs="SPDT"/>
+<instance part="D12" gate="G$1" x="83.82" y="40.64" smashed="yes" rot="R90" grouprefs="SPDT"/>
+<instance part="D11" gate="G$1" x="88.9" y="40.64" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="SUPPLY8" gate="GND" x="-30.48" y="-27.94" smashed="yes" grouprefs="HEX_SELECTOR"/>
 <instance part="H1" gate="G$1" x="-25.4" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H2" gate="G$1" x="-20.32" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H3" gate="G$1" x="-15.24" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H4" gate="G$1" x="-10.16" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="SUPPLY6" gate="GND" x="71.12" y="-38.1" smashed="yes" grouprefs="POT"/>
-<instance part="S4" gate="G$1" x="-7.62" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="S3" gate="G$1" x="-2.54" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="S2" gate="G$1" x="2.54" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="S1" gate="G$1" x="7.62" y="35.56" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="SUPPLY5" gate="GND" x="-12.7" y="25.4" smashed="yes" grouprefs="SPST"/>
+<instance part="S1" gate="G$1" x="-2.54" y="43.18" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="SUPPLY5" gate="GND" x="-2.54" y="33.02" smashed="yes" grouprefs="SPST"/>
 <instance part="POT_GPIO" gate="G$1" x="50.8" y="-7.62" smashed="yes" rot="R180" grouprefs="POT">
 <attribute name="VALUE" x="55.88" y="-0.254" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="55.88" y="-0.508" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -7618,22 +7245,6 @@ used in other sections</text>
 <attribute name="VALUE" x="58.42" y="-35.306" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="58.42" y="-19.812" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SPST_PWR" gate="G$1" x="-30.48" y="48.26" smashed="yes" rot="R180" grouprefs="SPST">
-<attribute name="VALUE" x="-25.4" y="55.626" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="-25.4" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="SPST_GPIO" gate="G$1" x="-17.78" y="45.72" smashed="yes" grouprefs="SPST">
-<attribute name="VALUE" x="-22.86" y="38.354" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-22.86" y="53.848" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="SPDT_GPIO" gate="G$1" x="63.5" y="45.72" smashed="yes" grouprefs="SPDT">
-<attribute name="VALUE" x="58.42" y="38.354" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="58.42" y="53.848" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="SPDT_PWR" gate="G$1" x="53.34" y="50.8" smashed="yes" rot="R180" grouprefs="SPDT">
-<attribute name="VALUE" x="55.88" y="55.626" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="55.88" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
 <instance part="HEX_PWR" gate="G$1" x="-45.72" y="-2.54" smashed="yes" rot="R180" grouprefs="HEX_SELECTOR">
 <attribute name="VALUE" x="-43.18" y="2.286" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="-43.18" y="2.032" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -7642,77 +7253,51 @@ used in other sections</text>
 <attribute name="VALUE" x="-40.64" y="-14.986" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-40.64" y="0.508" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="SUPPLY4" gate="GND" x="170.18" y="27.94" smashed="yes" grouprefs="LED">
-<attribute name="VALUE" x="168.275" y="24.765" size="1.778" layer="96"/>
+<instance part="SUPPLY4" gate="GND" x="142.24" y="-7.62" smashed="yes" grouprefs="LED">
+<attribute name="VALUE" x="140.335" y="-10.795" size="1.778" layer="96"/>
 </instance>
-<instance part="L1" gate="G$1" x="134.62" y="58.42" smashed="yes" grouprefs="LED">
-<attribute name="NAME" x="134.62" y="59.944" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="134.62" y="56.896" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="L1" gate="G$1" x="106.68" y="-2.54" smashed="yes" grouprefs="LED">
+<attribute name="NAME" x="106.68" y="-1.016" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="106.68" y="-4.064" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="L2" gate="G$1" x="134.62" y="45.72" smashed="yes" grouprefs="LED">
-<attribute name="NAME" x="134.62" y="47.244" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="134.62" y="44.196" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="SPST_PWR" gate="G$1" x="-25.4" y="50.8" smashed="yes" rot="R180" grouprefs="SPST">
+<attribute name="VALUE" x="-22.86" y="55.626" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="-22.86" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="L3" gate="G$1" x="134.62" y="33.02" smashed="yes" grouprefs="LED">
-<attribute name="NAME" x="134.62" y="34.544" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="134.62" y="31.496" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="SPST_GPIO" gate="G$1" x="-15.24" y="50.8" smashed="yes" grouprefs="SPST">
+<attribute name="VALUE" x="-17.78" y="45.974" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-17.78" y="53.848" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="L4" gate="G$1" x="134.62" y="20.32" smashed="yes" grouprefs="LED">
-<attribute name="NAME" x="134.62" y="21.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="134.62" y="18.796" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="SPDT_GPIO" gate="G$1" x="68.58" y="48.26" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="66.04" y="43.434" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="66.04" y="53.848" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="LED_GPIO" gate="G$1" x="149.86" y="40.64" smashed="yes" rot="R180" grouprefs="LED">
-<attribute name="VALUE" x="154.94" y="48.006" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="154.94" y="47.752" size="1.778" layer="95" font="vector" rot="R180"/>
+<instance part="SPDT_PWR" gate="G$1" x="55.88" y="50.8" smashed="yes" rot="R180" grouprefs="SPDT">
+<attribute name="VALUE" x="58.42" y="55.626" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="58.42" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="LED_GND" gate="G$1" x="162.56" y="38.1" smashed="yes" grouprefs="LED">
-<attribute name="VALUE" x="157.48" y="30.734" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="157.48" y="46.228" size="1.778" layer="95" font="vector"/>
+<instance part="LED_GPIO" gate="G$1" x="121.92" y="-2.54" smashed="yes" rot="R180" grouprefs="LED">
+<attribute name="VALUE" x="124.46" y="2.286" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="124.46" y="2.032" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="SUPPLY12" gate="GND" x="106.68" y="-45.72" smashed="yes" grouprefs="EXTRA"/>
-<instance part="EX_GPIOS" gate="G$1" x="132.08" y="-25.4" smashed="yes" grouprefs="EXTRA"/>
-<instance part="EX_PWR" gate="G$1" x="114.3" y="-17.78" smashed="yes" rot="R180" grouprefs="EXTRA"/>
-<instance part="EX_GND" gate="G$1" x="114.3" y="-35.56" smashed="yes" rot="R180" grouprefs="EXTRA"/>
+<instance part="LED_GND" gate="G$1" x="132.08" y="-2.54" smashed="yes" grouprefs="LED">
+<attribute name="VALUE" x="129.54" y="-7.366" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="129.54" y="0.508" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="30.48" x2="7.62" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="7.62" y1="27.94" x2="2.54" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="S2" gate="G$1" pin="1"/>
-<wire x1="2.54" y1="27.94" x2="-2.54" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-2.54" y1="27.94" x2="-7.62" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-7.62" y1="27.94" x2="-12.7" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="2.54" y1="30.48" x2="2.54" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="2.54" y="27.94" grouprefs="SPST"/>
-<pinref part="S3" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="30.48" x2="-2.54" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-2.54" y="27.94" grouprefs="SPST"/>
-<pinref part="S4" gate="G$1" pin="1"/>
-<wire x1="-7.62" y1="30.48" x2="-7.62" y2="27.94" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-7.62" y="27.94" grouprefs="SPST"/>
-</segment>
-<segment>
-<pinref part="D11" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="30.48" x2="88.9" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="88.9" y1="27.94" x2="83.82" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="D22" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="27.94" x2="78.74" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="78.74" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="73.66" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="73.66" y1="30.48" x2="73.66" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="73.66" y="27.94" grouprefs="SPDT"/>
-<pinref part="D21" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="30.48" x2="78.74" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="78.74" y="27.94" grouprefs="SPDT"/>
 <pinref part="D12" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="30.48" x2="83.82" y2="27.94" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="83.82" y="27.94" grouprefs="SPDT"/>
+<wire x1="83.82" y1="35.56" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
+<pinref part="D11" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="33.02" x2="83.82" y2="30.48" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="88.9" y1="35.56" x2="88.9" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="88.9" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
+<junction x="83.82" y="33.02" grouprefs="SPDT"/>
 </segment>
 <segment>
 <pinref part="H4" gate="G$1" pin="1"/>
@@ -7751,40 +7336,15 @@ used in other sections</text>
 <junction x="71.12" y="-30.48" grouprefs="POT"/>
 </segment>
 <segment>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="43.18" x2="170.18" y2="43.18" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="170.18" y1="43.18" x2="170.18" y2="40.64" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="170.18" y1="40.64" x2="170.18" y2="38.1" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="170.18" y1="38.1" x2="170.18" y2="35.56" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="170.18" y1="35.56" x2="170.18" y2="30.48" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="167.64" y1="40.64" x2="170.18" y2="40.64" width="0.1524" layer="91" grouprefs="LED"/>
-<junction x="170.18" y="40.64" grouprefs="LED"/>
-<wire x1="167.64" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91" grouprefs="LED"/>
-<junction x="170.18" y="38.1" grouprefs="LED"/>
-<wire x1="167.64" y1="35.56" x2="170.18" y2="35.56" width="0.1524" layer="91" grouprefs="LED"/>
-<junction x="170.18" y="35.56" grouprefs="LED"/>
-<pinref part="LED_GND" gate="G$1" pin="1"/>
-<pinref part="LED_GND" gate="G$1" pin="2"/>
-<pinref part="LED_GND" gate="G$1" pin="3"/>
-<pinref part="LED_GND" gate="G$1" pin="4"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="38.1" x2="-2.54" y2="35.56" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="109.22" y1="-33.02" x2="106.68" y2="-33.02" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-33.02" x2="106.68" y2="-35.56" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-35.56" x2="106.68" y2="-35.56" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-35.56" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-35.56" x2="106.68" y2="-38.1" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-38.1" x2="106.68" y2="-38.1" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-38.1" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-38.1" x2="106.68" y2="-40.64" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-40.64" x2="106.68" y2="-40.64" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-40.64" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-40.64" x2="106.68" y2="-43.18" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<pinref part="EX_GND" gate="G$1" pin="1"/>
-<pinref part="EX_GND" gate="G$1" pin="2"/>
-<pinref part="EX_GND" gate="G$1" pin="3"/>
-<pinref part="EX_GND" gate="G$1" pin="4"/>
+<pinref part="LED_GND" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-2.54" x2="142.24" y2="-2.54" width="0.1524" layer="91" grouprefs="LED"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<wire x1="142.24" y1="-2.54" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="LED"/>
 </segment>
 </net>
 <net name="POT4" class="0">
@@ -7817,90 +7377,35 @@ used in other sections</text>
 </net>
 <net name="SPDT1_2" class="0">
 <segment>
-<wire x1="68.58" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="76.2" y1="48.26" x2="83.82" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
 <label x="91.44" y="48.26" size="1.778" layer="95" grouprefs="SPDT"/>
 <pinref part="D12" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="48.26" x2="101.6" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="83.82" y1="40.64" x2="83.82" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="83.82" y1="45.72" x2="83.82" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="83.82" y="48.26" grouprefs="SPDT"/>
-<pinref part="SPDT_GPIO" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="SPDT2_1" class="0">
-<segment>
-<wire x1="68.58" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91" grouprefs="SPDT"/>
-<label x="91.44" y="45.72" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="D21" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="78.74" y1="40.64" x2="78.74" y2="45.72" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="78.74" y="45.72" grouprefs="SPDT"/>
-<pinref part="SPDT_GPIO" gate="G$1" pin="2"/>
+<pinref part="SPDT_GPIO" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SPDT1_1" class="0">
 <segment>
-<wire x1="68.58" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="76.2" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
 <label x="91.44" y="50.8" size="1.778" layer="95" grouprefs="SPDT"/>
 <pinref part="D11" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="88.9" y1="40.64" x2="88.9" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="88.9" y1="45.72" x2="88.9" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="88.9" y="50.8" grouprefs="SPDT"/>
-<pinref part="SPDT_GPIO" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="SPDT2_2" class="0">
-<segment>
-<wire x1="68.58" y1="43.18" x2="73.66" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
-<label x="91.44" y="43.18" size="1.778" layer="95" grouprefs="SPDT"/>
-<pinref part="D22" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="43.18" x2="101.6" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="73.66" y1="40.64" x2="73.66" y2="43.18" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="73.66" y="43.18" grouprefs="SPDT"/>
-<pinref part="SPDT_GPIO" gate="G$1" pin="1"/>
+<pinref part="SPDT_GPIO" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="SPST1" class="0">
 <segment>
 <pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="50.8" x2="7.62" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="7.62" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="10.16" y="50.8" size="1.778" layer="95" grouprefs="SPST"/>
-<wire x1="-12.7" y1="50.8" x2="7.62" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="7.62" y="50.8" grouprefs="SPST"/>
-<pinref part="SPST_GPIO" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="SPST4" class="0">
-<segment>
-<pinref part="S4" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="43.18" x2="-7.62" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-7.62" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="10.16" y="43.18" size="1.778" layer="95" grouprefs="SPST"/>
-<wire x1="-12.7" y1="43.18" x2="-7.62" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-7.62" y="43.18" grouprefs="SPST"/>
+<wire x1="-2.54" y1="50.8" x2="-2.54" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-2.54" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="2.54" y="50.8" size="1.778" layer="95" grouprefs="SPST"/>
+<wire x1="-7.62" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-2.54" y="50.8" grouprefs="SPST"/>
 <pinref part="SPST_GPIO" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="SPST3" class="0">
-<segment>
-<pinref part="S3" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="45.72" x2="-2.54" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-2.54" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="10.16" y="45.72" size="1.778" layer="95" grouprefs="SPST"/>
-<wire x1="-12.7" y1="45.72" x2="-2.54" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-2.54" y="45.72" grouprefs="SPST"/>
-<pinref part="SPST_GPIO" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="SPST2" class="0">
-<segment>
-<pinref part="S2" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="48.26" x2="2.54" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="2.54" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="10.16" y="48.26" size="1.778" layer="95" grouprefs="SPST"/>
-<wire x1="-12.7" y1="48.26" x2="2.54" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="2.54" y="48.26" grouprefs="SPST"/>
-<pinref part="SPST_GPIO" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="+3V3_A" class="0">
@@ -7923,56 +7428,22 @@ used in other sections</text>
 <label x="66.04" y="2.54" size="1.778" layer="95" grouprefs="POT"/>
 </segment>
 <segment>
-<pinref part="SPST_PWR" gate="G$1" pin="4"/>
-<wire x1="-35.56" y1="43.18" x2="-40.64" y2="43.18" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-40.64" y1="43.18" x2="-40.64" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SPST_PWR" gate="G$1" pin="3"/>
-<wire x1="-40.64" y1="45.72" x2="-40.64" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-40.64" y1="48.26" x2="-40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
 <wire x1="-40.64" y1="50.8" x2="-40.64" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-35.56" y1="45.72" x2="-40.64" y2="45.72" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-40.64" y="45.72" grouprefs="SPST"/>
-<pinref part="SPST_PWR" gate="G$1" pin="2"/>
-<wire x1="-35.56" y1="48.26" x2="-40.64" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-40.64" y="48.26" grouprefs="SPST"/>
-<pinref part="SPST_PWR" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-40.64" y="50.8" grouprefs="SPST"/>
+<wire x1="-33.02" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
 <label x="-45.72" y="55.88" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST_PWR" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SPDT_PWR" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="40.64" y1="48.26" x2="40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
-<pinref part="SPDT_PWR" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="50.8" x2="40.64" y2="55.88" width="0.1524" layer="91" grouprefs="SPDT"/>
-<wire x1="45.72" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
-<junction x="40.64" y="50.8" grouprefs="SPDT"/>
+<wire x1="48.26" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPDT"/>
 <label x="35.56" y="55.88" size="1.778" layer="95" grouprefs="SPDT"/>
+<pinref part="SPDT_PWR" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="HEX_PWR" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="-2.54" x2="-58.42" y2="-2.54" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <wire x1="-58.42" y1="-2.54" x2="-58.42" y2="2.54" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <label x="-63.5" y="2.54" size="1.778" layer="95" grouprefs="HEX_SELECTOR"/>
-</segment>
-<segment>
-<wire x1="109.22" y1="-22.86" x2="106.68" y2="-22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-22.86" x2="106.68" y2="-20.32" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-20.32" x2="106.68" y2="-17.78" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-17.78" x2="106.68" y2="-15.24" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="106.68" y1="-15.24" x2="106.68" y2="-10.16" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-15.24" x2="106.68" y2="-15.24" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-15.24" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-17.78" x2="106.68" y2="-17.78" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-17.78" grouprefs="EXTRA"/>
-<wire x1="109.22" y1="-20.32" x2="106.68" y2="-20.32" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<junction x="106.68" y="-20.32" grouprefs="EXTRA"/>
-<label x="101.6" y="-10.16" size="1.778" layer="95" grouprefs="EXTRA"/>
-<pinref part="EX_PWR" gate="G$1" pin="1"/>
-<pinref part="EX_PWR" gate="G$1" pin="2"/>
-<pinref part="EX_PWR" gate="G$1" pin="3"/>
-<pinref part="EX_PWR" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="HEX_1" class="0">
@@ -8019,94 +7490,18 @@ used in other sections</text>
 <pinref part="HEX_GPIO" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="LED3" class="0">
-<segment>
-<pinref part="L3" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91" grouprefs="LED"/>
-<label x="121.92" y="33.02" size="1.778" layer="95" grouprefs="LED"/>
-</segment>
-</net>
-<net name="LED4" class="0">
-<segment>
-<pinref part="L4" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="20.32" x2="129.54" y2="20.32" width="0.1524" layer="91" grouprefs="LED"/>
-<label x="121.92" y="20.32" size="1.778" layer="95" grouprefs="LED"/>
-</segment>
-</net>
-<net name="LED2" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91" grouprefs="LED"/>
-<label x="121.92" y="45.72" size="1.778" layer="95" grouprefs="LED"/>
-</segment>
-</net>
 <net name="LED1" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91" grouprefs="LED"/>
-<label x="121.92" y="58.42" size="1.778" layer="95" grouprefs="LED"/>
+<wire x1="96.52" y1="-2.54" x2="101.6" y2="-2.54" width="0.1524" layer="91" grouprefs="LED"/>
+<label x="93.98" y="-2.54" size="1.778" layer="95" grouprefs="LED"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="144.78" y1="58.42" x2="144.78" y2="43.18" width="0.1524" layer="91" grouprefs="LED"/>
 <pinref part="LED_GPIO" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="142.24" y1="45.72" x2="142.24" y2="40.64" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="142.24" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91" grouprefs="LED"/>
-<pinref part="LED_GPIO" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="L3" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="33.02" x2="142.24" y2="33.02" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="142.24" y1="33.02" x2="142.24" y2="38.1" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="142.24" y1="38.1" x2="144.78" y2="38.1" width="0.1524" layer="91" grouprefs="LED"/>
-<pinref part="LED_GPIO" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="L4" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="20.32" x2="144.78" y2="20.32" width="0.1524" layer="91" grouprefs="LED"/>
-<wire x1="144.78" y1="20.32" x2="144.78" y2="35.56" width="0.1524" layer="91" grouprefs="LED"/>
-<pinref part="LED_GPIO" gate="G$1" pin="4"/>
-</segment>
-</net>
-<net name="GPIO4" class="0">
-<segment>
-<wire x1="147.32" y1="-27.94" x2="137.16" y2="-27.94" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="139.7" y="-27.94" size="1.778" layer="95" grouprefs="EXTRA"/>
-<pinref part="EX_GPIOS" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="GPIO3" class="0">
-<segment>
-<wire x1="147.32" y1="-25.4" x2="137.16" y2="-25.4" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="139.7" y="-25.4" size="1.778" layer="95" grouprefs="EXTRA"/>
-<pinref part="EX_GPIOS" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="GPIO2" class="0">
-<segment>
-<wire x1="147.32" y1="-22.86" x2="137.16" y2="-22.86" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="139.7" y="-22.86" size="1.778" layer="95" grouprefs="EXTRA"/>
-<pinref part="EX_GPIOS" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="GPIO1" class="0">
-<segment>
-<wire x1="147.32" y1="-20.32" x2="137.16" y2="-20.32" width="0.1524" layer="91" grouprefs="EXTRA"/>
-<label x="139.7" y="-20.32" size="1.778" layer="95" grouprefs="EXTRA"/>
-<pinref part="EX_GPIOS" gate="G$1" pin="4"/>
+<wire x1="111.76" y1="-2.54" x2="114.3" y2="-2.54" width="0.1524" layer="91" grouprefs="LED"/>
 </segment>
 </net>
 </nets>
