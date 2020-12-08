@@ -769,20 +769,34 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <wire x1="-0.3" y1="-1.8" x2="-0.3" y2="-1.8" width="0.1" layer="21"/>
 <wire x1="-0.3" y1="-1.8" x2="-0.4" y2="-1.8" width="0.1" layer="21" curve="180"/>
 </package>
-</packages>
-</library>
-<library name="Electrosmith-Passives">
-<packages>
-<package name="BOURNS_SRP2010">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<smd name="P$1" x="-1.0033" y="0" dx="0.5588" dy="1.6002" layer="1"/>
-<smd name="P$2" x="1.0033" y="0" dx="0.5588" dy="1.6002" layer="1"/>
-<text x="-2.2225" y="0" size="0.8128" layer="21" font="vector" rot="R270" align="center">&gt;NAME</text>
-<wire x1="-1.42875" y1="1.42875" x2="-1.42875" y2="-1.42875" width="0.0508" layer="21"/>
-<wire x1="-1.42875" y1="-1.42875" x2="1.42875" y2="-1.42875" width="0.0508" layer="21"/>
-<wire x1="1.42875" y1="-1.42875" x2="1.42875" y2="1.42875" width="0.0508" layer="21"/>
-<wire x1="1.42875" y1="1.42875" x2="-1.42875" y2="1.42875" width="0.0508" layer="21"/>
+<package name="WE-TIS_111190">
+<description>&lt;b&gt;WE-TIS_111190&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="-2.5" y="0" drill="1" diameter="1.5"/>
+<pad name="2" x="2.5" y="0" drill="1" diameter="1.5"/>
+<text x="-3.81" y="6.445" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<text x="-3.81" y="-8.35" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="5.5226" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="5.831" width="0.127" layer="21"/>
+</package>
+<package name="RCEC71H226MWK1H03B">
+<description>&lt;b&gt;L=5.5mm W=7.5mm T=4.0mm&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="0.75" diameter="1.2"/>
+<pad name="2" x="5" y="0" drill="0.75" diameter="1.2"/>
+<text x="2.5" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="2.5" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-0.25" y1="2" x2="5.25" y2="2" width="0.2" layer="51"/>
+<wire x1="5.25" y1="2" x2="5.25" y2="-2" width="0.2" layer="51"/>
+<wire x1="5.25" y1="-2" x2="-0.25" y2="-2" width="0.2" layer="51"/>
+<wire x1="-0.25" y1="-2" x2="-0.25" y2="2" width="0.2" layer="51"/>
+<wire x1="-1.6" y1="3" x2="6.6" y2="3" width="0.1" layer="51"/>
+<wire x1="6.6" y1="3" x2="6.6" y2="-3" width="0.1" layer="51"/>
+<wire x1="6.6" y1="-3" x2="-1.6" y2="-3" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-3" x2="-1.6" y2="3" width="0.1" layer="51"/>
+<wire x1="-0.25" y1="2" x2="5.25" y2="2" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="-2" x2="5.3" y2="-2" width="0.1" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1167,9 +1181,6 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-08440" x="-10.16" y="-8.89" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-10.16" y="-11.557" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="L5" library="Electrosmith-Passives" package="BOURNS_SRP2010" value="2.2uH" x="-8.89" y="-15.24" smashed="yes">
-<attribute name="NAME" x="-11.1125" y="-15.24" size="0.8128" layer="21" font="vector" rot="R270" align="center"/>
-</element>
 <element name="PS1" library="SamacSys_Parts" package="RFM0505S" value="RFM-0505S" x="-8.89" y="-22.86" smashed="yes">
 <attribute name="DESCRIPTION" value="RECOM POWER - RFM-0505S - DC-DC CONVERTER, 5V, 0.2A" x="-8.89" y="-22.86" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="10.5mm" x="-8.89" y="-22.86" size="1.778" layer="27" display="off"/>
@@ -1179,6 +1190,26 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/RECOM-Power/RFM-0505S?qs=lYGu3FyN48dRVYKTH5ipqg%3D%3D" x="-8.89" y="-22.86" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-5.08" y="-21.41" size="1.27" layer="25" align="center"/>
 <attribute name="VALUE" x="-5.08" y="-21.41" size="1.27" layer="27" align="center"/>
+</element>
+<element name="L5" library="SamacSys_Parts" package="WE-TIS_111190" value="7447471022" x="-19.05" y="-15.24" smashed="yes">
+<attribute name="DESCRIPTION" value="Wurth 2.2 uH +/-20% Ferrite Leaded Inductor, Max SRF:75MHz, 10A Idc, 0.009 Rdc WE-TIS" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="7447471022" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="710-7447471022" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=710-7447471022" x="-19.05" y="-15.24" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-22.86" y="-23.59" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-22.86" y="-8.795" size="1.27" layer="27" align="center"/>
+</element>
+<element name="C6" library="SamacSys_Parts" package="RCEC71H226MWK1H03B" value="RDEC71H226MWK1H03B" x="-26.67" y="-29.21" smashed="yes">
+<attribute name="DESCRIPTION" value="Capacitor L=5.5mm W=7.5mm T=4.0mm" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="10mm" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Murata Electronics" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="RDEC71H226MWK1H03B" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="81-RDEC71H226MWK1H3B" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Murata-Electronics/RDEC71H226MWK1H03B?qs=QzBtWTOodeV2kUwqUMKnLA%3D%3D" x="-26.67" y="-29.21" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-24.17" y="-29.21" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="-24.17" y="-29.21" size="1.27" layer="27" align="center"/>
 </element>
 </elements>
 <signals>
@@ -1275,9 +1306,23 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="C2" pad="2"/>
 <contactref element="C1" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="IC1" pad="1"/>
+<contactref element="C4" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="PS1" pad="1"/>
+<contactref element="PS1" pad="3"/>
+<contactref element="C6" pad="2"/>
 <wire x1="54.63" y1="55.86" x2="53.34" y2="55.86" width="0" layer="19" extent="16-16"/>
 <wire x1="42.164" y1="56.007" x2="53.34" y2="55.86" width="0" layer="19" extent="16-16"/>
-<wire x1="5.207" y1="-11.43" x2="16.51" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="5.207" y1="-2.54" x2="16.51" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="5.08" y1="-7.62" x2="5.207" y2="-2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="5.207" y1="-11.43" x2="5.08" y2="-7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.06" y1="-8.89" x2="5.08" y2="-7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.41" y1="-8.89" x2="-5.06" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.81" y1="-22.86" x2="-5.06" y2="-8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.89" y1="-22.86" x2="-3.81" y2="-22.86" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.67" y1="-29.21" x2="-8.89" y2="-22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SPST1">
 <contactref element="S1" pad="P$2"/>
@@ -1531,26 +1576,24 @@ design rules under a new name.</description>
 <wire x1="49.53" y1="38.1" x2="53.34" y2="38.1" width="0.6096" layer="1"/>
 <wire x1="49.53" y1="38.1" x2="41.783" y2="38.1" width="0.6096" layer="1"/>
 </signal>
-<signal name="N$6">
-<contactref element="C3" pad="2"/>
-<contactref element="IC1" pad="1"/>
-<contactref element="C4" pad="2"/>
-<contactref element="C5" pad="2"/>
-<wire x1="-5.06" y1="-8.89" x2="-11.41" y2="-8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="5.08" y1="-7.62" x2="-5.06" y2="-8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="5.207" y1="-2.54" x2="5.08" y2="-7.62" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$8">
 <contactref element="IC1" pad="2"/>
 <contactref element="C4" pad="1"/>
-<contactref element="L5" pad="P$1"/>
-<wire x1="-2.56" y1="-8.89" x2="-9.8933" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<contactref element="L5" pad="1"/>
+<wire x1="-2.56" y1="-8.89" x2="-21.55" y2="-15.24" width="0" layer="19" extent="1-1"/>
 <wire x1="7.63" y1="-7.62" x2="-2.56" y2="-8.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="C5" pad="1"/>
-<contactref element="L5" pad="P$2"/>
-<wire x1="-8.91" y1="-8.89" x2="-7.8867" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<contactref element="L5" pad="2"/>
+<contactref element="PS1" pad="2"/>
+<wire x1="-8.91" y1="-8.89" x2="-16.55" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.35" y1="-22.86" x2="-16.55" y2="-15.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+5V_ISOL">
+<contactref element="PS1" pad="4"/>
+<contactref element="C6" pad="1"/>
+<wire x1="-1.27" y1="-22.86" x2="-26.67" y2="-29.21" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
