@@ -6842,20 +6842,6 @@ and providing isolated 5V power to the audio components</text>
 <label x="223.52" y="167.64" size="1.778" layer="95" grouprefs="AUDIO_INPUT"/>
 </segment>
 </net>
-<net name="LED3" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO17(ADC1_INP15)"/>
-<wire x1="134.62" y1="71.12" x2="149.86" y2="71.12" width="0.1524" layer="91"/>
-<label x="142.24" y="71.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED4" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO16(ADC1_INP10)"/>
-<wire x1="134.62" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
-<label x="142.24" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="POT4" class="0">
 <segment>
 <pinref part="SEED" gate="G$1" pin="GPIO21(ADC1_INP11)"/>
@@ -6882,13 +6868,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SEED" gate="G$1" pin="GPIO24(DAC1_OUT1)"/>
 <wire x1="134.62" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <label x="142.24" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED2" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="GPIO18(ADC1_INP5)"/>
-<wire x1="134.62" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
-<label x="142.24" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -6957,13 +6936,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SEED" gate="G$1" pin="GPIO12(I2C1_SCL)"/>
 <wire x1="73.66" y1="86.36" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
 <label x="58.42" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="+3V3_D" class="0">
-<segment>
-<pinref part="SEED" gate="G$1" pin="+3V3_D"/>
-<wire x1="134.62" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
-<label x="139.7" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
