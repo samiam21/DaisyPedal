@@ -4907,217 +4907,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
-<description>&lt;h3&gt;SparkFun Capacitors&lt;/h3&gt;
-This library contains capacitors. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0402" urn="urn:adsk.eagle:footprint:37389/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.2" y1="0.65" x2="1.2" y2="0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="0.65" x2="1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="1.2" y1="-0.65" x2="-1.2" y2="-0.65" width="0.0508" layer="39"/>
-<wire x1="-1.2" y1="-0.65" x2="-1.2" y2="0.65" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="CAP-PTH-SMALL-KIT" urn="urn:adsk.eagle:footprint:37404/1" library_version="1">
-<description>&lt;h3&gt;CAP-PTH-SMALL-KIT&lt;/h3&gt;
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<pad name="2" x="1.397" y="0" drill="1.016" diameter="2.032" stop="no"/>
-<polygon width="0.127" layer="30">
-<vertex x="-1.4021" y="-0.9475" curve="-90"/>
-<vertex x="-2.357" y="-0.0178" curve="-90.011749"/>
-<vertex x="-1.4046" y="0.9576" curve="-90"/>
-<vertex x="-0.4546" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="-1.4046" y="-0.4395" curve="-90.012891"/>
-<vertex x="-1.8491" y="-0.0153" curve="-90"/>
-<vertex x="-1.4046" y="0.452" curve="-90"/>
-<vertex x="-0.9627" y="-0.0051" curve="-90.012967"/>
-</polygon>
-<polygon width="0.127" layer="30">
-<vertex x="1.397" y="-0.9475" curve="-90"/>
-<vertex x="0.4421" y="-0.0178" curve="-90.011749"/>
-<vertex x="1.3945" y="0.9576" curve="-90"/>
-<vertex x="2.3445" y="-0.0204" curve="-90.024193"/>
-</polygon>
-<polygon width="0.127" layer="29">
-<vertex x="1.3945" y="-0.4395" curve="-90.012891"/>
-<vertex x="0.95" y="-0.0153" curve="-90"/>
-<vertex x="1.3945" y="0.452" curve="-90"/>
-<vertex x="1.8364" y="-0.0051" curve="-90.012967"/>
-</polygon>
-</package>
-</packages>
-<packages3d>
-<package3d name="0402" urn="urn:adsk.eagle:package:37413/1" type="box" library_version="1">
-<description>Generic 1005 (0402) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0402"/>
-</packageinstances>
-</package3d>
-<package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
-<description>Generic 1608 (0603) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0603"/>
-</packageinstances>
-</package3d>
-<package3d name="CAP-PTH-SMALL-KIT" urn="urn:adsk.eagle:package:37428/1" type="box" library_version="1">
-<description>CAP-PTH-SMALL-KIT
-Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.com/products/8375) or 22pF caps (http://www.sparkfun.com/products/8571).
-
-Warning: This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.</description>
-<packageinstances>
-<packageinstance name="CAP-PTH-SMALL-KIT"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="CAP" urn="urn:adsk.eagle:symbol:37385/1" library_version="1">
-<wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="0.508" width="0.1524" layer="94"/>
-<text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<rectangle x1="-2.032" y1="0.508" x2="2.032" y2="1.016" layer="94"/>
-<rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0.1UF" urn="urn:adsk.eagle:component:37472/1" prefix="C" library_version="1">
-<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0402-16V-10%" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37413/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-12416"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-(+80/-20%)" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-25V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08604"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37428/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08370"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0603-100V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:37414/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08390"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="holes" urn="urn:adsk.eagle:library:237">
 <description>&lt;b&gt;Mounting Holes and Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -5969,22 +5758,6 @@ Commonly used for 1/4W through-hole resistors. 0.3" pitch between holes.</descri
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22UF" prefix="C">
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MCP6004" prefix="IC">
 <description>&lt;b&gt;Quad Op Amp&lt;/b&gt; 2.7V to 6.0V Single Supply CMOS&lt;p&gt;
 Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
@@ -6149,6 +5922,38 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="0.1UF" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="22UF" prefix="C">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -6206,19 +6011,15 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="H6" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
 <part name="H7" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
 <part name="H8" library="holes" library_urn="urn:adsk.eagle:library:237" deviceset="MOUNT-HOLE" device="2.8" package3d_urn="urn:adsk.eagle:package:14271/1"/>
-<part name="C3" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-KIT-EZ-50V-20%" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF"/>
 <part name="IC1" library="SamacSys_Parts" deviceset="LD1117V" device=""/>
-<part name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-KIT-EZ-50V-20%" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF"/>
 <part name="PS1" library="SamacSys_Parts" deviceset="RFM-0505S" device=""/>
 <part name="L5" library="SamacSys_Parts" deviceset="7447471022" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100k"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100k"/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C6" library="Custom-Parts" deviceset="22UF" device=""/>
 <part name="IC2" library="Custom-Parts" deviceset="MCP6004" device="P" package3d_urn="urn:adsk.eagle:package:16407/2"/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-KIT-EZ-50V-20%" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF"/>
 <part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R3" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="R4" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
@@ -6241,13 +6042,17 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="LED_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="AUD_PIN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="AUD_GND" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
-<part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-KIT-EZ-50V-20%" package3d_urn="urn:adsk.eagle:package:37428/1" value="0.1uF"/>
 <part name="C9" library="Custom-Parts" deviceset="10UF" device=""/>
 <part name="C10" library="Custom-Parts" deviceset="10UF" device=""/>
 <part name="C12" library="Custom-Parts" deviceset="10UF" device=""/>
 <part name="C11" library="Custom-Parts" deviceset="10UF" device=""/>
 <part name="C4" library="Custom-Parts" deviceset="10UF" device=""/>
 <part name="C2" library="Custom-Parts" deviceset="10UF" device=""/>
+<part name="C5" library="Custom-Parts" deviceset="0.1UF" device=""/>
+<part name="C7" library="Custom-Parts" deviceset="0.1UF" device=""/>
+<part name="C3" library="Custom-Parts" deviceset="0.1UF" device=""/>
+<part name="C1" library="Custom-Parts" deviceset="0.1UF" device=""/>
+<part name="C6" library="Custom-Parts" deviceset="22UF" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6304,17 +6109,9 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="9.652" y="79.3242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="9.652" y="76.2762" size="1.778" layer="96"/>
 </instance>
-<instance part="C3" gate="G$1" x="68.58" y="2.54" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="70.104" y="5.461" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="70.104" y="0.381" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="IC1" gate="G$1" x="81.28" y="15.24" smashed="yes" rot="R90" grouprefs="POWER">
 <attribute name="NAME" x="81.28" y="34.29" size="1.778" layer="95" rot="R180" align="center-left"/>
 <attribute name="VALUE" x="76.2" y="21.59" size="1.778" layer="96" rot="R90" align="center-left"/>
-</instance>
-<instance part="C1" gate="G$1" x="48.26" y="2.54" smashed="yes" grouprefs="POWER">
-<attribute name="NAME" x="49.784" y="5.461" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="49.784" y="0.381" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="PS1" gate="G$1" x="137.16" y="12.7" smashed="yes" rot="R90" grouprefs="POWER">
 <attribute name="NAME" x="139.7" y="34.29" size="1.778" layer="95" rot="R180" align="center-left"/>
@@ -6338,10 +6135,6 @@ and providing isolated 5V power to the audio components</text>
 <instance part="SUPPLY14" gate="GND" x="71.12" y="154.94" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="VALUE" x="69.215" y="151.765" size="1.778" layer="96"/>
 </instance>
-<instance part="C6" gate="G$1" x="162.56" y="0" smashed="yes">
-<attribute name="NAME" x="164.084" y="2.921" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="164.084" y="-2.159" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="IC2" gate="A" x="91.44" y="172.72" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="NAME" x="93.98" y="175.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="167.64" size="1.778" layer="96"/>
@@ -6361,10 +6154,6 @@ and providing isolated 5V power to the audio components</text>
 </instance>
 <instance part="SUPPLY15" gate="GND" x="71.12" y="137.16" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="VALUE" x="69.215" y="133.985" size="1.778" layer="96"/>
-</instance>
-<instance part="C8" gate="G$1" x="93.98" y="218.44" smashed="yes" grouprefs="AUDIO_PWR">
-<attribute name="NAME" x="95.504" y="221.361" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="95.504" y="216.281" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="SUPPLY16" gate="GND" x="71.12" y="203.2" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="VALUE" x="69.215" y="200.025" size="1.778" layer="96"/>
@@ -6423,10 +6212,6 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="VALUE" x="5.08" y="154.686" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="5.08" y="154.432" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="C7" gate="G$1" x="83.82" y="218.44" smashed="yes">
-<attribute name="NAME" x="85.344" y="221.361" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="85.344" y="216.281" size="1.778" layer="96" font="vector"/>
-</instance>
 <instance part="C9" gate="G$1" x="177.8" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="174.879" y="171.704" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="179.959" y="171.704" size="1.778" layer="96" font="vector" rot="R90"/>
@@ -6450,6 +6235,26 @@ and providing isolated 5V power to the audio components</text>
 <instance part="C2" gate="G$1" x="38.1" y="5.08" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.576" y="2.159" size="1.778" layer="95" font="vector" rot="R180"/>
 <attribute name="VALUE" x="36.576" y="7.239" size="1.778" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C5" gate="G$1" x="83.82" y="218.44" smashed="yes">
+<attribute name="NAME" x="85.344" y="221.361" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="85.344" y="216.281" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C7" gate="G$1" x="93.98" y="218.44" smashed="yes">
+<attribute name="NAME" x="95.504" y="221.361" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="95.504" y="216.281" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C3" gate="G$1" x="68.58" y="2.54" smashed="yes">
+<attribute name="NAME" x="70.104" y="5.461" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="70.104" y="0.381" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C1" gate="G$1" x="48.26" y="2.54" smashed="yes">
+<attribute name="NAME" x="49.784" y="5.461" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="49.784" y="0.381" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C6" gate="G$1" x="162.56" y="0" smashed="yes">
+<attribute name="NAME" x="164.084" y="2.921" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="164.084" y="-2.159" size="1.778" layer="96" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -6481,11 +6286,10 @@ and providing isolated 5V power to the audio components</text>
 </segment>
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
-<pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="48.26" y1="-2.54" x2="48.26" y2="0" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="C1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="0" x2="68.58" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="68.58" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -6511,9 +6315,10 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="142.24" y1="12.7" x2="142.24" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="142.24" y1="-7.62" x2="162.56" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="162.56" y="-7.62" grouprefs="POWER"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -6533,11 +6338,11 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="83.82" y1="215.9" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <wire x1="83.82" y1="208.28" x2="71.12" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <junction x="71.12" y="208.28" grouprefs="AUDIO_PWR"/>
-<pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="215.9" x2="93.98" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <wire x1="93.98" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <junction x="83.82" y="208.28" grouprefs="AUDIO_PWR"/>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -6730,15 +6535,15 @@ and providing isolated 5V power to the audio components</text>
 <junction x="38.1" y="10.16" grouprefs="POWER"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="48.26" y1="10.16" x2="68.58" y2="10.16" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="10.16" x2="68.58" y2="7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="68.58" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91" grouprefs="POWER"/>
 <junction x="68.58" y="10.16" grouprefs="POWER"/>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
 <wire x1="86.36" y1="10.16" x2="86.36" y2="15.24" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="10.16" x2="48.26" y2="7.62" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -6773,9 +6578,9 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="162.56" y1="10.16" x2="175.26" y2="10.16" width="0.1524" layer="91" grouprefs="POWER"/>
 <wire x1="175.26" y1="10.16" x2="175.26" y2="15.24" width="0.1524" layer="91" grouprefs="POWER"/>
 <label x="175.26" y="15.24" size="1.778" layer="95" grouprefs="POWER"/>
-<pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="5.08" x2="162.56" y2="10.16" width="0.1524" layer="91"/>
 <junction x="162.56" y="10.16"/>
+<pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -6789,11 +6594,11 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="83.82" y1="223.52" x2="83.82" y2="228.6" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <wire x1="83.82" y1="228.6" x2="71.12" y2="228.6" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <junction x="71.12" y="228.6" grouprefs="AUDIO_PWR"/>
-<pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="223.52" x2="93.98" y2="228.6" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <wire x1="93.98" y1="228.6" x2="83.82" y2="228.6" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
 <junction x="83.82" y="228.6" grouprefs="AUDIO_PWR"/>
 <label x="71.12" y="233.68" size="1.778" layer="95" grouprefs="AUDIO_PWR"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
