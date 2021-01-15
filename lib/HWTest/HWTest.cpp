@@ -3,6 +3,7 @@
 void HWTest::Setup(size_t pNumChannels)
 {
     numChannels = pNumChannels;
+    float sample_rate = DAISY.get_samplerate();
 
     // Initialize the buttons
     button1.Init(effectSPSTPin1, INPUT);
@@ -27,7 +28,7 @@ void HWTest::AudioCallback(float **in, float **out, size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
-        out[audioOutChannel][i] = in[audioInChannel][i] * (volumeBoost * 4.0 + 1.0f);
+        out[AUDIO_OUT_CH][i] = in[AUDIO_IN_CH][i] * (volumeBoost * 4.0 + 1.0f);
     }
 }
 

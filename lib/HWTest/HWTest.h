@@ -46,14 +46,10 @@ private:
     const int LED_MAX_VALUE = 256;
     const int LED_MIN_VALUE = 0;
 
-    // Audio channels
-    const int audioInChannel = 0;
-    const int audioOutChannel = 0;
-
     bool isLed3On = false;
     float led1Value = 0.0f;
     float led2Value = 0.0f;
-    float volumeBoost = 0.0f;
+    float volumeBoost = 1.0f;
 
     Button button1;
     Button button2;

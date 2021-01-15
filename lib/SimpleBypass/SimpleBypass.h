@@ -42,10 +42,6 @@ private:
     const int LED_MAX_VALUE = 256;
     const int LED_MIN_VALUE = 0;
 
-    // Audio channels
-    const int audioInChannel = 0;
-    const int audioOutChannel = 0;
-
     const float boostLevelMin = 30.0f;
     const float boostLevelMax = 60.0f;
     float boostLevel = 0.0f;
