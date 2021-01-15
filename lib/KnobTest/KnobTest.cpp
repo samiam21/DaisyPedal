@@ -19,7 +19,7 @@ void KnobTest::AudioCallback(float **in, float **out, size_t size)
 {
     for (size_t i = 0; i < size; i++)
     {
-        out[audioOutChannel][i] = in[audioInChannel][i];
+        out[AUDIO_OUT_CH][i] = in[AUDIO_IN_CH][i];
     }
 }
 
