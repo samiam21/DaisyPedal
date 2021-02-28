@@ -8376,7 +8376,6 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 </classes>
 <groups>
 <schematic_group name="POT"/>
-<schematic_group name="SPST"/>
 <schematic_group name="SPDT"/>
 <schematic_group name="ENCODER"/>
 <schematic_group name="MOUNT"/>
@@ -8387,6 +8386,7 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <schematic_group name="AUDIO_JACKS"/>
 <schematic_group name="OLED"/>
 <schematic_group name="LED"/>
+<schematic_group name="SPST"/>
 </groups>
 <parts>
 <part name="SEED" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
@@ -8438,8 +8438,6 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SPST_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
-<part name="SPST_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="SPDT_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="SPDT_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="AUD_PIN" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
@@ -8472,6 +8470,13 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="L4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="L6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="L7" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
+<part name="SPST_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
+<part name="SPST_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_06" device="SILK_FEMALE_PTH" package3d_urn="urn:adsk.eagle:package:38009/1"/>
+<part name="S2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="S3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="S4" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="S5" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
+<part name="S6" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9300,8 +9305,8 @@ switch with a pull-down resistor for each 'on' pin</text>
 switch with a pull-down resistor for each selector pin</text>
 <text x="38.1" y="5.08" size="1.778" layer="94" grouprefs="POT">This section provides connections
 for 4 potentiometers</text>
-<text x="-43.18" y="60.96" size="1.778" layer="94" grouprefs="SPST">This section provides connections for the SPST 
-momentary switch using a pull-down resistor</text>
+<text x="-53.34" y="78.74" size="1.778" layer="94" grouprefs="SPST">This section provides connections for the 6 SPST 
+momentary switches using pull-down resistors</text>
 <text x="93.98" y="5.08" size="1.778" layer="94" grouprefs="LED">This section provides connections for 6 LEDs,
 each behind a 330Ohm resistor</text>
 <text x="139.7" y="58.42" size="1.778" layer="94" grouprefs="OLED">This section provides connections 
@@ -9316,8 +9321,8 @@ for an SSD1309 OLED display</text>
 <instance part="H3" gate="G$1" x="-25.4" y="-17.78" smashed="yes" rot="R90" grouprefs="ENCODER"/>
 <instance part="H4" gate="G$1" x="-22.86" y="-17.78" smashed="yes" rot="R90" grouprefs="ENCODER"/>
 <instance part="SUPPLY6" gate="GND" x="71.12" y="-38.1" smashed="yes" grouprefs="POT"/>
-<instance part="S1" gate="G$1" x="-2.54" y="43.18" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="SUPPLY5" gate="GND" x="-2.54" y="33.02" smashed="yes" grouprefs="SPST"/>
+<instance part="S1" gate="G$1" x="-12.7" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="SUPPLY5" gate="GND" x="-20.32" y="35.56" smashed="yes" grouprefs="SPST"/>
 <instance part="ENC_PWR" gate="G$1" x="-45.72" y="-2.54" smashed="yes" rot="R180" grouprefs="ENCODER">
 <attribute name="VALUE" x="-43.18" y="2.286" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="-43.18" y="2.032" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -9326,14 +9331,6 @@ for an SSD1309 OLED display</text>
 <attribute name="VALUE" x="140.335" y="-26.035" size="1.778" layer="96"/>
 </instance>
 <instance part="L1" gate="G$1" x="106.68" y="-2.54" smashed="yes" grouprefs="LED"/>
-<instance part="SPST_PWR" gate="G$1" x="-25.4" y="50.8" smashed="yes" rot="R180" grouprefs="SPST">
-<attribute name="VALUE" x="-22.86" y="55.626" size="1.778" layer="96" font="vector" rot="R180"/>
-<attribute name="NAME" x="-22.86" y="55.372" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="SPST_GPIO" gate="G$1" x="-15.24" y="50.8" smashed="yes" grouprefs="SPST">
-<attribute name="VALUE" x="-17.78" y="45.974" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-17.78" y="53.848" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="SPDT_GPIO" gate="G$1" x="68.58" y="48.26" smashed="yes" grouprefs="SPDT">
 <attribute name="VALUE" x="66.04" y="43.434" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="66.04" y="53.848" size="1.778" layer="95" font="vector"/>
@@ -9389,6 +9386,19 @@ for an SSD1309 OLED display</text>
 <instance part="L4" gate="G$1" x="106.68" y="-10.16" smashed="yes" grouprefs="LED"/>
 <instance part="L6" gate="G$1" x="106.68" y="-12.7" smashed="yes" grouprefs="LED"/>
 <instance part="L7" gate="G$1" x="106.68" y="-15.24" smashed="yes" grouprefs="LED"/>
+<instance part="SPST_PWR" gate="G$1" x="-38.1" y="63.5" smashed="yes" rot="R180" grouprefs="SPST">
+<attribute name="VALUE" x="-33.02" y="73.406" size="1.778" layer="96" font="vector" rot="R180"/>
+<attribute name="NAME" x="-33.02" y="73.152" size="1.778" layer="95" font="vector" rot="R180"/>
+</instance>
+<instance part="SPST_GPIO" gate="G$1" x="-22.86" y="60.96" smashed="yes" grouprefs="SPST">
+<attribute name="VALUE" x="-27.94" y="51.054" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="-27.94" y="71.628" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="S2" gate="G$1" x="-10.16" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="S3" gate="G$1" x="-7.62" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="S4" gate="G$1" x="-5.08" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="S5" gate="G$1" x="-2.54" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
+<instance part="S6" gate="G$1" x="0" y="48.26" smashed="yes" rot="R90" grouprefs="SPST"/>
 </instances>
 <busses>
 </busses>
@@ -9441,11 +9451,6 @@ for an SSD1309 OLED display</text>
 <junction x="71.12" y="-33.02"/>
 </segment>
 <segment>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="38.1" x2="-2.54" y2="35.56" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 <wire x1="142.24" y1="-2.54" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="LED"/>
 <pinref part="LED_GND" gate="G$1" pin="6"/>
@@ -9482,6 +9487,33 @@ for an SSD1309 OLED display</text>
 <pinref part="SUPPLY22" gate="GND" pin="GND"/>
 <wire x1="134.62" y1="40.64" x2="129.54" y2="40.64" width="0.1524" layer="91" grouprefs="OLED"/>
 <wire x1="129.54" y1="40.64" x2="129.54" y2="38.1" width="0.1524" layer="91" grouprefs="OLED"/>
+</segment>
+<segment>
+<pinref part="S6" gate="G$1" pin="1"/>
+<wire x1="0" y1="43.18" x2="0" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="0" y1="40.64" x2="-2.54" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<wire x1="-2.54" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-5.08" y1="40.64" x2="-7.62" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-7.62" y1="40.64" x2="-10.16" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-10.16" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-12.7" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-20.32" y1="40.64" x2="-20.32" y2="38.1" width="0.1524" layer="91" grouprefs="SPST"/>
+<pinref part="S1" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="43.18" x2="-12.7" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-12.7" y="40.64" grouprefs="SPST"/>
+<pinref part="S2" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="43.18" x2="-10.16" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-10.16" y="40.64" grouprefs="SPST"/>
+<pinref part="S3" gate="G$1" pin="1"/>
+<wire x1="-7.62" y1="43.18" x2="-7.62" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-7.62" y="40.64" grouprefs="SPST"/>
+<pinref part="S4" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="43.18" x2="-5.08" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-5.08" y="40.64" grouprefs="SPST"/>
+<pinref part="S5" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="43.18" x2="-2.54" y2="40.64" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-2.54" y="40.64" grouprefs="SPST"/>
 </segment>
 </net>
 <net name="POT4" class="0">
@@ -9536,13 +9568,13 @@ for an SSD1309 OLED display</text>
 </net>
 <net name="SPST1" class="0">
 <segment>
-<pinref part="S1" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="50.8" x2="-2.54" y2="48.26" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-2.54" y1="50.8" x2="2.54" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="2.54" y="50.8" size="1.778" layer="95" grouprefs="SPST"/>
-<wire x1="-7.62" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<junction x="-2.54" y="50.8" grouprefs="SPST"/>
 <pinref part="SPST_GPIO" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="55.88" x2="-12.7" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="55.88" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="S1" gate="G$1" pin="2"/>
+<wire x1="-12.7" y1="55.88" x2="12.7" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-12.7" y1="53.34" x2="-12.7" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-12.7" y="55.88" grouprefs="SPST"/>
 </segment>
 </net>
 <net name="+3V3_A" class="0">
@@ -9569,10 +9601,30 @@ for an SSD1309 OLED display</text>
 <junction x="71.12" y="-2.54"/>
 </segment>
 <segment>
-<wire x1="-40.64" y1="50.8" x2="-40.64" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
-<wire x1="-33.02" y1="50.8" x2="-40.64" y2="50.8" width="0.1524" layer="91" grouprefs="SPST"/>
-<label x="-45.72" y="55.88" size="1.778" layer="95" grouprefs="SPST"/>
+<wire x1="-50.8" y1="68.58" x2="-50.8" y2="73.66" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-43.18" y1="68.58" x2="-50.8" y2="68.58" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="-55.88" y="73.66" size="1.778" layer="95" grouprefs="SPST"/>
 <pinref part="SPST_PWR" gate="G$1" pin="1"/>
+<pinref part="SPST_PWR" gate="G$1" pin="6"/>
+<wire x1="-43.18" y1="55.88" x2="-50.8" y2="55.88" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-50.8" y1="55.88" x2="-50.8" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-50.8" y="68.58" grouprefs="SPST"/>
+<pinref part="SPST_PWR" gate="G$1" pin="2"/>
+<wire x1="-50.8" y1="58.42" x2="-50.8" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-50.8" y1="60.96" x2="-50.8" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-50.8" y1="63.5" x2="-50.8" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-50.8" y1="66.04" x2="-50.8" y2="68.58" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-43.18" y1="66.04" x2="-50.8" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-50.8" y="66.04" grouprefs="SPST"/>
+<pinref part="SPST_PWR" gate="G$1" pin="3"/>
+<wire x1="-43.18" y1="63.5" x2="-50.8" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-50.8" y="63.5" grouprefs="SPST"/>
+<pinref part="SPST_PWR" gate="G$1" pin="4"/>
+<wire x1="-43.18" y1="60.96" x2="-50.8" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-50.8" y="60.96" grouprefs="SPST"/>
+<pinref part="SPST_PWR" gate="G$1" pin="5"/>
+<wire x1="-43.18" y1="58.42" x2="-50.8" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-50.8" y="58.42" grouprefs="SPST"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="50.8" x2="40.64" y2="55.88" width="0.1524" layer="91" grouprefs="SPDT"/>
@@ -9752,6 +9804,61 @@ for an SSD1309 OLED display</text>
 <pinref part="L7" gate="G$1" pin="1"/>
 <wire x1="101.6" y1="-15.24" x2="93.98" y2="-15.24" width="0.1524" layer="91" grouprefs="LED"/>
 <label x="93.98" y="-15.24" size="1.778" layer="95" grouprefs="LED"/>
+</segment>
+</net>
+<net name="SPST5" class="0">
+<segment>
+<pinref part="SPST_GPIO" gate="G$1" pin="5"/>
+<wire x1="-17.78" y1="66.04" x2="-2.54" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="66.04" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="S5" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="66.04" x2="12.7" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-2.54" y1="53.34" x2="-2.54" y2="66.04" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-2.54" y="66.04" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST4" class="0">
+<segment>
+<pinref part="SPST_GPIO" gate="G$1" pin="4"/>
+<wire x1="-17.78" y1="63.5" x2="-5.08" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="63.5" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="S4" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="63.5" x2="12.7" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-5.08" y1="53.34" x2="-5.08" y2="63.5" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-5.08" y="63.5" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST3" class="0">
+<segment>
+<pinref part="SPST_GPIO" gate="G$1" pin="3"/>
+<wire x1="-17.78" y1="60.96" x2="-7.62" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="60.96" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="S3" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="60.96" x2="12.7" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-7.62" y1="53.34" x2="-7.62" y2="60.96" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-7.62" y="60.96" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST2" class="0">
+<segment>
+<pinref part="SPST_GPIO" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="58.42" x2="-10.16" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="58.42" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="S2" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="-10.16" y1="53.34" x2="-10.16" y2="58.42" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="-10.16" y="58.42" grouprefs="SPST"/>
+</segment>
+</net>
+<net name="SPST6" class="0">
+<segment>
+<wire x1="-17.78" y1="68.58" x2="0" y2="68.58" width="0.1524" layer="91" grouprefs="SPST"/>
+<label x="5.08" y="68.58" size="1.778" layer="95" grouprefs="SPST"/>
+<pinref part="SPST_GPIO" gate="G$1" pin="6"/>
+<pinref part="S6" gate="G$1" pin="2"/>
+<wire x1="0" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91" grouprefs="SPST"/>
+<wire x1="0" y1="53.34" x2="0" y2="68.58" width="0.1524" layer="91" grouprefs="SPST"/>
+<junction x="0" y="68.58" grouprefs="SPST"/>
 </segment>
 </net>
 </nets>
