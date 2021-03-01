@@ -1517,6 +1517,18 @@ design rules under a new name.</description>
 <wire x1="12.7" y1="52.07" x2="6.35" y2="52.07" width="0.6096" layer="1"/>
 <wire x1="50.8" y1="75.057" x2="55.753" y2="75.057" width="0.6096" layer="1"/>
 <wire x1="55.753" y1="75.057" x2="57.15" y2="73.66" width="0.6096" layer="1"/>
+<polygon width="0.1524" layer="1">
+<vertex x="0" y="0"/>
+<vertex x="0" y="86.36"/>
+<vertex x="62.23" y="86.36"/>
+<vertex x="62.23" y="0"/>
+</polygon>
+<polygon width="0.1524" layer="16">
+<vertex x="0" y="86.36"/>
+<vertex x="0" y="0"/>
+<vertex x="62.23" y="0"/>
+<vertex x="62.23" y="86.36"/>
+</polygon>
 </signal>
 <signal name="SPST1">
 <contactref element="SEED" pad="1"/>
