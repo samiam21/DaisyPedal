@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -5314,6 +5328,53 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="5.5226" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="5.831" width="0.127" layer="21"/>
 </package>
+<package name="RHDRRA30W64P254_2X15_3861X851X">
+<description>&lt;b&gt;SSQ-115-02-T-D-RA&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square"/>
+<pad name="2" x="0" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="3" x="-2.54" y="0" drill="1.1" diameter="1.65"/>
+<pad name="4" x="-2.54" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="5" x="-5.08" y="0" drill="1.1" diameter="1.65"/>
+<pad name="6" x="-5.08" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="7" x="-7.62" y="0" drill="1.1" diameter="1.65"/>
+<pad name="8" x="-7.62" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="9" x="-10.16" y="0" drill="1.1" diameter="1.65"/>
+<pad name="10" x="-10.16" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="11" x="-12.7" y="0" drill="1.1" diameter="1.65"/>
+<pad name="12" x="-12.7" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="13" x="-15.24" y="0" drill="1.1" diameter="1.65"/>
+<pad name="14" x="-15.24" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="15" x="-17.78" y="0" drill="1.1" diameter="1.65"/>
+<pad name="16" x="-17.78" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="17" x="-20.32" y="0" drill="1.1" diameter="1.65"/>
+<pad name="18" x="-20.32" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="19" x="-22.86" y="0" drill="1.1" diameter="1.65"/>
+<pad name="20" x="-22.86" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="21" x="-25.4" y="0" drill="1.1" diameter="1.65"/>
+<pad name="22" x="-25.4" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="23" x="-27.94" y="0" drill="1.1" diameter="1.65"/>
+<pad name="24" x="-27.94" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="25" x="-30.48" y="0" drill="1.1" diameter="1.65"/>
+<pad name="26" x="-30.48" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="27" x="-33.02" y="0" drill="1.1" diameter="1.65"/>
+<pad name="28" x="-33.02" y="2.54" drill="1.1" diameter="1.65"/>
+<pad name="29" x="-35.56" y="0" drill="1.1" diameter="1.65"/>
+<pad name="30" x="-35.56" y="2.54" drill="1.1" diameter="1.65"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="1.775" y1="-1.325" x2="-37.335" y2="-1.325" width="0.05" layer="51"/>
+<wire x1="-37.335" y1="-1.325" x2="-37.335" y2="12.82" width="0.05" layer="51"/>
+<wire x1="-37.335" y1="12.82" x2="1.775" y2="12.82" width="0.05" layer="51"/>
+<wire x1="1.775" y1="12.82" x2="1.775" y2="-1.325" width="0.05" layer="51"/>
+<wire x1="1.525" y1="4.06" x2="-37.085" y2="4.06" width="0.1" layer="51"/>
+<wire x1="-37.085" y1="4.06" x2="-37.085" y2="12.57" width="0.1" layer="51"/>
+<wire x1="-37.085" y1="12.57" x2="1.525" y2="12.57" width="0.1" layer="51"/>
+<wire x1="1.525" y1="12.57" x2="1.525" y2="4.06" width="0.1" layer="51"/>
+<wire x1="1.525" y1="0" x2="1.525" y2="12.57" width="0.2" layer="21"/>
+<wire x1="1.525" y1="12.57" x2="-37.085" y2="12.57" width="0.2" layer="21"/>
+<wire x1="-37.085" y1="12.57" x2="-37.085" y2="4.06" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LD1117V">
@@ -5348,6 +5409,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <pin name="1" x="0" y="0" visible="pad" length="middle"/>
 <pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SSQ-115-02-T-D-RA">
+<wire x1="5.08" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-38.1" x2="17.78" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-38.1" x2="5.08" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-38.1" width="0.254" layer="94"/>
+<text x="19.05" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="19.05" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="3" x="0" y="-2.54" length="middle"/>
+<pin name="5" x="0" y="-5.08" length="middle"/>
+<pin name="7" x="0" y="-7.62" length="middle"/>
+<pin name="9" x="0" y="-10.16" length="middle"/>
+<pin name="11" x="0" y="-12.7" length="middle"/>
+<pin name="13" x="0" y="-15.24" length="middle"/>
+<pin name="15" x="0" y="-17.78" length="middle"/>
+<pin name="17" x="0" y="-20.32" length="middle"/>
+<pin name="19" x="0" y="-22.86" length="middle"/>
+<pin name="21" x="0" y="-25.4" length="middle"/>
+<pin name="23" x="0" y="-27.94" length="middle"/>
+<pin name="25" x="0" y="-30.48" length="middle"/>
+<pin name="27" x="0" y="-33.02" length="middle"/>
+<pin name="29" x="0" y="-35.56" length="middle"/>
+<pin name="2" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="4" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="6" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="8" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="10" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="12" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="14" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="16" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="18" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="20" x="22.86" y="-22.86" length="middle" rot="R180"/>
+<pin name="22" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="24" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="26" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="28" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="30" x="22.86" y="-35.56" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5426,6 +5525,59 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/7447471022.pd
 <attribute name="MANUFACTURER_PART_NUMBER" value="7447471022" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="710-7447471022" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=710-7447471022" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSQ-115-02-T-D-RA" prefix="J">
+<description>&lt;b&gt;CONN RECEPTACLE, 2.54MM, R/A DUAL 30WAY&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://suddendocs.samtec.com/catalog_english/ssq_th.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SSQ-115-02-T-D-RA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RHDRRA30W64P254_2X15_3861X851X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="21" pad="21"/>
+<connect gate="G$1" pin="22" pad="22"/>
+<connect gate="G$1" pin="23" pad="23"/>
+<connect gate="G$1" pin="24" pad="24"/>
+<connect gate="G$1" pin="25" pad="25"/>
+<connect gate="G$1" pin="26" pad="26"/>
+<connect gate="G$1" pin="27" pad="27"/>
+<connect gate="G$1" pin="28" pad="28"/>
+<connect gate="G$1" pin="29" pad="29"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="30" pad="30"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="CONN RECEPTACLE, 2.54MM, R/A DUAL 30WAY" constant="no"/>
+<attribute name="HEIGHT" value="4.95mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="SAMTEC" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SSQ-115-02-T-D-RA" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="200-SSQ11502TDRA" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Samtec/SSQ-115-02-T-D-RA?qs=rU5fayqh%252BE2UN30xyNQdAQ%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5956,6 +6108,47 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-PowerSymbols" urn="urn:adsk.eagle:library:530">
+<description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
+This library contains power, ground, and voltage-supply symbols.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="AGND" urn="urn:adsk.eagle:symbol:39414/1" library_version="1">
+<description>&lt;h3&gt;Analog Ground Supply&lt;/h3&gt;</description>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="0" y="-0.254" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AGND" urn="urn:adsk.eagle:component:39436/1" library_version="1">
+<description>&lt;b&gt;Analog Ground Symbol&lt;/b&gt;
+&lt;p&gt;Generic symbol for a analog ground supply.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5981,18 +6174,12 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 </groups>
 <parts>
 <part name="SEED" library="Electrosmith-Boards" deviceset="ES_DAISY_SEED_REV4" device=""/>
-<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="330OHM" device="-HORIZ-1/10W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="330"/>
 <part name="S1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="D12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="D11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
-<part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="H1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="H2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
 <part name="H3" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="10k"/>
@@ -6017,23 +6204,14 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100k"/>
 <part name="R2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100KOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100k"/>
-<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="IC2" library="Custom-Parts" deviceset="MCP6004" device="P" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY16" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R3" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="R4" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="U1" library="Custom-Parts" deviceset="OPA1652AID" device=""/>
 <part name="R7" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
 <part name="R8" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="100OHM" device="-HORIZ-1/4W-1%" package3d_urn="urn:adsk.eagle:package:39658/1" value="100"/>
-<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R10" library="Custom-Parts" deviceset="2MOHM" device="-HORIZ-1/4W-5%" package3d_urn="urn:adsk.eagle:package:39658/1" value="2M"/>
-<part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY23" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SPST_PWR" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="SPST_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1"/>
 <part name="SPDT_GPIO" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
@@ -6053,6 +6231,22 @@ Source: https://www.mouser.com/datasheet/2/268/21733e-41017.pdf</description>
 <part name="C3" library="Custom-Parts" deviceset="0.1UF" device=""/>
 <part name="C1" library="Custom-Parts" deviceset="0.1UF" device=""/>
 <part name="C6" library="Custom-Parts" deviceset="22UF" device=""/>
+<part name="U$1" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$5" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$7" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="U$11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="DIGILENT" library="SamacSys_Parts" deviceset="SSQ-115-02-T-D-RA" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6068,14 +6262,8 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="78.74" y="119.38" size="1.778" layer="94"/>
 <attribute name="VALUE" x="129.54" y="60.96" size="1.778" layer="94" rot="R180"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="71.12" y="60.96" smashed="yes">
-<attribute name="VALUE" x="69.215" y="57.785" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY2" gate="GND" x="142.24" y="119.38" smashed="yes" rot="R90">
 <attribute name="VALUE" x="145.415" y="117.475" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY3" gate="GND" x="-7.62" y="142.24" smashed="yes" grouprefs="AUDIO_JACKS">
-<attribute name="VALUE" x="-9.525" y="139.065" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY9" gate="GND" x="22.86" y="0" smashed="yes" grouprefs="POWER">
 <attribute name="VALUE" x="20.955" y="-3.175" size="1.778" layer="96"/>
@@ -6093,21 +6281,21 @@ and providing isolated 5V power to the audio components</text>
 <instance part="D2" gate="G$1" x="30.48" y="10.16" smashed="yes" grouprefs="POWER">
 <attribute name="NAME" x="27.94" y="12.192" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="H5" gate="G$1" x="7.62" y="101.6" smashed="yes" grouprefs="MOUNT">
-<attribute name="NAME" x="9.652" y="102.1842" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.652" y="99.1362" size="1.778" layer="96"/>
+<instance part="H5" gate="G$1" x="205.74" y="5.08" smashed="yes" grouprefs="MOUNT">
+<attribute name="NAME" x="207.772" y="5.6642" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.772" y="2.6162" size="1.778" layer="96"/>
 </instance>
-<instance part="H6" gate="G$1" x="7.62" y="93.98" smashed="yes" grouprefs="MOUNT">
-<attribute name="NAME" x="9.652" y="94.5642" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.652" y="91.5162" size="1.778" layer="96"/>
+<instance part="H6" gate="G$1" x="205.74" y="-2.54" smashed="yes" grouprefs="MOUNT">
+<attribute name="NAME" x="207.772" y="-1.9558" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.772" y="-5.0038" size="1.778" layer="96"/>
 </instance>
-<instance part="H7" gate="G$1" x="7.62" y="86.36" smashed="yes" grouprefs="MOUNT">
-<attribute name="NAME" x="9.652" y="86.9442" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.652" y="83.8962" size="1.778" layer="96"/>
+<instance part="H7" gate="G$1" x="205.74" y="-10.16" smashed="yes" grouprefs="MOUNT">
+<attribute name="NAME" x="207.772" y="-9.5758" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.772" y="-12.6238" size="1.778" layer="96"/>
 </instance>
-<instance part="H8" gate="G$1" x="7.62" y="78.74" smashed="yes" grouprefs="MOUNT">
-<attribute name="NAME" x="9.652" y="79.3242" size="1.778" layer="95"/>
-<attribute name="VALUE" x="9.652" y="76.2762" size="1.778" layer="96"/>
+<instance part="H8" gate="G$1" x="205.74" y="-17.78" smashed="yes" grouprefs="MOUNT">
+<attribute name="NAME" x="207.772" y="-17.1958" size="1.778" layer="95"/>
+<attribute name="VALUE" x="207.772" y="-20.2438" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$1" x="81.28" y="15.24" smashed="yes" rot="R90" grouprefs="POWER">
 <attribute name="NAME" x="81.28" y="34.29" size="1.778" layer="95" rot="R180" align="center-left"/>
@@ -6132,9 +6320,6 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="69.596" y="167.64" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="72.644" y="167.64" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY14" gate="GND" x="71.12" y="154.94" smashed="yes" grouprefs="AUDIO_PWR">
-<attribute name="VALUE" x="69.215" y="151.765" size="1.778" layer="96"/>
-</instance>
 <instance part="IC2" gate="A" x="91.44" y="172.72" smashed="yes" grouprefs="AUDIO_PWR">
 <attribute name="NAME" x="93.98" y="175.895" size="1.778" layer="95"/>
 <attribute name="VALUE" x="93.98" y="167.64" size="1.778" layer="96"/>
@@ -6152,12 +6337,6 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="91.44" y="145.415" size="1.778" layer="95"/>
 <attribute name="VALUE" x="91.44" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY15" gate="GND" x="71.12" y="137.16" smashed="yes" grouprefs="AUDIO_PWR">
-<attribute name="VALUE" x="69.215" y="133.985" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY16" gate="GND" x="71.12" y="203.2" smashed="yes" grouprefs="AUDIO_PWR">
-<attribute name="VALUE" x="69.215" y="200.025" size="1.778" layer="96"/>
-</instance>
 <instance part="R3" gate="G$1" x="185.42" y="177.8" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
 <attribute name="NAME" x="183.896" y="177.8" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="186.944" y="177.8" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -6165,9 +6344,6 @@ and providing isolated 5V power to the audio components</text>
 <instance part="R4" gate="G$1" x="167.64" y="162.56" smashed="yes" rot="R90" grouprefs="AUDIO_INPUT">
 <attribute name="NAME" x="166.116" y="162.56" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="169.164" y="162.56" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
-</instance>
-<instance part="SUPPLY17" gate="GND" x="167.64" y="152.4" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="VALUE" x="165.735" y="149.225" size="1.778" layer="96"/>
 </instance>
 <instance part="U1" gate="A" x="210.82" y="93.98" smashed="yes" grouprefs="AUDIO_OUTPUT">
 <attribute name="NAME" x="239.1156" y="95.4786" size="2.0828" layer="95" ratio="6" rot="SR0"/>
@@ -6181,28 +6357,13 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="194.056" y="81.28" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="197.104" y="81.28" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="SUPPLY19" gate="GND" x="195.58" y="71.12" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="193.675" y="67.945" size="1.778" layer="96"/>
-</instance>
 <instance part="R9" gate="G$1" x="213.36" y="106.68" smashed="yes" grouprefs="AUDIO_OUTPUT">
 <attribute name="NAME" x="213.36" y="108.204" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="213.36" y="105.156" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY20" gate="GND" x="254" y="104.14" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="252.095" y="100.965" size="1.778" layer="96"/>
-</instance>
 <instance part="R10" gate="G$1" x="246.38" y="109.22" smashed="yes" rot="R180" grouprefs="AUDIO_OUTPUT">
 <attribute name="NAME" x="246.38" y="107.696" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="246.38" y="110.744" size="1.778" layer="96" font="vector" rot="R180" align="top-center"/>
-</instance>
-<instance part="SUPPLY21" gate="GND" x="274.32" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="272.415" y="78.105" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY23" gate="GND" x="210.82" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
-<attribute name="VALUE" x="208.915" y="78.105" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY18" gate="GND" x="180.34" y="195.58" smashed="yes" grouprefs="AUDIO_INPUT">
-<attribute name="VALUE" x="178.435" y="192.405" size="1.778" layer="96"/>
 </instance>
 <instance part="AUD_PIN" gate="G$1" x="12.7" y="147.32" smashed="yes" grouprefs="AUDIO_JACKS">
 <attribute name="VALUE" x="10.16" y="142.494" size="1.778" layer="96" font="vector"/>
@@ -6256,6 +6417,43 @@ and providing isolated 5V power to the audio components</text>
 <attribute name="NAME" x="164.084" y="2.921" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="164.084" y="-2.159" size="1.778" layer="96" font="vector"/>
 </instance>
+<instance part="U$1" gate="G$1" x="71.12" y="60.96" smashed="yes">
+<attribute name="VALUE" x="71.12" y="60.706" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-7.62" y="142.24" smashed="yes" grouprefs="AUDIO_JACKS">
+<attribute name="VALUE" x="-7.62" y="141.986" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$3" gate="G$1" x="71.12" y="137.16" smashed="yes" grouprefs="AUDIO_PWR">
+<attribute name="VALUE" x="71.12" y="136.906" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$4" gate="G$1" x="71.12" y="154.94" smashed="yes" grouprefs="AUDIO_PWR">
+<attribute name="VALUE" x="71.12" y="154.686" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$5" gate="G$1" x="71.12" y="203.2" smashed="yes" grouprefs="AUDIO_PWR">
+<attribute name="VALUE" x="71.12" y="202.946" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$6" gate="G$1" x="167.64" y="152.4" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="VALUE" x="167.64" y="152.146" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$7" gate="G$1" x="180.34" y="195.58" smashed="yes" grouprefs="AUDIO_INPUT">
+<attribute name="VALUE" x="180.34" y="195.326" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$8" gate="G$1" x="274.32" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
+<attribute name="VALUE" x="274.32" y="81.026" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$9" gate="G$1" x="210.82" y="81.28" smashed="yes" grouprefs="AUDIO_OUTPUT">
+<attribute name="VALUE" x="210.82" y="81.026" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$10" gate="G$1" x="195.58" y="71.12" smashed="yes" grouprefs="AUDIO_OUTPUT">
+<attribute name="VALUE" x="195.58" y="70.866" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="U$11" gate="G$1" x="254" y="104.14" smashed="yes" grouprefs="AUDIO_OUTPUT">
+<attribute name="VALUE" x="254" y="103.886" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="DIGILENT" gate="G$1" x="-15.24" y="106.68" smashed="yes">
+<attribute name="NAME" x="3.81" y="114.3" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="3.81" y="111.76" size="1.778" layer="96" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6271,12 +6469,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="134.62" y1="114.3" x2="139.7" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="114.3" x2="139.7" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SEED" gate="G$1" pin="AGND"/>
-<pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="66.04" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="1"/>
@@ -6319,75 +6511,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="SUPPLY14" gate="GND" pin="GND"/>
-<wire x1="71.12" y1="162.56" x2="71.12" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="D" pin="+IN"/>
-<wire x1="81.28" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="71.12" y1="144.78" x2="71.12" y2="139.7" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="P" pin="V-"/>
-<wire x1="71.12" y1="210.82" x2="71.12" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<wire x1="71.12" y1="208.28" x2="71.12" y2="205.74" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<wire x1="83.82" y1="215.9" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<wire x1="83.82" y1="208.28" x2="71.12" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<junction x="71.12" y="208.28" grouprefs="AUDIO_PWR"/>
-<wire x1="93.98" y1="215.9" x2="93.98" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<wire x1="93.98" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
-<junction x="83.82" y="208.28" grouprefs="AUDIO_PWR"/>
-<pinref part="SUPPLY16" gate="GND" pin="GND"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<pinref part="SUPPLY17" gate="GND" pin="GND"/>
-<wire x1="167.64" y1="157.48" x2="167.64" y2="154.94" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
-<wire x1="195.58" y1="76.2" x2="195.58" y2="73.66" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="SUPPLY20" gate="GND" pin="GND"/>
-<wire x1="254" y1="109.22" x2="254" y2="106.68" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="V-"/>
-<wire x1="213.36" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-<pinref part="SUPPLY23" gate="GND" pin="GND"/>
-<wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="B" pin="+IN"/>
-<wire x1="193.04" y1="205.74" x2="180.34" y2="205.74" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-<pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="180.34" y1="205.74" x2="180.34" y2="198.12" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="INB+"/>
-<wire x1="269.24" y1="86.36" x2="274.32" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="274.32" y1="86.36" x2="274.32" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="AUD_GND" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="149.86" x2="-7.62" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="-7.62" y1="149.86" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<pinref part="AUD_GND" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="147.32" x2="-7.62" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<wire x1="-5.08" y1="147.32" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
-<junction x="-7.62" y="147.32" grouprefs="AUDIO_JACKS"/>
 </segment>
 </net>
 <net name="SPST1" class="0">
@@ -6751,6 +6874,83 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="274.32" y1="88.9" x2="269.24" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="AGND" class="0">
+<segment>
+<pinref part="SEED" gate="G$1" pin="AGND"/>
+<wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="66.04" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="AUD_GND" gate="G$1" pin="1"/>
+<wire x1="-5.08" y1="149.86" x2="-7.62" y2="149.86" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<wire x1="-7.62" y1="149.86" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<pinref part="AUD_GND" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="147.32" x2="-7.62" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<wire x1="-5.08" y1="147.32" x2="-7.62" y2="147.32" width="0.1524" layer="91" grouprefs="AUDIO_JACKS"/>
+<junction x="-7.62" y="147.32" grouprefs="AUDIO_JACKS"/>
+<pinref part="U$2" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="D" pin="+IN"/>
+<wire x1="81.28" y1="144.78" x2="71.12" y2="144.78" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<wire x1="71.12" y1="144.78" x2="71.12" y2="139.7" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<pinref part="U$3" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="162.56" x2="71.12" y2="157.48" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<pinref part="U$4" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="P" pin="V-"/>
+<wire x1="71.12" y1="210.82" x2="71.12" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<wire x1="71.12" y1="208.28" x2="71.12" y2="205.74" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<wire x1="83.82" y1="215.9" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<wire x1="83.82" y1="208.28" x2="71.12" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<junction x="71.12" y="208.28" grouprefs="AUDIO_PWR"/>
+<wire x1="93.98" y1="215.9" x2="93.98" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<wire x1="93.98" y1="208.28" x2="83.82" y2="208.28" width="0.1524" layer="91" grouprefs="AUDIO_PWR"/>
+<junction x="83.82" y="208.28" grouprefs="AUDIO_PWR"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="157.48" x2="167.64" y2="154.94" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<pinref part="U$6" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="B" pin="+IN"/>
+<wire x1="193.04" y1="205.74" x2="180.34" y2="205.74" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<wire x1="180.34" y1="205.74" x2="180.34" y2="198.12" width="0.1524" layer="91" grouprefs="AUDIO_INPUT"/>
+<pinref part="U$7" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="INB+"/>
+<wire x1="269.24" y1="86.36" x2="274.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="86.36" x2="274.32" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="V-"/>
+<wire x1="213.36" y1="86.36" x2="210.82" y2="86.36" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<wire x1="210.82" y1="86.36" x2="210.82" y2="83.82" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<pinref part="U$9" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="76.2" x2="195.58" y2="73.66" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<pinref part="U$10" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="251.46" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<wire x1="254" y1="109.22" x2="254" y2="106.68" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
+<pinref part="U$11" gate="G$1" pin="AGND"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -6768,17 +6968,13 @@ momentary switch using a pull-down resistor</text>
 each behind a 330Ohm resistor</text>
 </plain>
 <instances>
-<instance part="SUPPLY7" gate="GND" x="83.82" y="27.94" smashed="yes" grouprefs="SPDT"/>
 <instance part="D12" gate="G$1" x="83.82" y="40.64" smashed="yes" rot="R90" grouprefs="SPDT"/>
 <instance part="D11" gate="G$1" x="88.9" y="40.64" smashed="yes" rot="R90" grouprefs="SPDT"/>
-<instance part="SUPPLY8" gate="GND" x="-30.48" y="-27.94" smashed="yes" grouprefs="HEX_SELECTOR"/>
 <instance part="H1" gate="G$1" x="-25.4" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H2" gate="G$1" x="-20.32" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H3" gate="G$1" x="-15.24" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
 <instance part="H4" gate="G$1" x="-10.16" y="-17.78" smashed="yes" rot="R90" grouprefs="HEX_SELECTOR"/>
-<instance part="SUPPLY6" gate="GND" x="71.12" y="-38.1" smashed="yes" grouprefs="POT"/>
 <instance part="S1" gate="G$1" x="-2.54" y="43.18" smashed="yes" rot="R90" grouprefs="SPST"/>
-<instance part="SUPPLY5" gate="GND" x="-2.54" y="33.02" smashed="yes" grouprefs="SPST"/>
 <instance part="POT_GPIO" gate="G$1" x="50.8" y="-7.62" smashed="yes" rot="R180" grouprefs="POT">
 <attribute name="VALUE" x="55.88" y="-0.254" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="55.88" y="-0.508" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -6830,25 +7026,60 @@ each behind a 330Ohm resistor</text>
 <attribute name="VALUE" x="129.54" y="-7.366" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="129.54" y="0.508" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="SUPPLY1" gate="GND" x="76.2" y="30.48" smashed="yes" grouprefs="SPDT">
+<attribute name="VALUE" x="74.295" y="27.305" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY3" gate="GND" x="71.12" y="-35.56" smashed="yes" grouprefs="POT">
+<attribute name="VALUE" x="69.215" y="-38.735" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY5" gate="GND" x="-30.48" y="-27.94" smashed="yes" grouprefs="HEX_SELECTOR">
+<attribute name="VALUE" x="-32.385" y="-31.115" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY6" gate="GND" x="-2.54" y="33.02" smashed="yes" grouprefs="SPST">
+<attribute name="VALUE" x="-4.445" y="29.845" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<pinref part="LED_GND" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="-2.54" x2="142.24" y2="-2.54" width="0.1524" layer="91" grouprefs="LED"/>
+<pinref part="SUPPLY4" gate="GND" pin="GND"/>
+<wire x1="142.24" y1="-2.54" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="LED"/>
+</segment>
+<segment>
 <pinref part="D12" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="35.56" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
 <pinref part="D11" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="33.02" x2="83.82" y2="30.48" width="0.1524" layer="91" grouprefs="SPDT"/>
+<wire x1="83.82" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
 <wire x1="88.9" y1="35.56" x2="88.9" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
 <wire x1="88.9" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91" grouprefs="SPDT"/>
 <junction x="83.82" y="33.02" grouprefs="SPDT"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="POT_GND" gate="G$1" pin="4"/>
+<wire x1="68.58" y1="-22.86" x2="71.12" y2="-22.86" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-22.86" x2="71.12" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
+<pinref part="POT_GND" gate="G$1" pin="3"/>
+<wire x1="71.12" y1="-25.4" x2="71.12" y2="-27.94" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-27.94" x2="71.12" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="71.12" y1="-30.48" x2="71.12" y2="-33.02" width="0.1524" layer="91" grouprefs="POT"/>
+<wire x1="68.58" y1="-25.4" x2="71.12" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="71.12" y="-25.4" grouprefs="POT"/>
+<pinref part="POT_GND" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="-27.94" x2="71.12" y2="-27.94" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="71.12" y="-27.94" grouprefs="POT"/>
+<pinref part="POT_GND" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="-30.48" x2="71.12" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
+<junction x="71.12" y="-30.48" grouprefs="POT"/>
+<pinref part="SUPPLY3" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="H4" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="-22.86" x2="-10.16" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
-<pinref part="SUPPLY8" gate="GND" pin="GND"/>
 <wire x1="-10.16" y1="-25.4" x2="-15.24" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <pinref part="H3" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="-25.4" x2="-20.32" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
@@ -6862,35 +7093,12 @@ each behind a 330Ohm resistor</text>
 <pinref part="H1" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-22.86" x2="-25.4" y2="-25.4" width="0.1524" layer="91" grouprefs="HEX_SELECTOR"/>
 <junction x="-25.4" y="-25.4" grouprefs="HEX_SELECTOR"/>
-</segment>
-<segment>
-<pinref part="POT_GND" gate="G$1" pin="4"/>
-<pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="68.58" y1="-22.86" x2="71.12" y2="-22.86" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="71.12" y1="-22.86" x2="71.12" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
-<pinref part="POT_GND" gate="G$1" pin="3"/>
-<wire x1="71.12" y1="-25.4" x2="71.12" y2="-27.94" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="71.12" y1="-27.94" x2="71.12" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="71.12" y1="-30.48" x2="71.12" y2="-35.56" width="0.1524" layer="91" grouprefs="POT"/>
-<wire x1="68.58" y1="-25.4" x2="71.12" y2="-25.4" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="71.12" y="-25.4" grouprefs="POT"/>
-<pinref part="POT_GND" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="-27.94" x2="71.12" y2="-27.94" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="71.12" y="-27.94" grouprefs="POT"/>
-<pinref part="POT_GND" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="-30.48" x2="71.12" y2="-30.48" width="0.1524" layer="91" grouprefs="POT"/>
-<junction x="71.12" y="-30.48" grouprefs="POT"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="38.1" x2="-2.54" y2="35.56" width="0.1524" layer="91" grouprefs="SPST"/>
-<pinref part="SUPPLY5" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED_GND" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="-2.54" x2="142.24" y2="-2.54" width="0.1524" layer="91" grouprefs="LED"/>
-<pinref part="SUPPLY4" gate="GND" pin="GND"/>
-<wire x1="142.24" y1="-2.54" x2="142.24" y2="-5.08" width="0.1524" layer="91" grouprefs="LED"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="POT4" class="0">
