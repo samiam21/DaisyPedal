@@ -6320,8 +6320,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="DIGILENT" library="SamacSys_Parts" deviceset="SSQ-115-02-T-D-RA" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="J1" library="SamacSys_Parts" deviceset="NYS2152" device=""/>
-<part name="J2" library="SamacSys_Parts" deviceset="NYS2152" device=""/>
+<part name="AUD_OUT" library="SamacSys_Parts" deviceset="NYS2152" device=""/>
+<part name="AUD_IN" library="SamacSys_Parts" deviceset="NYS2152" device=""/>
+<part name="U$12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6535,13 +6536,16 @@ and providing isolated 5V power to the audio components</text>
 <instance part="SUPPLY8" gate="GND" x="-33.02" y="71.12" smashed="yes">
 <attribute name="VALUE" x="-34.925" y="67.945" size="1.778" layer="96"/>
 </instance>
-<instance part="J1" gate="G$1" x="10.16" y="134.62" smashed="yes">
-<attribute name="NAME" x="26.67" y="142.24" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="26.67" y="139.7" size="1.778" layer="96" align="center-left"/>
+<instance part="AUD_OUT" gate="G$1" x="15.24" y="129.54" smashed="yes">
+<attribute name="NAME" x="31.75" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="134.62" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="-25.4" y="134.62" smashed="yes">
-<attribute name="NAME" x="-8.89" y="142.24" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="-8.89" y="139.7" size="1.778" layer="96" align="center-left"/>
+<instance part="AUD_IN" gate="G$1" x="-40.64" y="129.54" smashed="yes">
+<attribute name="NAME" x="-24.13" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="-24.13" y="134.62" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="U$12" gate="G$1" x="162.56" y="-17.78" smashed="yes">
+<attribute name="VALUE" x="162.56" y="-18.034" size="1.778" layer="96" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -6569,37 +6573,6 @@ and providing isolated 5V power to the audio components</text>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 <wire x1="48.26" y1="-2.54" x2="48.26" y2="0" width="0.1524" layer="91" grouprefs="POWER"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="68.58" y1="0" x2="68.58" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="68.58" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="IC1" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="-7.62" x2="91.44" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="81.28" y1="15.24" x2="81.28" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="81.28" y="-7.62" grouprefs="POWER"/>
-<wire x1="91.44" y1="-2.54" x2="91.44" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="91.44" y1="-7.62" x2="121.92" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="91.44" y="-7.62" grouprefs="POWER"/>
-<wire x1="121.92" y1="-7.62" x2="121.92" y2="-2.54" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="121.92" y="-7.62" grouprefs="POWER"/>
-<wire x1="121.92" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="PS1" gate="G$1" pin="-VIN"/>
-<wire x1="137.16" y1="-7.62" x2="137.16" y2="12.7" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="121.92" y1="-7.62" x2="121.92" y2="-12.7" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-<wire x1="121.92" y1="-12.7" x2="121.92" y2="-15.24" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="121.92" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="121.92" y="-12.7" grouprefs="POWER"/>
-<wire x1="162.56" y1="-12.7" x2="162.56" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<pinref part="PS1" gate="G$1" pin="-VOUT"/>
-<wire x1="162.56" y1="-7.62" x2="162.56" y2="-2.54" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="142.24" y1="12.7" x2="142.24" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<wire x1="142.24" y1="-7.62" x2="162.56" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
-<junction x="162.56" y="-7.62" grouprefs="POWER"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<pinref part="C6" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="DIGILENT" gate="G$1" pin="20"/>
@@ -7060,6 +7033,40 @@ and providing isolated 5V power to the audio components</text>
 <wire x1="251.46" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <wire x1="254" y1="109.22" x2="254" y2="106.68" width="0.1524" layer="91" grouprefs="AUDIO_OUTPUT"/>
 <pinref part="U$11" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="0" x2="68.58" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="68.58" y1="-7.62" x2="81.28" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<wire x1="81.28" y1="-7.62" x2="91.44" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="81.28" y1="15.24" x2="81.28" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="81.28" y="-7.62" grouprefs="POWER"/>
+<wire x1="91.44" y1="-2.54" x2="91.44" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="91.44" y1="-7.62" x2="121.92" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="91.44" y="-7.62" grouprefs="POWER"/>
+<wire x1="121.92" y1="-7.62" x2="121.92" y2="-2.54" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="121.92" y="-7.62" grouprefs="POWER"/>
+<wire x1="121.92" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="PS1" gate="G$1" pin="-VIN"/>
+<wire x1="137.16" y1="-7.62" x2="137.16" y2="12.7" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="121.92" y1="-7.62" x2="121.92" y2="-12.7" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
+<wire x1="121.92" y1="-12.7" x2="121.92" y2="-15.24" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="121.92" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="121.92" y="-12.7" grouprefs="POWER"/>
+<wire x1="162.56" y1="-12.7" x2="162.56" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<pinref part="PS1" gate="G$1" pin="-VOUT"/>
+<wire x1="162.56" y1="-7.62" x2="162.56" y2="-2.54" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="142.24" y1="12.7" x2="142.24" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<wire x1="142.24" y1="-7.62" x2="162.56" y2="-7.62" width="0.1524" layer="91" grouprefs="POWER"/>
+<junction x="162.56" y="-7.62" grouprefs="POWER"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<pinref part="U$12" gate="G$1" pin="AGND"/>
+<wire x1="162.56" y1="-15.24" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="162.56" y="-12.7"/>
 </segment>
 </net>
 <net name="N$11" class="0">
